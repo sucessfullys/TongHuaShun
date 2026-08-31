@@ -1,0 +1,313 @@
+{
+  "train_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version7_with_norm.jsonl",
+  "base_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version6_with_norm.jsonl",
+  "base_stats": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version6_with_norm.stats.json",
+  "created_at": "2026-08-06T11:42:54",
+  "note": "version7_with_norm is generated from version6_with_norm without modifying original files. It adds selected add/abnormal, add/abnormal_aug, and add/normal samples. Abnormal evidence follows the previous v4 multi-hand style, focusing on extra hands, branching wrists/arms, and unnatural hand connections.",
+  "base_rows": 10065,
+  "added_rows": 306,
+  "total_rows": 10371,
+  "total_image_refs": 10371,
+  "skipped_duplicate_images": 0,
+  "added": {
+    "add_abnormal_manual": 64,
+    "add_abnormal_manual_aug": 192,
+    "add_normal_manual": 50
+  },
+  "added_label_counts": {
+    "abnormal": 256,
+    "normal": 50
+  },
+  "added_dirs": {
+    "add_abnormal_manual": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal",
+    "add_abnormal_manual_aug": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal_aug",
+    "add_normal_manual": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/normal"
+  },
+  "label_counts": {
+    "normal": 5206,
+    "abnormal": 3665,
+    "non_human": 1500
+  },
+  "source_counts": {
+    "normal_human": 3000,
+    "abnormal_selected": 1205,
+    "background_no_human": 1000,
+    "abnormal_bg_aug": 300,
+    "normal_human_noise_aug": 1700,
+    "abnormal_bg_aug_noise_aug": 198,
+    "abnormal_selected_noise_aug": 802,
+    "background_no_human_noise_aug": 500,
+    "supplement_misclassified_normal": 106,
+    "supplement_misclassified_abnormal": 131,
+    "dreamface2_abnormal_seg_hand_selected": 302,
+    "dreamface2_manual_abnormal": 21,
+    "dreamface2_manual_abnormal_aug": 162,
+    "dreamface2_manual_normal": 199,
+    "dreamface2_highrisk_hand_foot_abnormal_selected": 84,
+    "dreamface2_diverse_english_3seed_selected_multihand_abnormal": 204,
+    "dreamface2_diverse_english_3seed_selected_normal": 151,
+    "add_abnormal_manual": 64,
+    "add_abnormal_manual_aug": 192,
+    "add_normal_manual": 50
+  },
+  "parent_counts": {
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/normal_human": 3000,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择": 1205,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours/Version1/背景": 1000,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择_bg_aug/base9b_bg_cfg4.0_step28_seed42": 300,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/normal": 1700,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/abnormal": 1000,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/non_human": 500,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/补充图像数据集/normal": 106,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/补充图像数据集/abnormal": 131,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal_seg_hand_选择": 302,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal": 21,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal_aug": 162,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/normal": 199,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_20260803_173429/images_abnormal_选择": 84,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_diverse_english_3seed_20260804_174158/images_abnormal_选择": 204,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_diverse_english_3seed_20260804_174158/images_normal_选择": 151,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal": 64,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal_aug": 192,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/normal": 50
+  },
+  "validation": {
+    "duplicate_ids": 0,
+    "duplicate_image_refs": 0,
+    "missing_images": 0,
+    "label_conclusion_mismatch": 0,
+    "all_added_abnormal_evidence_focus": "multi-hand / extra hands / branching wrist-arm connection"
+  },
+  "added_examples": [
+    {
+      "id": "multihand_v3_010066",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/000.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是多模态人体异常识别助手。任务是根据图片判断是否存在多手异常，并用自然语言说明可见证据。结论必须写成 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion>。"
+        },
+        {
+          "role": "user",
+          "content": "<image>请检查是否存在额外手部、手腕分叉或多手连接异常。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>人体附近出现多只手或重叠生成的手掌，数量和连接关系都不自然。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010067",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/001.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+        },
+        {
+          "role": "user",
+          "content": "<image>请判断画面中的人体手部结构是否正常，并给出依据。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>人体附近出现多只手或重叠生成的手掌，数量和连接关系都不自然。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010068",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/002.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是多模态人体异常识别助手。任务是根据图片判断是否存在多手异常，并用自然语言说明可见证据。结论必须写成 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion>。"
+        },
+        {
+          "role": "user",
+          "content": "<image>请检查是否存在额外手部、手腕分叉或多手连接异常。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>画面中手掌数量异常，部分手部像从同一手腕或手臂处分叉生成。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010069",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/003.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是多模态人体异常识别助手。任务是根据图片判断是否存在多手异常，并用自然语言说明可见证据。结论必须写成 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion>。"
+        },
+        {
+          "role": "user",
+          "content": "<image>请判断画面中的人体手部结构是否正常，并给出依据。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>画面中手掌数量异常，部分手部像从同一手腕或手臂处分叉生成。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010070",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/004.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是多模态人体异常识别助手。任务是根据图片判断是否存在多手异常，并用自然语言说明可见证据。结论必须写成 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion>。"
+        },
+        {
+          "role": "user",
+          "content": "<image>这张图片是否存在多手异常？请说明理由并给出结论。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>画面里可见额外手掌或手臂末端分叉，手部与人体主体的连接关系不符合常见人体结构。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010071",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/005.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+        },
+        {
+          "role": "user",
+          "content": "<image>请判断画面中的人体手部结构是否正常，并给出依据。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>手部结构有明显重复增生，额外手掌与手腕连接异常，符合多手畸形表现。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010072",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/006.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是多模态人体异常识别助手。任务是根据图片判断是否存在多手异常，并用自然语言说明可见证据。结论必须写成 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion>。"
+        },
+        {
+          "role": "user",
+          "content": "<image>请判断画面中的人体手部结构是否正常，并给出依据。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>人体手部附近出现不自然的重复或分叉结构，整体表现为超过正常双手数量的异常。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010073",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/007.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+        },
+        {
+          "role": "user",
+          "content": "<image>图中人体手部连接关系是否自然？请给出判断。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>人体附近出现多只手或重叠生成的手掌，数量和连接关系都不自然。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010074",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/008.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+        },
+        {
+          "role": "user",
+          "content": "<image>这张图片是否存在多手异常？请说明理由并给出结论。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>手部结构有明显重复增生，额外手掌与手腕连接异常，符合多手畸形表现。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    },
+    {
+      "id": "multihand_v3_010075",
+      "task_type": "multi_hand_abnormal_classification",
+      "label": "abnormal",
+      "source": "add_abnormal_manual",
+      "images": [
+        "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/add/abnormal/009.png"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+        },
+        {
+          "role": "user",
+          "content": "<image>请检查是否存在额外手部、手腕分叉或多手连接异常。"
+        },
+        {
+          "role": "assistant",
+          "content": "<evidence>画面中人体手部区域存在异常增生或分叉表现，手部数量超过正常双手结构。</evidence>\n<conclusion>abnormal</conclusion>"
+        }
+      ]
+    }
+  ]
+}

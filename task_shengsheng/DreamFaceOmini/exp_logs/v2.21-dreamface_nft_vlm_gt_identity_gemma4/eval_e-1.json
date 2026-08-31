@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.21-dreamface_nft_vlm_gt_identity_gemma4",
+  "eval_note": "看v2.21的效果。使用更多数据",
+  "date": "2026-05-12_16:08:55",
+  "epoch": -1,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/nft/dreamface_nft_vlm_gt_identity_gemma4/checkpoints/checkpoint-80/adapter_diffsynth_model.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/机器人/demo/02-2.json",
+  "num_samples": 200,
+  "seed": 42,
+  "steps": 4,
+  "cfg": 1.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.21-dreamface_nft_vlm_gt_identity_gemma4_e-1_cfg1.0_s2guidance0_scale1-robot-flux9b-e80"
+}

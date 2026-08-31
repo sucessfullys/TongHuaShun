@@ -1,0 +1,13 @@
+{
+  "script_used": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/DF2K/Download_df2k/datasets/DF2K/generate_realistic_lr_dataset.py",
+  "source_dir": "/mnt/image-edit/datasets/duanyufa/Face/Other_data/Instargram/HR_images",
+  "output_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/DF2K/Download_df2k/datasets/DF2K/Instargram_test",
+  "num_images": 6,
+  "severities": [
+    "mild",
+    "medium",
+    "strong"
+  ],
+  "comparison_layout": "Original | Mild | Medium | Strong",
+  "noise_probability": 0.35
+}

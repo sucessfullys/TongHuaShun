@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "memory_manager.input",
+  "title": "MemoryManagerInput",
+  "description": "Input for the memory_manager tool. Dispatches one of four memory operations defined in memory.manager.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["op", "args"],
+  "properties": {
+    "op": {
+      "type": "string",
+      "description": "Memory operation to execute.",
+      "enum": [
+        "load_for_generation",
+        "append_long_memory",
+        "write_pair",
+        "prune_long_memory"
+      ]
+    },
+    "args": {
+      "type": "object",
+      "description": "Operation-specific arguments. Shape depends on op value.",
+      "additionalProperties": true,
+      "oneOf": [
+        {
+          "title": "load_for_generation args",
+          "description": "Load relevant memory context for the prompt generation step.",
+          "required": ["run_id", "round_id"],
+          "properties": {
+            "run_id": { "type": "string", "description": "Active run identifier." },
+            "round_id": { "type": "integer", "description": "Current optimization round." },
+            "top_k": { "type": "integer", "description": "Maximum number of long-memory pairs to retrieve.", "default": 5 }
+          }
+        },
+        {
+          "title": "append_long_memory args",
+          "description": "Append a prompt pair to the long-term memory store.",
+          "required": ["run_id", "prompt_pair_id"],
+          "properties": {
+            "run_id": { "type": "string", "description": "Active run identifier." },
+            "prompt_pair_id": { "type": "string", "description": "ID of the prompt pair to append." }
+          }
+        },
+        {
+          "title": "write_pair args",
+          "description": "Persist a prompt pair to the round memory store.",
+          "required": ["run_id", "round_id", "prompt_pair"],
+          "properties": {
+            "run_id": { "type": "string", "description": "Active run identifier." },
+            "round_id": { "type": "integer", "description": "Current optimization round." },
+            "prompt_pair": { "type": "object", "description": "PromptPair object (see schemas.PromptPair)." }
+          }
+        },
+        {
+          "title": "prune_long_memory args",
+          "description": "Remove low-scoring entries from the long-term memory store.",
+          "required": ["run_id"],
+          "properties": {
+            "run_id": { "type": "string", "description": "Active run identifier." },
+            "keep_top_k": { "type": "integer", "description": "Number of top entries to retain.", "default": 20 }
+          }
+        }
+      ]
+    }
+  }
+}

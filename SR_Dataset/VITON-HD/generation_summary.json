@@ -1,0 +1,25 @@
+{
+  "hr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/VITON-HD/HR",
+  "lr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/VITON-HD/LR",
+  "severity_probs": {
+    "mild": 0.3,
+    "medium": 0.45,
+    "strong": 0.25
+  },
+  "noise_probability": 0.4,
+  "source_images": 13679,
+  "eligible_images": 13679,
+  "skipped_aspect_ratio": 0,
+  "paired_images": 13679,
+  "severity_counts": {
+    "mild": 4063,
+    "medium": 6090,
+    "strong": 3526
+  },
+  "noise_counts": {
+    "none": 8260,
+    "light_gaussian": 4648,
+    "light_poisson": 771
+  },
+  "metadata_rows": 13679
+}

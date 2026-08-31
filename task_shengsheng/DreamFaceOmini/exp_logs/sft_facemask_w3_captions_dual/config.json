@@ -1,0 +1,23 @@
+{
+  "exp_name": "sft_facemask_w3_captions_dual",
+  "note": "纯SFT: 人脸区域MSE加权x3(归一化), 无face_id_loss, klein-9B全量transformer",
+  "date": "2026-06-11_23:02:03",
+  "server": "interactive-f0rw3dhx2jeq-c8d7cb599-w4wln",
+  "git_commit": "73d738b",
+  "gpus": "0,1,2,3,4,5,6,7",
+  "learning_rate": "1e-4",
+  "num_epochs": 20,
+  "max_pixels": 4194304,
+  "lora_rank": 32,
+  "lora_checkpoint": "",
+  "dataset": "/mnt/data/image-edit/datasets/shensheng/datasets/merged_captions_dual_train-20260611.jsonl",
+  "transformer": "black-forest-labs/FLUX.2-klein-9B",
+  "face_mse_weight": 3.0,
+  "face_mask_expand": 1.4,
+  "output_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/train/sft_facemask_w3_captions_dual",
+  "geo_aug_prob": 0,
+  "geo_aug_max_rotation": 0,
+  "degradation_prob": 0,
+  "headcrop_prob": 0,
+  "max_grad_norm": 1.0
+}

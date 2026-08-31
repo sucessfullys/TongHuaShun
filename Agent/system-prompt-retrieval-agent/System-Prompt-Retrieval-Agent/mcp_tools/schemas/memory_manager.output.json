@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "memory_manager.output",
+  "title": "MemoryManagerOutput",
+  "description": "Output for the memory_manager tool. Returns the operation result and schema version for forward-compatibility.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["result", "schema_version"],
+  "properties": {
+    "result": {
+      "description": "The return value of the memory operation. Shape depends on op: load_for_generation returns a PromptPairHistoryContext object; append_long_memory and write_pair return null on success; prune_long_memory returns the number of entries removed."
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "Version string of the memory schema used (e.g., '1.0'). Allows callers to detect schema migrations."
+    },
+    "error": {
+      "type": ["string", "null"],
+      "description": "Error message if the operation failed, otherwise null."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "artifact_manager.output",
+  "title": "ArtifactManagerOutput",
+  "description": "Output for the artifact_manager tool. Reports transfer and verification results.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ok", "verified_files"],
+  "properties": {
+    "ok": {
+      "type": "boolean",
+      "description": "True if the copy-back completed and all required files are present."
+    },
+    "verified_files": {
+      "type": "array",
+      "description": "List of filenames that were verified to exist under local_path after transfer.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "error": {
+      "type": ["string", "null"],
+      "description": "Error message if the transfer or verification failed, otherwise null."
+    },
+    "bytes_transferred": {
+      "type": ["integer", "null"],
+      "description": "Total bytes transferred during the copy-back, or null if not measured."
+    }
+  }
+}

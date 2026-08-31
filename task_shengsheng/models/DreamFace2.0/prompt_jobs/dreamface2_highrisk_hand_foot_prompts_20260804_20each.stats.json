@@ -1,0 +1,303 @@
+{
+  "output_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/prompt_jobs/dreamface2_highrisk_hand_foot_prompts_20260804_20each.jsonl",
+  "updated_at": "2026-08-04T17:38:22",
+  "random_seed": 202608041909,
+  "backup": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/prompt_jobs/dreamface2_highrisk_hand_foot_prompts_20260804_20each.jsonl.bak_diverse_20260804_173821",
+  "stats_backup": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/prompt_jobs/dreamface2_highrisk_hand_foot_prompts_20260804_20each.stats.json.bak_diverse_20260804_173821",
+  "source_template_jsonl": "/mnt/image-edit-hdd/datasets/shensheng/share/dreamface2_filter0730_l1_multihand_20260730/meta/prompts/filter0730_extracted.jsonl",
+  "source_template_rows": 834,
+  "reference_images": 147,
+  "rows": 15435,
+  "per_reference": {
+    "diverse_highrisk_prompts": 20,
+    "confirmed_bad_prompts": 85,
+    "total": 105
+  },
+  "policy": {
+    "diverse_20": "For each reference image, randomly sample 20 different source templates and compose English prompts from scene/outfit/light elements plus high-risk hand/foot actions.",
+    "confirmed_bad_85": "All 85 human-confirmed bad templates are retained for every reference image.",
+    "language": "prompt field is English only"
+  },
+  "risk_counts": {
+    "bad_hand_high_frequency_diverse": 1470,
+    "bad_foot_high_frequency_diverse": 1470,
+    "confirmed_bad_hand_prompt": 8526,
+    "confirmed_bad_hand_leg_prompt": 1470,
+    "confirmed_bad_leg_prompt": 2499
+  },
+  "source_template_unique_used_by_diverse_20": 823,
+  "validation": {
+    "duplicate_ids": 0,
+    "bad_reference_row_counts": 0,
+    "references_with_duplicate_prompts_inside": 0,
+    "prompts_with_cjk_chars": 0,
+    "adjacent_reference_shared_first20_signatures": 12
+  },
+  "examples": {
+    "first_reference": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+    "first_reference_first_8_prompts": [
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_01",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a672523588bde38bd5b76c0",
+        "template_row_index": 109,
+        "template_pattern_name": "f0730_bd5b76c0男",
+        "prompt": "The generated subject must match the reference person, with stable facial features, hair, skin tone, and likeness. Create a medium close portrait: a seated full-body portrait with one hand wrapped around the lower legs and the other hand touching the face, with realistic depth of field and natural body perspective. Set the scene in a rainy neon street at night with wet pavement reflections, with the subject wearing soft textured fashion styling. Use cinematic natural light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Realistic camera perspective, refined lighting, detailed hands and feet visible when present, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041909
+      },
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_02",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a5877945511687dc04de311",
+        "template_row_index": 376,
+        "template_pattern_name": "f0730_c04de311女",
+        "prompt": "Preserve the reference person's identity faithfully while changing only the pose, styling, scene, and camera composition. Create a three-quarter portrait: a close portrait with both hands framing the cheeks while loose hair crosses over the wrists and fingertips, with props crossing near the hands or feet. Set the scene in a windlit boat deck with polished wood and open sea behind, with the subject wearing clean high-end portrait wardrobe. Use golden-hour rim light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. 8K realistic fashion portrait, cinematic composition, detailed clothing and skin, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041910
+      },
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_03",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a5875cdd358d22e2400a1c0",
+        "template_row_index": 383,
+        "template_pattern_name": "f0730_2400a1c0",
+        "prompt": "Strictly preserve the reference person's facial identity, facial proportions, skin tone, hairstyle, and overall likeness. Create a slightly overhead cinematic portrait: a low-angle fashion shot with both hands gripping a metal railing, sleeves and fingers overlapping along the bars, with props crossing near the hands or feet. Set the scene in a rainy window-side interior with flowers and warm diffused light, with the subject wearing long dress with soft translucent hem. Use low-key warm practical light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Photorealistic high-end portrait photography, realistic lens perspective, detailed fabric texture, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041911
+      },
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_04",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a475636d358d22e2400a06e",
+        "template_row_index": 652,
+        "template_pattern_name": "f0730_2400a06e男",
+        "prompt": "Maintain the reference identity exactly, including facial structure, hairstyle, complexion, and overall presence. Create a full-body editorial portrait: a dramatic stage portrait with one hand lifting a microphone and the other hand pressing against the chest, with realistic depth of field and natural body perspective. Set the scene in a sunny private yacht deck over deep blue water, with the subject wearing structured cotton shirt. Use warm diffused window light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Realistic camera perspective, refined lighting, detailed hands and feet visible when present, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041912
+      },
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_05",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a47561fd358d22e2400a068",
+        "template_row_index": 664,
+        "template_pattern_name": "f0730_2400a068男",
+        "prompt": "Maintain the reference identity exactly, including facial structure, hairstyle, complexion, and overall presence. Create a three-quarter portrait: a side-view portrait with one hand lifting the hair and the other hand gripping a bouquet near the chest, with realistic depth of field and natural body perspective. Set the scene in a cinematic indoor portrait set adapted from a reviewed DreamFace2 template, with the subject wearing oversized long-sleeve shirt. Use low-key warm practical light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Editorial portrait photography, natural skin texture, clear subject, softly blurred background, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041913
+      },
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_06",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a6724e0588bde38bd5b76bc",
+        "template_row_index": 117,
+        "template_pattern_name": "f0730_bd5b76bc男",
+        "prompt": "Keep the same person from the reference image, preserving face shape, features, hair, skin texture, and expression style. Create a slightly overhead cinematic portrait: a mirror portrait with one hand holding a phone and the other hand touching the hat brim or hairline, with layered fabric and object edges near the body. Set the scene in a cozy bed-side interior with fabric folds and shallow depth of field, with the subject wearing flowing fabric with visible cuffs. Use warm diffused window light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Realistic camera perspective, refined lighting, detailed hands and feet visible when present, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041914
+      },
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_07",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a605926d9058d1adb9e3c76",
+        "template_row_index": 243,
+        "template_pattern_name": "f0730_db9e3c76",
+        "prompt": "The generated subject must match the reference person, with stable facial features, hair, skin tone, and likeness. Create a medium close portrait: a kitchen portrait with one hand holding a glass bowl and the other hand stirring with a spoon near the fingers, with realistic depth of field and natural body perspective. Set the scene in a floral studio filled with layered burgundy petals, with the subject wearing structured evening outfit with clean lines. Use golden-hour rim light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. 8K realistic fashion portrait, cinematic composition, detailed clothing and skin, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041915
+      },
+      {
+        "id": "6a211a9a21f59e0d4bc62580_diverse_badhand_08",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211a9a21f59e0d4bc62580.png",
+        "template_id": "6a47565ecdda077159534306",
+        "template_row_index": 631,
+        "template_pattern_name": "f0730_59534306男",
+        "prompt": "Keep the same person from the reference image, preserving face shape, features, hair, skin texture, and expression style. Create a mirror-assisted portrait: a standing pose with one hand raised to a cabinet or door handle and the other hand tucked near a pocket, with layered fabric and object edges near the body. Set the scene in a minimalist photo studio with seamless background, with the subject wearing loose white shirt with long cuffs. Use cinematic natural light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Realistic camera perspective, refined lighting, detailed hands and feet visible when present, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608041916
+      }
+    ],
+    "second_reference_first_8_prompts": [
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_01",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a69525d588bde38bd5b76f5",
+        "template_row_index": 79,
+        "template_pattern_name": "f0730_bd5b76f5女",
+        "prompt": "Keep the same person from the reference image, preserving face shape, features, hair, skin texture, and expression style. Create a full-body editorial portrait: a train-station portrait with one hand pulling a suitcase handle and the other hand holding a ticket near the chest, with realistic depth of field and natural body perspective. Set the scene in a lush green courtyard with old iron gates and summer daylight, with the subject wearing soft textured fashion styling. Use overcast outdoor light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Editorial portrait photography, natural skin texture, clear subject, softly blurred background, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051916
+      },
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_02",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a436188d358d22e24009fe2",
+        "template_row_index": 720,
+        "template_pattern_name": "f0730_24009fe2男",
+        "prompt": "The generated subject must match the reference person, with stable facial features, hair, skin tone, and likeness. Create a slightly overhead cinematic portrait: a bookstore portrait with both hands holding stacked books, thumbs hidden behind book edges and sleeves, with realistic depth of field and natural body perspective. Set the scene in a rainy window-side interior with flowers and warm diffused light, with the subject wearing structured cotton shirt. Use golden-hour rim light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. 8K realistic fashion portrait, cinematic composition, detailed clothing and skin, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051917
+      },
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_03",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a631a77b09fee4ddb44f018",
+        "template_row_index": 139,
+        "template_pattern_name": "f0730_db44f018男",
+        "prompt": "Maintain the reference identity exactly, including facial structure, hairstyle, complexion, and overall presence. Create a low-angle fashion portrait: a kitchen portrait with one hand holding a glass bowl and the other hand stirring with a spoon near the fingers, with layered fabric and object edges near the body. Set the scene in a cinematic indoor portrait set adapted from a reviewed DreamFace2 template, with the subject wearing ribbed knit top with long sleeves. Use soft side light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Realistic camera perspective, refined lighting, detailed hands and feet visible when present, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051918
+      },
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_04",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a618481d9058d1adb9e3c88",
+        "template_row_index": 225,
+        "template_pattern_name": "f0730_db9e3c88男",
+        "prompt": "Keep the same person from the reference image, preserving face shape, features, hair, skin texture, and expression style. Create a side-view lifestyle portrait: a formal-dinner portrait with one hand holding cutlery and the other hand resting near a wine glass, with controlled foreground occlusion. Set the scene in a minimalist room with large grid windows casting geometric shadows, with the subject wearing ribbed knit top with long sleeves. Use warm diffused window light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Photorealistic high-end portrait photography, realistic lens perspective, detailed fabric texture, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051919
+      },
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_05",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a4f5203cdda077159534367",
+        "template_row_index": 549,
+        "template_pattern_name": "f0730_59534367女",
+        "prompt": "Preserve the reference person's identity faithfully while changing only the pose, styling, scene, and camera composition. Create a medium close portrait: a reclining pose with one hand supporting the chin and the other hand holding an open book close to the body, with a clear face and complex limb overlap. Set the scene in a rainy window-side interior with flowers and warm diffused light, with the subject wearing long-sleeve editorial outfit. Use clean studio flash. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Editorial portrait photography, natural skin texture, clear subject, softly blurred background, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051920
+      },
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_06",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a69d520588bde38bd5b7745",
+        "template_row_index": 28,
+        "template_pattern_name": "f0730_bd5b7745男",
+        "prompt": "The generated subject must match the reference person, with stable facial features, hair, skin tone, and likeness. Create a slightly overhead cinematic portrait: a selfie-like composition with one hand reaching toward the lens and the other hand adjusting hair near the face, with layered fabric and object edges near the body. Set the scene in a vintage formal salon with carved walls and warm window light, with the subject wearing oversized long-sleeve shirt. Use overcast outdoor light. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Editorial portrait photography, natural skin texture, clear subject, softly blurred background, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051921
+      },
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_07",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a55dc0ccdda0771595343df",
+        "template_row_index": 399,
+        "template_pattern_name": "f0730_595343df女",
+        "prompt": "The generated subject must match the reference person, with stable facial features, hair, skin tone, and likeness. Create a medium close portrait: a flower-shop portrait with both hands sorting flower stems, leaves, ribbons, and fingers densely layered, with a clear face and complex limb overlap. Set the scene in a tall European-style hall with lace drapes and a white grand piano, with the subject wearing loose white shirt with long cuffs. Use cool misty daylight. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. 8K realistic fashion portrait, cinematic composition, detailed clothing and skin, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051922
+      },
+      {
+        "id": "6a211aab21f59e0d4bc62581_diverse_badhand_08",
+        "risk_type": "bad_hand_high_frequency_diverse",
+        "scene_type": "diverse_hand_highrisk",
+        "reference_image": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211aab21f59e0d4bc62581.png",
+        "template_id": "6a60892cd9058d1adb9e3c7c",
+        "template_row_index": 236,
+        "template_pattern_name": "f0730_db9e3c7c",
+        "prompt": "Maintain the reference identity exactly, including facial structure, hairstyle, complexion, and overall presence. Create a three-quarter portrait: a painter-studio portrait with one hand holding a brush and the other hand supporting a palette near the torso, with a clear face and complex limb overlap. Set the scene in a rainy window-side interior with flowers and warm diffused light, with the subject wearing layered casual clothing. Use cool misty daylight. This prompt is newly composed from the reviewed DreamFace2 prompt library and high-risk hand/foot pose patterns. Photorealistic high-end portrait photography, realistic lens perspective, detailed fabric texture, no text, no watermark.",
+        "prompt_language": "en",
+        "generation_seed_policy": "random_per_prompt",
+        "composition_seed": 202608051923
+      }
+    ],
+    "adjacent_reference_shared_first20_signature_examples": [
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211bb421f59e0d4bc6258a.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211bc621f59e0d4bc6258b.png",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211bd7345e7d2725515706.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211be9345e7d2725515707.jpg",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211c1d21f59e0d4bc6258d.jpg",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211c2f345e7d2725515709.jpg",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211df121f59e0d4bc62599.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211e0321f59e0d4bc6259a.jpg",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211ec421f59e0d4bc625a0.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211ed521f59e0d4bc625a1.png",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211fc6345e7d2725515729.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211fc921f59e0d4bc625b6.jpg",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211fd121f59e0d4bc625b7.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211fd3345e7d272551572c.png",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211fee21f59e0d4bc625b9.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211ff6345e7d2725515734.png",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a211ff6345e7d2725515734.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a21200e21f59e0d4bc625ba.png",
+        "shared": 1
+      },
+      {
+        "a": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a2120c821f59e0d4bc625d8.png",
+        "b": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/参考图/6a2120cb21f59e0d4bc625d9.jpg",
+        "shared": 1
+      }
+    ]
+  }
+}

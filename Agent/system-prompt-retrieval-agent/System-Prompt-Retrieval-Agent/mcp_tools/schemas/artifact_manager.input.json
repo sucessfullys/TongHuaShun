@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "artifact_manager.input",
+  "title": "ArtifactManagerInput",
+  "description": "Input for the artifact_manager tool. Specifies a copy-back operation from the remote server to a local path, plus optional file verification.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["remote_path", "local_path", "ssh_alias"],
+  "properties": {
+    "remote_path": {
+      "type": "string",
+      "description": "Absolute path on the remote server to the artifact or directory to copy back."
+    },
+    "local_path": {
+      "type": "string",
+      "description": "Absolute path on the local machine where the artifact will be written."
+    },
+    "ssh_alias": {
+      "type": "string",
+      "description": "SSH config alias used for the rsync/scp transfer (e.g., '3h100')."
+    },
+    "required_file": {
+      "type": ["string", "null"],
+      "description": "Filename that must exist under local_path after copy-back to consider the transfer successful. Null skips file verification."
+    }
+  }
+}

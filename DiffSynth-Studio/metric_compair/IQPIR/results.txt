@@ -1,0 +1,18 @@
+Image Quality Metrics
+pred_dir: /mnt/image-edit/datasets/duanyufa/IQPIR/results/iqpir_test/restored_faces_1024
+gt_dir: /mnt/image-edit/datasets/duanyufa/Face/test/HR
+num_pred_images: 100
+num_rows: 100
+skipped_pairs: 0
+
+Mean metrics:
+PSNR: 21.811199
+SSIM: 0.676454
+LPIPS: 0.352419
+MUSIQ: 70.502082
+MANIQA: 0.355230
+
+Notes:
+PSNR, SSIM, and LPIPS require GT images.
+MUSIQ and MANIQA are no-reference metrics and only use predicted images.
+For LPIPS, lower is better. For PSNR/SSIM/MUSIQ/MANIQA, higher is generally better.

@@ -1,0 +1,14 @@
+{
+  "pred_dir": "/mnt/image-edit/datasets/duanyufa/DiffSynth-Studio/outputs/Template-KleinBase4B-Deblur_full_1e4/test_results/epoch-2/template",
+  "gt_dir": "/mnt/image-edit/datasets/duanyufa/Face/test/HR",
+  "num_pred_images": 100,
+  "num_rows": 100,
+  "skipped_pairs": 0,
+  "means": {
+    "psnr": 23.2424489402771,
+    "ssim": 0.6947001209855079,
+    "lpips": 0.3038437417149544,
+    "musiq": 75.44094390869141,
+    "maniqa": 0.4422137302160263
+  }
+}

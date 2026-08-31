@@ -1,0 +1,35 @@
+version: "v1.0"
+description: "Additional precise structural hand anomalies for prompt expansion."
+
+anomaly_descriptions:
+  bifid_finger:
+    bifid_index_finger:
+      single: "the {side} hand shows a clear hand-structure abnormality, with the index finger splitting from its middle segment into two complete branches, each branch having its own fingertip and visible joints"
+      both: "both hands show clear hand-structure abnormalities, with the index finger on each hand splitting from its middle segment into two complete branches, each branch having its own fingertip and visible joints"
+    bifid_middle_finger:
+      single: "the {side} hand shows a clear hand-structure abnormality, with the middle finger splitting from its middle segment into two complete branches, each branch having its own fingertip and visible joints"
+      both: "both hands show clear hand-structure abnormalities, with the middle finger on each hand splitting from its middle segment into two complete branches, each branch having its own fingertip and visible joints"
+
+  thumb_anomaly:
+    duplicated_thumb:
+      single: "the {side} hand shows a clear hand-structure abnormality, with one additional complete thumb growing directly beside the normal thumb, forming two separate side-by-side thumbs with distinct joints and fingertips"
+      both: "both hands show clear hand-structure abnormalities, with one additional complete thumb growing directly beside the normal thumb on each hand, forming two separate side-by-side thumbs with distinct joints and fingertips"
+    reversed_thumb:
+      single: "the {side} hand shows a clear hand-structure abnormality, with the thumb extending from the palm in the opposite direction from a normal thumb, forming a clearly readable reversed-thumb structure"
+      both: "both hands show clear hand-structure abnormalities, with the thumb on each hand extending from the palm in the opposite direction from a normal thumb, forming clearly readable reversed-thumb structures"
+
+  ectrodactyly:
+    central_v_cleft_three_digits:
+      single: "the {side} hand shows a clear hand-structure abnormality, with a deep central V-shaped cleft dividing three complete digits into two distinct groups, all remaining digits clearly separated and countable"
+      both: "both hands show clear hand-structure abnormalities, with a deep central V-shaped cleft on each palm dividing three complete digits into two distinct groups, all remaining digits clearly separated and countable"
+    central_v_cleft_four_digits:
+      single: "the {side} hand shows a clear hand-structure abnormality, with a deep central V-shaped cleft dividing four complete digits into two distinct groups, all remaining digits clearly separated and countable"
+      both: "both hands show clear hand-structure abnormalities, with a deep central V-shaped cleft on each palm dividing four complete digits into two distinct groups, all remaining digits clearly separated and countable"
+
+  macrodactyly:
+    enlarged_index_finger:
+      single: "the {side} hand shows a clear hand-structure abnormality, with the index finger uniformly enlarged to about twice the width of the other fingers while retaining a complete fingertip and clearly defined joints"
+      both: "both hands show clear hand-structure abnormalities, with the index finger on each hand uniformly enlarged to about twice the width of the other fingers while retaining complete fingertips and clearly defined joints"
+    enlarged_middle_and_ring_fingers:
+      single: "the {side} hand shows a clear hand-structure abnormality, with the middle and ring fingers uniformly enlarged to about twice the width of the other fingers while retaining complete fingertips and clearly defined joints"
+      both: "both hands show clear hand-structure abnormalities, with the middle and ring fingers on each hand uniformly enlarged to about twice the width of the other fingers while retaining complete fingertips and clearly defined joints"

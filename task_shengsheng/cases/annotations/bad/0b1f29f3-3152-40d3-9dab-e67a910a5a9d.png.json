@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "sample_key": "bad/0b1f29f3-3152-40d3-9dab-e67a910a5a9d.png",
+  "per_method": {
+    "image": "The generated image contains floating objects (the physics logic is incorrect).\n\nThe generated image shows multiple ghosting of the head."
+  },
+  "created_at": "2026-06-08T07:11:09+00:00",
+  "updated_at": "2026-06-08T07:11:24+00:00"
+}

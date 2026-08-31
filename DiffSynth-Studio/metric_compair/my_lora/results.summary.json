@@ -1,0 +1,14 @@
+{
+  "pred_dir": "/mnt/image-edit/datasets/duanyufa/DiffSynth-Studio/outputs/FLUX.2_Base_deblur_LoRA/test_results/epoch-3/edit_image",
+  "gt_dir": "/mnt/image-edit/datasets/duanyufa/Face/test/HR",
+  "num_pred_images": 100,
+  "num_rows": 100,
+  "skipped_pairs": 0,
+  "means": {
+    "psnr": 21.89099500656128,
+    "ssim": 0.648079184293747,
+    "lpips": 0.33363875284790995,
+    "musiq": 77.0993081665039,
+    "maniqa": 0.48161319345235826
+  }
+}

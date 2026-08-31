@@ -1,0 +1,2502 @@
+[
+  {
+    "scene_id": "sunlit_cafe_01",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with a quiet, lightly populated background",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_02",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with subtle everyday activity in the middle distance",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_03",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with layered foreground and background environmental detail",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_04",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_05",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_06",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_07",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with realistic lived-in details distributed through the setting",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_08",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with a spacious view that clearly establishes the environment",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_09",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with intimate environmental framing and natural candid detail",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "sunlit_cafe_10",
+    "description": "warm sunlit cafe with wooden furniture and a window-side seat, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "sunlit_cafe"
+  },
+  {
+    "scene_id": "restaurant_table_01",
+    "description": "bright restaurant table setting with tableware and glasses, with a quiet, lightly populated background",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_02",
+    "description": "bright restaurant table setting with tableware and glasses, with subtle everyday activity in the middle distance",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_03",
+    "description": "bright restaurant table setting with tableware and glasses, with layered foreground and background environmental detail",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_04",
+    "description": "bright restaurant table setting with tableware and glasses, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_05",
+    "description": "bright restaurant table setting with tableware and glasses, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_06",
+    "description": "bright restaurant table setting with tableware and glasses, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_07",
+    "description": "bright restaurant table setting with tableware and glasses, with realistic lived-in details distributed through the setting",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_08",
+    "description": "bright restaurant table setting with tableware and glasses, with a spacious view that clearly establishes the environment",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_09",
+    "description": "bright restaurant table setting with tableware and glasses, with intimate environmental framing and natural candid detail",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "restaurant_table_10",
+    "description": "bright restaurant table setting with tableware and glasses, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "restaurant_table"
+  },
+  {
+    "scene_id": "home_kitchen_01",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with a quiet, lightly populated background",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_02",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with subtle everyday activity in the middle distance",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_03",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with layered foreground and background environmental detail",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_04",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_05",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_06",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_07",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with realistic lived-in details distributed through the setting",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_08",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with a spacious view that clearly establishes the environment",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_09",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with intimate environmental framing and natural candid detail",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "home_kitchen_10",
+    "description": "warm home kitchen with a tidy countertop and morning domestic atmosphere, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "home_kitchen"
+  },
+  {
+    "scene_id": "living_room_01",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with a quiet, lightly populated background",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_02",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_03",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with layered foreground and background environmental detail",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_04",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_05",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_06",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_07",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_08",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_09",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "living_room_10",
+    "description": "modern living room with a soft sofa, coffee table, and warm lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "living_room"
+  },
+  {
+    "scene_id": "bedroom_01",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with a quiet, lightly populated background",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_02",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with subtle everyday activity in the middle distance",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_03",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with layered foreground and background environmental detail",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_04",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_05",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_06",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_07",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with realistic lived-in details distributed through the setting",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_08",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with a spacious view that clearly establishes the environment",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_09",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with intimate environmental framing and natural candid detail",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "bedroom_10",
+    "description": "tidy bedroom with a bed, curtains, and soft morning light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "bedroom"
+  },
+  {
+    "scene_id": "home_study_01",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with a quiet, lightly populated background",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_02",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with subtle everyday activity in the middle distance",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_03",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with layered foreground and background environmental detail",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_04",
+    "description": "home study with a desk, desk lamp, and bookshelf background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_05",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_06",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_07",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with realistic lived-in details distributed through the setting",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_08",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with a spacious view that clearly establishes the environment",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_09",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with intimate environmental framing and natural candid detail",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "home_study_10",
+    "description": "home study with a desk, desk lamp, and bookshelf background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "home_study"
+  },
+  {
+    "scene_id": "office_desk_area_01",
+    "description": "modern office desk area with a computer, documents, and office chair, with a quiet, lightly populated background",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_02",
+    "description": "modern office desk area with a computer, documents, and office chair, with subtle everyday activity in the middle distance",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_03",
+    "description": "modern office desk area with a computer, documents, and office chair, with layered foreground and background environmental detail",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_04",
+    "description": "modern office desk area with a computer, documents, and office chair, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_05",
+    "description": "modern office desk area with a computer, documents, and office chair, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_06",
+    "description": "modern office desk area with a computer, documents, and office chair, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_07",
+    "description": "modern office desk area with a computer, documents, and office chair, with realistic lived-in details distributed through the setting",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_08",
+    "description": "modern office desk area with a computer, documents, and office chair, with a spacious view that clearly establishes the environment",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_09",
+    "description": "modern office desk area with a computer, documents, and office chair, with intimate environmental framing and natural candid detail",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_desk_area_10",
+    "description": "modern office desk area with a computer, documents, and office chair, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "office_desk_area"
+  },
+  {
+    "scene_id": "office_meeting_room_01",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with a quiet, lightly populated background",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_02",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with subtle everyday activity in the middle distance",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_03",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with layered foreground and background environmental detail",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_04",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_05",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_06",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_07",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with realistic lived-in details distributed through the setting",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_08",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with a spacious view that clearly establishes the environment",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_09",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with intimate environmental framing and natural candid detail",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "office_meeting_room_10",
+    "description": "modern meeting room with a long table, glass wall, and presentation screen, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "office_meeting_room"
+  },
+  {
+    "scene_id": "coworking_space_01",
+    "description": "coworking space with open desks, plants, and laptops, with a quiet, lightly populated background",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_02",
+    "description": "coworking space with open desks, plants, and laptops, with subtle everyday activity in the middle distance",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_03",
+    "description": "coworking space with open desks, plants, and laptops, with layered foreground and background environmental detail",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_04",
+    "description": "coworking space with open desks, plants, and laptops, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_05",
+    "description": "coworking space with open desks, plants, and laptops, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_06",
+    "description": "coworking space with open desks, plants, and laptops, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_07",
+    "description": "coworking space with open desks, plants, and laptops, with realistic lived-in details distributed through the setting",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_08",
+    "description": "coworking space with open desks, plants, and laptops, with a spacious view that clearly establishes the environment",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_09",
+    "description": "coworking space with open desks, plants, and laptops, with intimate environmental framing and natural candid detail",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "coworking_space_10",
+    "description": "coworking space with open desks, plants, and laptops, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "coworking_space"
+  },
+  {
+    "scene_id": "library_reading_area_01",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with a quiet, lightly populated background",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_02",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with subtle everyday activity in the middle distance",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_03",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with layered foreground and background environmental detail",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_04",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_05",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_06",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_07",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with realistic lived-in details distributed through the setting",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_08",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with a spacious view that clearly establishes the environment",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_09",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with intimate environmental framing and natural candid detail",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "library_reading_area_10",
+    "description": "quiet university library with wooden desks, bookshelves, and soft reading lamps, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "library_reading_area"
+  },
+  {
+    "scene_id": "classroom_01",
+    "description": "bright classroom with desks, blackboard, and natural window light, with a quiet, lightly populated background",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_02",
+    "description": "bright classroom with desks, blackboard, and natural window light, with subtle everyday activity in the middle distance",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_03",
+    "description": "bright classroom with desks, blackboard, and natural window light, with layered foreground and background environmental detail",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_04",
+    "description": "bright classroom with desks, blackboard, and natural window light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_05",
+    "description": "bright classroom with desks, blackboard, and natural window light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_06",
+    "description": "bright classroom with desks, blackboard, and natural window light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_07",
+    "description": "bright classroom with desks, blackboard, and natural window light, with realistic lived-in details distributed through the setting",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_08",
+    "description": "bright classroom with desks, blackboard, and natural window light, with a spacious view that clearly establishes the environment",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_09",
+    "description": "bright classroom with desks, blackboard, and natural window light, with intimate environmental framing and natural candid detail",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "classroom_10",
+    "description": "bright classroom with desks, blackboard, and natural window light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "classroom"
+  },
+  {
+    "scene_id": "art_studio_01",
+    "description": "art studio with easels, paint, and scattered drawing papers, with a quiet, lightly populated background",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_02",
+    "description": "art studio with easels, paint, and scattered drawing papers, with subtle everyday activity in the middle distance",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_03",
+    "description": "art studio with easels, paint, and scattered drawing papers, with layered foreground and background environmental detail",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_04",
+    "description": "art studio with easels, paint, and scattered drawing papers, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_05",
+    "description": "art studio with easels, paint, and scattered drawing papers, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_06",
+    "description": "art studio with easels, paint, and scattered drawing papers, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_07",
+    "description": "art studio with easels, paint, and scattered drawing papers, with realistic lived-in details distributed through the setting",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_08",
+    "description": "art studio with easels, paint, and scattered drawing papers, with a spacious view that clearly establishes the environment",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_09",
+    "description": "art studio with easels, paint, and scattered drawing papers, with intimate environmental framing and natural candid detail",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "art_studio_10",
+    "description": "art studio with easels, paint, and scattered drawing papers, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "art_studio"
+  },
+  {
+    "scene_id": "dance_studio_01",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with a quiet, lightly populated background",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_02",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with subtle everyday activity in the middle distance",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_03",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with layered foreground and background environmental detail",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_04",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_05",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_06",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_07",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with realistic lived-in details distributed through the setting",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_08",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with a spacious view that clearly establishes the environment",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_09",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with intimate environmental framing and natural candid detail",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "dance_studio_10",
+    "description": "dance studio with wooden floor, mirrored wall, and clean training space, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "dance_studio"
+  },
+  {
+    "scene_id": "gym_01",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with a quiet, lightly populated background",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_02",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_03",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with layered foreground and background environmental detail",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_04",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_05",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_06",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_07",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_08",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_09",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "gym_10",
+    "description": "modern gym with equipment, mirrored walls, and athletic lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "gym"
+  },
+  {
+    "scene_id": "yoga_room_01",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with a quiet, lightly populated background",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_02",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with subtle everyday activity in the middle distance",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_03",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with layered foreground and background environmental detail",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_04",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_05",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_06",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_07",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with realistic lived-in details distributed through the setting",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_08",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with a spacious view that clearly establishes the environment",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_09",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with intimate environmental framing and natural candid detail",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "yoga_room_10",
+    "description": "quiet yoga room with mats, wooden floor, and soft light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "yoga_room"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_01",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with a quiet, lightly populated background",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_02",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with subtle everyday activity in the middle distance",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_03",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with layered foreground and background environmental detail",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_04",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_05",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_06",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_07",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with realistic lived-in details distributed through the setting",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_08",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with a spacious view that clearly establishes the environment",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_09",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with intimate environmental framing and natural candid detail",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "indoor_shopping_mall_10",
+    "description": "indoor shopping mall with bright storefront lighting and crowd background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "indoor_shopping_mall"
+  },
+  {
+    "scene_id": "supermarket_aisle_01",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with a quiet, lightly populated background",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_02",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_03",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with layered foreground and background environmental detail",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_04",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_05",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_06",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_07",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_08",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_09",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "supermarket_aisle_10",
+    "description": "supermarket aisle with neatly arranged products and bright lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "supermarket_aisle"
+  },
+  {
+    "scene_id": "convenience_store_01",
+    "description": "convenience store interior with refrigerators and shelves in the background, with a quiet, lightly populated background",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_02",
+    "description": "convenience store interior with refrigerators and shelves in the background, with subtle everyday activity in the middle distance",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_03",
+    "description": "convenience store interior with refrigerators and shelves in the background, with layered foreground and background environmental detail",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_04",
+    "description": "convenience store interior with refrigerators and shelves in the background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_05",
+    "description": "convenience store interior with refrigerators and shelves in the background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_06",
+    "description": "convenience store interior with refrigerators and shelves in the background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_07",
+    "description": "convenience store interior with refrigerators and shelves in the background, with realistic lived-in details distributed through the setting",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_08",
+    "description": "convenience store interior with refrigerators and shelves in the background, with a spacious view that clearly establishes the environment",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_09",
+    "description": "convenience store interior with refrigerators and shelves in the background, with intimate environmental framing and natural candid detail",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "convenience_store_10",
+    "description": "convenience store interior with refrigerators and shelves in the background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "convenience_store"
+  },
+  {
+    "scene_id": "bookstore_01",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with a quiet, lightly populated background",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_02",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with subtle everyday activity in the middle distance",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_03",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with layered foreground and background environmental detail",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_04",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_05",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_06",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_07",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with realistic lived-in details distributed through the setting",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_08",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with a spacious view that clearly establishes the environment",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_09",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with intimate environmental framing and natural candid detail",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "bookstore_10",
+    "description": "bookstore interior surrounded by bookshelves and wooden display tables, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "bookstore"
+  },
+  {
+    "scene_id": "flower_shop_01",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with a quiet, lightly populated background",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_02",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with subtle everyday activity in the middle distance",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_03",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with layered foreground and background environmental detail",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_04",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_05",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_06",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_07",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with realistic lived-in details distributed through the setting",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_08",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with a spacious view that clearly establishes the environment",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_09",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with intimate environmental framing and natural candid detail",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "flower_shop_10",
+    "description": "flower shop interior with fresh flowers, plants, and soft natural light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "flower_shop"
+  },
+  {
+    "scene_id": "hair_salon_01",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with a quiet, lightly populated background",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_02",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_03",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with layered foreground and background environmental detail",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_04",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_05",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_06",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_07",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_08",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_09",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hair_salon_10",
+    "description": "hair salon interior with mirrors, chairs, and soft lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "hair_salon"
+  },
+  {
+    "scene_id": "hospital_corridor_01",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with a quiet, lightly populated background",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_02",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_03",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with layered foreground and background environmental detail",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_04",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_05",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_06",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_07",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_08",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_09",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "hospital_corridor_10",
+    "description": "hospital corridor with light-colored walls, signs, and bright lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "hospital_corridor"
+  },
+  {
+    "scene_id": "clinic_waiting_area_01",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with a quiet, lightly populated background",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_02",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_03",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with layered foreground and background environmental detail",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_04",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_05",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_06",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_07",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_08",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_09",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "clinic_waiting_area_10",
+    "description": "clinic waiting area with chairs, magazine rack, and soft lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "clinic_waiting_area"
+  },
+  {
+    "scene_id": "pharmacy_01",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with a quiet, lightly populated background",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_02",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_03",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with layered foreground and background environmental detail",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_04",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_05",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_06",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_07",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_08",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_09",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "pharmacy_10",
+    "description": "pharmacy interior with medicine shelves and bright white lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "pharmacy"
+  },
+  {
+    "scene_id": "subway_platform_01",
+    "description": "modern subway platform with bright urban lighting and train background, with a quiet, lightly populated background",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_02",
+    "description": "modern subway platform with bright urban lighting and train background, with subtle everyday activity in the middle distance",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_03",
+    "description": "modern subway platform with bright urban lighting and train background, with layered foreground and background environmental detail",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_04",
+    "description": "modern subway platform with bright urban lighting and train background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_05",
+    "description": "modern subway platform with bright urban lighting and train background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_06",
+    "description": "modern subway platform with bright urban lighting and train background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_07",
+    "description": "modern subway platform with bright urban lighting and train background, with realistic lived-in details distributed through the setting",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_08",
+    "description": "modern subway platform with bright urban lighting and train background, with a spacious view that clearly establishes the environment",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_09",
+    "description": "modern subway platform with bright urban lighting and train background, with intimate environmental framing and natural candid detail",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_platform_10",
+    "description": "modern subway platform with bright urban lighting and train background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "subway_platform"
+  },
+  {
+    "scene_id": "subway_carriage_01",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with a quiet, lightly populated background",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_02",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with subtle everyday activity in the middle distance",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_03",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with layered foreground and background environmental detail",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_04",
+    "description": "subway carriage interior with handrails, seats, and commuting background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_05",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_06",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_07",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with realistic lived-in details distributed through the setting",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_08",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with a spacious view that clearly establishes the environment",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_09",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with intimate environmental framing and natural candid detail",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "subway_carriage_10",
+    "description": "subway carriage interior with handrails, seats, and commuting background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "subway_carriage"
+  },
+  {
+    "scene_id": "bus_stop_01",
+    "description": "city bus stop with signboard, road, and street background, with a quiet, lightly populated background",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_02",
+    "description": "city bus stop with signboard, road, and street background, with subtle everyday activity in the middle distance",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_03",
+    "description": "city bus stop with signboard, road, and street background, with layered foreground and background environmental detail",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_04",
+    "description": "city bus stop with signboard, road, and street background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_05",
+    "description": "city bus stop with signboard, road, and street background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_06",
+    "description": "city bus stop with signboard, road, and street background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_07",
+    "description": "city bus stop with signboard, road, and street background, with realistic lived-in details distributed through the setting",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_08",
+    "description": "city bus stop with signboard, road, and street background, with a spacious view that clearly establishes the environment",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_09",
+    "description": "city bus stop with signboard, road, and street background, with intimate environmental framing and natural candid detail",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_stop_10",
+    "description": "city bus stop with signboard, road, and street background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "bus_stop"
+  },
+  {
+    "scene_id": "bus_interior_01",
+    "description": "bus interior with handrails, seats, and window light, with a quiet, lightly populated background",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_02",
+    "description": "bus interior with handrails, seats, and window light, with subtle everyday activity in the middle distance",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_03",
+    "description": "bus interior with handrails, seats, and window light, with layered foreground and background environmental detail",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_04",
+    "description": "bus interior with handrails, seats, and window light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_05",
+    "description": "bus interior with handrails, seats, and window light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_06",
+    "description": "bus interior with handrails, seats, and window light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_07",
+    "description": "bus interior with handrails, seats, and window light, with realistic lived-in details distributed through the setting",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_08",
+    "description": "bus interior with handrails, seats, and window light, with a spacious view that clearly establishes the environment",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_09",
+    "description": "bus interior with handrails, seats, and window light, with intimate environmental framing and natural candid detail",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "bus_interior_10",
+    "description": "bus interior with handrails, seats, and window light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "bus_interior"
+  },
+  {
+    "scene_id": "train_station_hall_01",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with a quiet, lightly populated background",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_02",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with subtle everyday activity in the middle distance",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_03",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with layered foreground and background environmental detail",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_04",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_05",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_06",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_07",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with realistic lived-in details distributed through the setting",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_08",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with a spacious view that clearly establishes the environment",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_09",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with intimate environmental framing and natural candid detail",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "train_station_hall_10",
+    "description": "train station hall with digital boards, waiting seats, and crowd background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "train_station_hall"
+  },
+  {
+    "scene_id": "airport_terminal_01",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with a quiet, lightly populated background",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_02",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with subtle everyday activity in the middle distance",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_03",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with layered foreground and background environmental detail",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_04",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_05",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_06",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_07",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with realistic lived-in details distributed through the setting",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_08",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with a spacious view that clearly establishes the environment",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_09",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with intimate environmental framing and natural candid detail",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "airport_terminal_10",
+    "description": "airport terminal with glass walls, luggage, and flight information screens, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "airport_terminal"
+  },
+  {
+    "scene_id": "parking_garage_01",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with a quiet, lightly populated background",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_02",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_03",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with layered foreground and background environmental detail",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_04",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_05",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_06",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_07",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_08",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_09",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "parking_garage_10",
+    "description": "underground parking garage with concrete pillars, cars, and cool lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "parking_garage"
+  },
+  {
+    "scene_id": "car_interior_01",
+    "description": "car interior with steering wheel, windows, and city street view, with a quiet, lightly populated background",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_02",
+    "description": "car interior with steering wheel, windows, and city street view, with subtle everyday activity in the middle distance",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_03",
+    "description": "car interior with steering wheel, windows, and city street view, with layered foreground and background environmental detail",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_04",
+    "description": "car interior with steering wheel, windows, and city street view, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_05",
+    "description": "car interior with steering wheel, windows, and city street view, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_06",
+    "description": "car interior with steering wheel, windows, and city street view, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_07",
+    "description": "car interior with steering wheel, windows, and city street view, with realistic lived-in details distributed through the setting",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_08",
+    "description": "car interior with steering wheel, windows, and city street view, with a spacious view that clearly establishes the environment",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_09",
+    "description": "car interior with steering wheel, windows, and city street view, with intimate environmental framing and natural candid detail",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "car_interior_10",
+    "description": "car interior with steering wheel, windows, and city street view, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "car_interior"
+  },
+  {
+    "scene_id": "city_street_day_01",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with a quiet, lightly populated background",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_02",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with subtle everyday activity in the middle distance",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_03",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with layered foreground and background environmental detail",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_04",
+    "description": "daytime city street with sidewalk, building facades, and natural light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_05",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_06",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_07",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with realistic lived-in details distributed through the setting",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_08",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with a spacious view that clearly establishes the environment",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_09",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with intimate environmental framing and natural candid detail",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_day_10",
+    "description": "daytime city street with sidewalk, building facades, and natural light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "city_street_day"
+  },
+  {
+    "scene_id": "city_street_night_01",
+    "description": "night city street with neon signs and blurred car lights, with a quiet, lightly populated background",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_02",
+    "description": "night city street with neon signs and blurred car lights, with subtle everyday activity in the middle distance",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_03",
+    "description": "night city street with neon signs and blurred car lights, with layered foreground and background environmental detail",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_04",
+    "description": "night city street with neon signs and blurred car lights, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_05",
+    "description": "night city street with neon signs and blurred car lights, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_06",
+    "description": "night city street with neon signs and blurred car lights, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_07",
+    "description": "night city street with neon signs and blurred car lights, with realistic lived-in details distributed through the setting",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_08",
+    "description": "night city street with neon signs and blurred car lights, with a spacious view that clearly establishes the environment",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_09",
+    "description": "night city street with neon signs and blurred car lights, with intimate environmental framing and natural candid detail",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "city_street_night_10",
+    "description": "night city street with neon signs and blurred car lights, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "city_street_night"
+  },
+  {
+    "scene_id": "crosswalk_01",
+    "description": "city crosswalk with traffic lights and street background, with a quiet, lightly populated background",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_02",
+    "description": "city crosswalk with traffic lights and street background, with subtle everyday activity in the middle distance",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_03",
+    "description": "city crosswalk with traffic lights and street background, with layered foreground and background environmental detail",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_04",
+    "description": "city crosswalk with traffic lights and street background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_05",
+    "description": "city crosswalk with traffic lights and street background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_06",
+    "description": "city crosswalk with traffic lights and street background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_07",
+    "description": "city crosswalk with traffic lights and street background, with realistic lived-in details distributed through the setting",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_08",
+    "description": "city crosswalk with traffic lights and street background, with a spacious view that clearly establishes the environment",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_09",
+    "description": "city crosswalk with traffic lights and street background, with intimate environmental framing and natural candid detail",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "crosswalk_10",
+    "description": "city crosswalk with traffic lights and street background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "crosswalk"
+  },
+  {
+    "scene_id": "alley_01",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with a quiet, lightly populated background",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_02",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with subtle everyday activity in the middle distance",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_03",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with layered foreground and background environmental detail",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_04",
+    "description": "urban alley with textured walls, street lights, and narrow street background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_05",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_06",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_07",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with realistic lived-in details distributed through the setting",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_08",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with a spacious view that clearly establishes the environment",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_09",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with intimate environmental framing and natural candid detail",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "alley_10",
+    "description": "urban alley with textured walls, street lights, and narrow street background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "alley"
+  },
+  {
+    "scene_id": "rooftop_day_01",
+    "description": "daytime city rooftop with distant skyline and natural light, with a quiet, lightly populated background",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_02",
+    "description": "daytime city rooftop with distant skyline and natural light, with subtle everyday activity in the middle distance",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_03",
+    "description": "daytime city rooftop with distant skyline and natural light, with layered foreground and background environmental detail",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_04",
+    "description": "daytime city rooftop with distant skyline and natural light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_05",
+    "description": "daytime city rooftop with distant skyline and natural light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_06",
+    "description": "daytime city rooftop with distant skyline and natural light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_07",
+    "description": "daytime city rooftop with distant skyline and natural light, with realistic lived-in details distributed through the setting",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_08",
+    "description": "daytime city rooftop with distant skyline and natural light, with a spacious view that clearly establishes the environment",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_09",
+    "description": "daytime city rooftop with distant skyline and natural light, with intimate environmental framing and natural candid detail",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_day_10",
+    "description": "daytime city rooftop with distant skyline and natural light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "rooftop_day"
+  },
+  {
+    "scene_id": "rooftop_night_01",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with a quiet, lightly populated background",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_02",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with subtle everyday activity in the middle distance",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_03",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with layered foreground and background environmental detail",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_04",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_05",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_06",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_07",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with realistic lived-in details distributed through the setting",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_08",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with a spacious view that clearly establishes the environment",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_09",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with intimate environmental framing and natural candid detail",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "rooftop_night_10",
+    "description": "nighttime city rooftop with distant neon lights and urban illumination, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "rooftop_night"
+  },
+  {
+    "scene_id": "park_walkway_01",
+    "description": "city park walkway with trees, benches, and natural light, with a quiet, lightly populated background",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_02",
+    "description": "city park walkway with trees, benches, and natural light, with subtle everyday activity in the middle distance",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_03",
+    "description": "city park walkway with trees, benches, and natural light, with layered foreground and background environmental detail",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_04",
+    "description": "city park walkway with trees, benches, and natural light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_05",
+    "description": "city park walkway with trees, benches, and natural light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_06",
+    "description": "city park walkway with trees, benches, and natural light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_07",
+    "description": "city park walkway with trees, benches, and natural light, with realistic lived-in details distributed through the setting",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_08",
+    "description": "city park walkway with trees, benches, and natural light, with a spacious view that clearly establishes the environment",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_09",
+    "description": "city park walkway with trees, benches, and natural light, with intimate environmental framing and natural candid detail",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "park_walkway_10",
+    "description": "city park walkway with trees, benches, and natural light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "park_walkway"
+  },
+  {
+    "scene_id": "playground_01",
+    "description": "outdoor playground with colorful equipment and sunlight, with a quiet, lightly populated background",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_02",
+    "description": "outdoor playground with colorful equipment and sunlight, with subtle everyday activity in the middle distance",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_03",
+    "description": "outdoor playground with colorful equipment and sunlight, with layered foreground and background environmental detail",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_04",
+    "description": "outdoor playground with colorful equipment and sunlight, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_05",
+    "description": "outdoor playground with colorful equipment and sunlight, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_06",
+    "description": "outdoor playground with colorful equipment and sunlight, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_07",
+    "description": "outdoor playground with colorful equipment and sunlight, with realistic lived-in details distributed through the setting",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_08",
+    "description": "outdoor playground with colorful equipment and sunlight, with a spacious view that clearly establishes the environment",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_09",
+    "description": "outdoor playground with colorful equipment and sunlight, with intimate environmental framing and natural candid detail",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "playground_10",
+    "description": "outdoor playground with colorful equipment and sunlight, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "playground"
+  },
+  {
+    "scene_id": "basketball_court_01",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with a quiet, lightly populated background",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_02",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with subtle everyday activity in the middle distance",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_03",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with layered foreground and background environmental detail",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_04",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_05",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_06",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_07",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with realistic lived-in details distributed through the setting",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_08",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with a spacious view that clearly establishes the environment",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_09",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with intimate environmental framing and natural candid detail",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "basketball_court_10",
+    "description": "outdoor basketball court with court lines, hoop, and fence background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "basketball_court"
+  },
+  {
+    "scene_id": "soccer_field_sideline_01",
+    "description": "soccer field sideline with grass, goal, and sports field background, with a quiet, lightly populated background",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_02",
+    "description": "soccer field sideline with grass, goal, and sports field background, with subtle everyday activity in the middle distance",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_03",
+    "description": "soccer field sideline with grass, goal, and sports field background, with layered foreground and background environmental detail",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_04",
+    "description": "soccer field sideline with grass, goal, and sports field background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_05",
+    "description": "soccer field sideline with grass, goal, and sports field background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_06",
+    "description": "soccer field sideline with grass, goal, and sports field background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_07",
+    "description": "soccer field sideline with grass, goal, and sports field background, with realistic lived-in details distributed through the setting",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_08",
+    "description": "soccer field sideline with grass, goal, and sports field background, with a spacious view that clearly establishes the environment",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_09",
+    "description": "soccer field sideline with grass, goal, and sports field background, with intimate environmental framing and natural candid detail",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "soccer_field_sideline_10",
+    "description": "soccer field sideline with grass, goal, and sports field background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "soccer_field_sideline"
+  },
+  {
+    "scene_id": "beach_01",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with a quiet, lightly populated background",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_02",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with subtle everyday activity in the middle distance",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_03",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with layered foreground and background environmental detail",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_04",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_05",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_06",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_07",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with realistic lived-in details distributed through the setting",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_08",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with a spacious view that clearly establishes the environment",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_09",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with intimate environmental framing and natural candid detail",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "beach_10",
+    "description": "beach at golden sunset with sea breeze moving clothes and hair, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "beach"
+  },
+  {
+    "scene_id": "lakeside_01",
+    "description": "lakeside walkway with calm water, trees, and natural light, with a quiet, lightly populated background",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_02",
+    "description": "lakeside walkway with calm water, trees, and natural light, with subtle everyday activity in the middle distance",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_03",
+    "description": "lakeside walkway with calm water, trees, and natural light, with layered foreground and background environmental detail",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_04",
+    "description": "lakeside walkway with calm water, trees, and natural light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_05",
+    "description": "lakeside walkway with calm water, trees, and natural light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_06",
+    "description": "lakeside walkway with calm water, trees, and natural light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_07",
+    "description": "lakeside walkway with calm water, trees, and natural light, with realistic lived-in details distributed through the setting",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_08",
+    "description": "lakeside walkway with calm water, trees, and natural light, with a spacious view that clearly establishes the environment",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_09",
+    "description": "lakeside walkway with calm water, trees, and natural light, with intimate environmental framing and natural candid detail",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "lakeside_10",
+    "description": "lakeside walkway with calm water, trees, and natural light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "lakeside"
+  },
+  {
+    "scene_id": "forest_path_01",
+    "description": "green forest path with dappled tree shadows and light morning mist, with a quiet, lightly populated background",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_02",
+    "description": "green forest path with dappled tree shadows and light morning mist, with subtle everyday activity in the middle distance",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_03",
+    "description": "green forest path with dappled tree shadows and light morning mist, with layered foreground and background environmental detail",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_04",
+    "description": "green forest path with dappled tree shadows and light morning mist, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_05",
+    "description": "green forest path with dappled tree shadows and light morning mist, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_06",
+    "description": "green forest path with dappled tree shadows and light morning mist, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_07",
+    "description": "green forest path with dappled tree shadows and light morning mist, with realistic lived-in details distributed through the setting",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_08",
+    "description": "green forest path with dappled tree shadows and light morning mist, with a spacious view that clearly establishes the environment",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_09",
+    "description": "green forest path with dappled tree shadows and light morning mist, with intimate environmental framing and natural candid detail",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "forest_path_10",
+    "description": "green forest path with dappled tree shadows and light morning mist, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "forest_path"
+  },
+  {
+    "scene_id": "mountain_trail_01",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with a quiet, lightly populated background",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_02",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with subtle everyday activity in the middle distance",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_03",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with layered foreground and background environmental detail",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_04",
+    "description": "mountain trail with rocks, trees, and distant mountain view, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_05",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_06",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_07",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with realistic lived-in details distributed through the setting",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_08",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with a spacious view that clearly establishes the environment",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_09",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with intimate environmental framing and natural candid detail",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "mountain_trail_10",
+    "description": "mountain trail with rocks, trees, and distant mountain view, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "mountain_trail"
+  },
+  {
+    "scene_id": "riverside_promenade_01",
+    "description": "riverside promenade with railing, city water view, and natural light, with a quiet, lightly populated background",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_02",
+    "description": "riverside promenade with railing, city water view, and natural light, with subtle everyday activity in the middle distance",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_03",
+    "description": "riverside promenade with railing, city water view, and natural light, with layered foreground and background environmental detail",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_04",
+    "description": "riverside promenade with railing, city water view, and natural light, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_05",
+    "description": "riverside promenade with railing, city water view, and natural light, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_06",
+    "description": "riverside promenade with railing, city water view, and natural light, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_07",
+    "description": "riverside promenade with railing, city water view, and natural light, with realistic lived-in details distributed through the setting",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_08",
+    "description": "riverside promenade with railing, city water view, and natural light, with a spacious view that clearly establishes the environment",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_09",
+    "description": "riverside promenade with railing, city water view, and natural light, with intimate environmental framing and natural candid detail",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "riverside_promenade_10",
+    "description": "riverside promenade with railing, city water view, and natural light, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "riverside_promenade"
+  },
+  {
+    "scene_id": "market_street_01",
+    "description": "busy market street with stalls, signs, and crowd background, with a quiet, lightly populated background",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_02",
+    "description": "busy market street with stalls, signs, and crowd background, with subtle everyday activity in the middle distance",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_03",
+    "description": "busy market street with stalls, signs, and crowd background, with layered foreground and background environmental detail",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_04",
+    "description": "busy market street with stalls, signs, and crowd background, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_05",
+    "description": "busy market street with stalls, signs, and crowd background, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_06",
+    "description": "busy market street with stalls, signs, and crowd background, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_07",
+    "description": "busy market street with stalls, signs, and crowd background, with realistic lived-in details distributed through the setting",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_08",
+    "description": "busy market street with stalls, signs, and crowd background, with a spacious view that clearly establishes the environment",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_09",
+    "description": "busy market street with stalls, signs, and crowd background, with intimate environmental framing and natural candid detail",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "market_street_10",
+    "description": "busy market street with stalls, signs, and crowd background, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "market_street"
+  },
+  {
+    "scene_id": "live_stream_room_01",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with a quiet, lightly populated background",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_02",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with subtle everyday activity in the middle distance",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_03",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with layered foreground and background environmental detail",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_04",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_05",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_06",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_07",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with realistic lived-in details distributed through the setting",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_08",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with a spacious view that clearly establishes the environment",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_09",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with intimate environmental framing and natural candid detail",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "live_stream_room_10",
+    "description": "live-stream room with red backdrop, studio lights, product display, and microphone, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "live_stream_room"
+  },
+  {
+    "scene_id": "podcast_studio_01",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with a quiet, lightly populated background",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_02",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with subtle everyday activity in the middle distance",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_03",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with layered foreground and background environmental detail",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_04",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, seen from a natural eye-level viewpoint near the main activity area",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_05",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with clean, orderly surroundings and restrained background detail",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_06",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with a few background figures rendered in gentle shallow focus",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_07",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with realistic lived-in details distributed through the setting",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_08",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with a spacious view that clearly establishes the environment",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_09",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with intimate environmental framing and natural candid detail",
+    "base_scene": "podcast_studio"
+  },
+  {
+    "scene_id": "podcast_studio_10",
+    "description": "podcast studio with microphone, acoustic panels, and soft lighting, with balanced architectural or landscape depth behind the subject",
+    "base_scene": "podcast_studio"
+  }
+]

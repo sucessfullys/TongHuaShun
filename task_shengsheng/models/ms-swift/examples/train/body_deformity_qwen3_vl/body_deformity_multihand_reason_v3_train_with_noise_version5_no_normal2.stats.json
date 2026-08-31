@@ -1,0 +1,110 @@
+{
+  "train_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version5_no_normal2.jsonl",
+  "base_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version4.jsonl",
+  "note": "Regenerated strictly from version4. Removed previous two added folders and added only DreamFace2.0 highrisk_hand_foot_20260803_173429/images_abnormal_选择; all added selected images are manually treated as multi-hand abnormal regardless of filename.",
+  "base_rows": 9626,
+  "added_rows": 84,
+  "total_rows": 9710,
+  "total_image_refs": 9710,
+  "removed_from_previous_version5_no_normal2": {
+    "dreamface2_manual_abnormal_copy_weighted": 174,
+    "benchmark_norm2_seg_hand_gen_abnormal_selected": 241
+  },
+  "added": {
+    "dreamface2_highrisk_hand_foot_abnormal_selected_treated_as_hand_abnormal": 84
+  },
+  "label_counts": {
+    "normal": 5005,
+    "abnormal": 3205,
+    "non_human": 1500
+  },
+  "source_counts": {
+    "normal_human": 3000,
+    "abnormal_selected": 1205,
+    "background_no_human": 1000,
+    "abnormal_bg_aug": 300,
+    "normal_human_noise_aug": 1700,
+    "abnormal_bg_aug_noise_aug": 198,
+    "abnormal_selected_noise_aug": 802,
+    "background_no_human_noise_aug": 500,
+    "supplement_misclassified_normal": 106,
+    "supplement_misclassified_abnormal": 131,
+    "dreamface2_abnormal_seg_hand_selected": 302,
+    "dreamface2_manual_abnormal": 21,
+    "dreamface2_manual_abnormal_aug": 162,
+    "dreamface2_manual_normal": 199,
+    "dreamface2_highrisk_hand_foot_abnormal_selected": 84,
+    "dreamface2_highrisk_hand_foot_abnormal_selected_treated_as_hand_abnormal": 84
+  },
+  "parent_counts": {
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/normal_human": 3000,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择": 1205,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours/Version1/背景": 1000,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择_bg_aug/base9b_bg_cfg4.0_step28_seed42": 300,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/normal": 1700,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/abnormal": 1000,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/non_human": 500,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/补充图像数据集/normal": 106,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/补充图像数据集/abnormal": 131,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal_seg_hand_选择": 302,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal": 21,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal_aug": 162,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/normal": 199,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_20260803_173429/images_abnormal_选择": 84
+  },
+  "label_parent_counts": {
+    "normal": {
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/normal_human": 3000,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/normal": 1700,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/补充图像数据集/normal": 106,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/normal": 199
+    },
+    "abnormal": {
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择": 1205,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择_bg_aug/base9b_bg_cfg4.0_step28_seed42": 300,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/abnormal": 1000,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/补充图像数据集/abnormal": 131,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal_seg_hand_选择": 302,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal": 21,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/test/dreamface2_filter_multihand_vlm_20260728/abnormal_aug": 162,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_20260803_173429/images_abnormal_选择": 84
+    },
+    "non_human": {
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours/Version1/背景": 1000,
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/噪声扩充数据集/non_human": 500
+    }
+  },
+  "validation": {
+    "duplicate_ids": 0,
+    "duplicate_images": 0,
+    "missing_images": 0,
+    "bad_label": 0,
+    "bad_message_structure": 0,
+    "label_conclusion_mismatch": 0,
+    "added_hand_abnormal_evidence_foot_word": 0,
+    "added_hand_abnormal_conclusion_bad": 0,
+    "added_multihand_evidence_bad": 0
+  },
+  "examples": {
+    "duplicate_ids": [],
+    "duplicate_images": [],
+    "missing_images": [],
+    "bad_label": [],
+    "message_bad": [],
+    "conclusion_mismatch": []
+  },
+  "backup": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version5_no_normal2.jsonl.bak_20260804_112036",
+  "stats_backup": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version5_no_normal2.stats.json.bak_20260804_112036",
+  "updated_at": "2026-08-04T22:08:42",
+  "manual_label_policy": {
+    "added_parent": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_20260803_173429/images_abnormal_选择",
+    "policy": "All images from this selected folder are multi-hand abnormal. Do not infer part label from filenames such as badfoot.",
+    "added_rows_checked": 84,
+    "multihand_evidence_bad_after_fix": 0,
+    "foot_word_in_added_evidence_after_fix": 0
+  },
+  "backup_handfix": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version5_no_normal2.jsonl.bak_handfix_20260804_220615",
+  "stats_backup_handfix": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version5_no_normal2.stats.json.bak_handfix_20260804_220615",
+  "backup_multihandfix": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version5_no_normal2.jsonl.bak_multihandfix_20260804_220842",
+  "stats_backup_multihandfix": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version5_no_normal2.stats.json.bak_multihandfix_20260804_220842"
+}

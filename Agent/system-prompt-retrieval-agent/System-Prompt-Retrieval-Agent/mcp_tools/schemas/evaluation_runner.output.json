@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evaluation_runner.output",
+  "title": "EvaluationRunnerOutput",
+  "description": "Output for the evaluation_runner tool. Returns per-sample evaluation results and total USD cost.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["results", "usd_spent"],
+  "properties": {
+    "results": {
+      "type": "array",
+      "description": "Per-sample evaluation results, one entry per input sample.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sample_id"],
+        "properties": {
+          "sample_id": {
+            "type": "string",
+            "description": "Identifier matching the input sample."
+          },
+          "category": {
+            "type": ["string", "null"],
+            "description": "Evaluation category label, echoed from input."
+          },
+          "sub_scores": {
+            "description": "Sub-score breakdown for this sample. Mirrors PromptPairSubScores.",
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "qwen_pass_rate": { "type": ["number", "null"], "description": "Qwen VLM pass rate (0–1)." },
+                  "edit_correctness": { "type": ["number", "null"], "description": "Edit correctness score (0–1)." },
+                  "garment_transfer_correctness": { "type": ["number", "null"], "description": "Garment transfer correctness (0–1)." },
+                  "preservation": { "type": ["number", "null"], "description": "Subject preservation score (0–1)." },
+                  "artifact_penalty": { "type": ["number", "null"], "description": "Artifact penalty (0–1, lower is better)." }
+                }
+              },
+              { "type": "null" }
+            ]
+          },
+          "overall_score": {
+            "type": ["number", "null"],
+            "description": "Composite score for this sample, or null if scoring failed."
+          },
+          "error": {
+            "type": ["string", "null"],
+            "description": "Error message if evaluation failed for this sample, otherwise null."
+          }
+        }
+      }
+    },
+    "usd_spent": {
+      "type": "number",
+      "description": "Total OpenAI API cost in USD for this evaluation batch."
+    },
+    "budget_exceeded": {
+      "type": "boolean",
+      "description": "True if the budget_usd limit was hit and evaluation was aborted early.",
+      "default": false
+    }
+  }
+}

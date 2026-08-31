@@ -1,0 +1,18 @@
+{
+  "input": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train.jsonl",
+  "train_output": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_fixed.jsonl",
+  "val_output": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_val_fixed.jsonl",
+  "seed": 20260722,
+  "train_total": 5295,
+  "val_total": 210,
+  "train_labels": {
+    "normal": 2900,
+    "abnormal": 1445,
+    "non_human": 950
+  },
+  "val_labels": {
+    "non_human": 50,
+    "normal": 100,
+    "abnormal": 60
+  }
+}

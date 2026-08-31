@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FailureSummaryResult",
+  "description": "Failure mode analysis for a single low-scoring sample. Bucket key includes user_prompt_id so per-phrasing brittleness is visible.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "summary",
+    "failure_tags"
+  ],
+  "properties": {
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "description": "1-3 sentence concise description of the failure mode."
+    },
+    "failure_tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "description": "List of failure mode tags (e.g. misaligned_garment, color_bleed)."
+    }
+  }
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "id": "multihand_abnormal_0001",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "abnormal",
+    "source": "abnormal_selected",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择/004017a727d30198a11fe1c8a9fb33b8bd582772fe229ac3c0265e6ee0b7b606.png"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>这张图片是否存在多手异常？请说明理由并给出结论。"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>图中手部数量和连接关系不符合正常人体结构，可见手腕或前臂附近出现额外手部，超过正常双手数量。</evidence>\n<conclusion>abnormal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_abnormal_0002",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "abnormal",
+    "source": "abnormal_selected",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择/0082901b04f95e427e7205dd96585cb7c34df7ae521137008582043a1b3c29bc.png"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>请判断画面里的人体是否有多手异常，并说明依据。"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>画面中的手部结构不自然，同一人体附近出现超过正常双手数量的手部区域，手与手臂的衔接关系异常。</evidence>\n<conclusion>abnormal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_abnormal_0003",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "abnormal",
+    "source": "abnormal_selected",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择/0084e9173a67cdba9f14da0729c1c83c638579db2cde9435a5a31293f821e734.png"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>这张图有没有多手问题？请给出理由。"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>图中人体手部结构异常，可见额外手掌或手部从手腕附近延伸出来，整体不符合正常解剖连接。</evidence>\n<conclusion>abnormal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_abnormal_0004",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "abnormal",
+    "source": "abnormal_bg_aug",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择_bg_aug/base9b_bg_cfg4.0_step28_seed42/0082901b04f95e427e7205dd96585cb7c34df7ae521137008582043a1b3c29bc_bg_08_v2.png"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>请判断这张图片中的人体手部结构是否正常。"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>图中手部与前臂的连接关系异常，出现手臂附近额外分叉出手部结构的情况，因此属于多手异常。</evidence>\n<conclusion>abnormal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_abnormal_0005",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "abnormal",
+    "source": "abnormal_bg_aug",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/abnormal_选择_bg_aug/base9b_bg_cfg4.0_step28_seed42/00919916ba9d5b627f6236311296ac6b5cde9460366439facfdd4df4ced67de4_bg_19_v2.png"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>这张图片是否存在多手异常？"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>画面中人体手部区域存在异常增生或分叉表现，手部数量超过正常双手结构。</evidence>\n<conclusion>abnormal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_normal_0001",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "normal",
+    "source": "normal_human",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/normal_human/001db8b52b079cd565aad7c6a7dedd18fd5f57561f68cf0408a24bc2d9c23193.jpg"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>请判断这张图片是否有多手异常。"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>图中可见人体结构整体自然，未观察到额外手部、手腕分叉或超过正常双手数量的异常连接。</evidence>\n<conclusion>normal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_normal_0002",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "normal",
+    "source": "normal_human",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/normal_human/003f24eec39bbed068a6acb9288bbeec017db116e0510f164fc0de62f1f403a1.jpg"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>这张图中的手部结构和连接关系是否正常？"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>图中没有明显多余手掌或手臂分叉现象，人体手部结构和连接关系看起来正常。</evidence>\n<conclusion>normal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_normal_0003",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "normal",
+    "source": "normal_human",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours_bad/hand_foder/normal_human/00a9cdac8f7a5142c85c2bffc919fa4e9f4ca5b9e5327bfd8147e971b391d593.jpg"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>请检查图中是否存在多手异常，并输出结论。"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>画面中人体手部没有异常增加，未见同一前臂连接额外手部的结构，整体属于正常人体样本。</evidence>\n<conclusion>normal</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_non_human_0001",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "non_human",
+    "source": "background_no_human",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours/Version1/背景/0012393e1ecedfdd949f491126be41638323417a75bfcc5719d3e83dac13925c.png"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>这张图片是否存在多手异常？"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>图中没有明确可判断的人体主体或手部区域，因此不属于人体多手异常判断样本。</evidence>\n<conclusion>non_human</conclusion>"
+      }
+    ]
+  },
+  {
+    "id": "multihand_non_human_0002",
+    "task_type": "multi_hand_abnormal_classification",
+    "label": "non_human",
+    "source": "background_no_human",
+    "images": [
+      "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours/Version1/背景/001daa32d7151904caa0e11ab7363434b7243cdfaa2633a8041110deed97713c.png"
+    ],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是人体结构异常检测助手。请判断图中是否存在多手异常，并给出简洁、可见的判断理由。最终只能用 <conclusion>normal</conclusion>、<conclusion>abnormal</conclusion> 或 <conclusion>non_human</conclusion> 输出结论。"
+      },
+      {
+        "role": "user",
+        "content": "<image>请判断画面里是否有人体多手异常。"
+      },
+      {
+        "role": "assistant",
+        "content": "<evidence>画面中未出现清晰人体或手部结构，无法形成多手异常判断，因此应归为非人体样本。</evidence>\n<conclusion>non_human</conclusion>"
+      }
+    ]
+  }
+]

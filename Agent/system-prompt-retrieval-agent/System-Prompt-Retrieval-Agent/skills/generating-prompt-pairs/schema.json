@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "required": ["prompt_pairs"],
+  "properties": {
+    "prompt_pairs": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["system_prompt", "negative_prompt", "rationale", "expected_improvement_target", "risk", "cross_lingual_robustness_strategy"],
+        "properties": {
+          "system_prompt": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 10000
+          },
+          "negative_prompt": {
+            "type": ["string", "null"]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "expected_improvement_target": {
+            "type": "string"
+          },
+          "risk": {
+            "type": "string"
+          },
+          "cross_lingual_robustness_strategy": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

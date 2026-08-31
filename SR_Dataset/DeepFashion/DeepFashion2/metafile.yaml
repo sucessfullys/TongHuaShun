@@ -1,0 +1,15 @@
+displayName: DeepFashion2
+labelTypes: []
+license:
+- DeepFashion2 Custom
+mediaTypes: []
+paperUrl: https://arxiv.org/pdf/1901.07973.pdf
+publishDate: "2019"
+publishUrl: https://github.com/switchablenorms/DeepFashion2
+publisher:
+- SenseTime Research
+- Chinese University of Hong Kong
+tags:
+- Clothing
+taskTypes:
+- Image Processing

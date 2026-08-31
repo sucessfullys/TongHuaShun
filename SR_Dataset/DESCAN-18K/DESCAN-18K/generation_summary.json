@@ -1,0 +1,24 @@
+{
+  "hr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/DESCAN-18K/DESCAN-18K/HR",
+  "lr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/DESCAN-18K/DESCAN-18K/LR",
+  "severity_probs": {
+    "mild": 0.3,
+    "medium": 0.45,
+    "strong": 0.25
+  },
+  "noise_probability": 0.4,
+  "source_images": 18359,
+  "eligible_images": 18359,
+  "skipped_aspect_ratio": 0,
+  "paired_images": 18359,
+  "severity_counts": {
+    "mild": 5534,
+    "medium": 8233,
+    "strong": 4592
+  },
+  "noise_counts": {
+    "none": 10908,
+    "light_gaussian": 6376,
+    "light_poisson": 1075
+  }
+}

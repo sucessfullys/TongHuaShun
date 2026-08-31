@@ -1,0 +1,148 @@
+import os, torch, importlib
+from tqdm import tqdm
+from accelerate import Accelerator
+from .training_module import DiffusionTrainingModule
+from .logger import ModelLogger
+from diffsynth.core import OffloadTrainingManager
+
+
+def get_optimizer_class(customized_optimizer=None):
+    if customized_optimizer is None:
+        return torch.optim.AdamW
+    else:
+        module_name, class_name = customized_optimizer.rsplit(".", 1)
+        module = importlib.import_module(module_name)
+        print(f"Customized opimizer `{customized_optimizer}` imported.")
+        return getattr(module, class_name)
+
+
+def launch_training_task(
+    accelerator: Accelerator,
+    dataset: torch.utils.data.Dataset,
+    model: DiffusionTrainingModule,
+    model_logger: ModelLogger,
+    learning_rate: float = 1e-5,
+    weight_decay: float = 1e-2,
+    num_workers: int = 1,
+    save_steps: int = None,
+    num_epochs: int = 1,
+    enable_model_cpu_offload: bool = False,
+    enable_optimizer_cpu_offload: bool = False,
+    cpu_offload_split_threshold: int = None,
+    customized_optimizer: str = None,
+    log_every: int = 0,
+    args = None,
+    **kwargs,
+):
+    if args is not None:
+        learning_rate = args.learning_rate
+        weight_decay = args.weight_decay
+        num_workers = args.dataset_num_workers
+        save_steps = args.save_steps
+        num_epochs = args.num_epochs
+        enable_model_cpu_offload = args.enable_model_cpu_offload
+        enable_optimizer_cpu_offload = args.enable_optimizer_cpu_offload
+        cpu_offload_split_threshold = args.cpu_offload_split_threshold
+        customized_optimizer = args.customized_optimizer
+        log_every = args.log_every
+
+    optimizer_class = get_optimizer_class(customized_optimizer)
+    optimizer = optimizer_class(model.trainable_modules(), lr=learning_rate, weight_decay=weight_decay)
+    scheduler = torch.optim.lr_scheduler.ConstantLR(optimizer)
+    dataloader = torch.utils.data.DataLoader(dataset, shuffle=True, collate_fn=lambda x: x[0], num_workers=num_workers)
+
+    if enable_model_cpu_offload:
+        optimizer, dataloader, scheduler = accelerator.prepare(optimizer, dataloader, scheduler)
+        model.pipe.device = accelerator.device
+        offload_manager = OffloadTrainingManager(model, accelerator.device, enable_optimizer_cpu_offload, cpu_offload_split_threshold)
+    else:
+        model.to(device=accelerator.device)
+        model, optimizer, dataloader, scheduler = accelerator.prepare(model, optimizer, dataloader, scheduler)
+
+    initialize_deepspeed_gradient_checkpointing(accelerator)
+    for epoch_id in range(num_epochs):
+        progress_bar = tqdm(
+            dataloader,
+            desc=f"Epoch {epoch_id + 1}/{num_epochs}",
+            disable=not accelerator.is_main_process,
+        )
+        for data in progress_bar:
+            with accelerator.accumulate(model):
+                if dataset.load_from_cache:
+                    loss = model({}, inputs=data)
+                else:
+                    loss = model(data)
+                # Every process participates in the reduction; only rank 0
+                # prints and writes logs. This yields one clean loss stream for
+                # single-node multi-GPU training instead of eight duplicates.
+                reduced_loss = accelerator.reduce(loss.detach().float(), reduction="mean")
+                step_id = model_logger.num_steps + 1
+                if accelerator.is_main_process and log_every > 0 and step_id % log_every == 0:
+                    loss_value = reduced_loss.item()
+                    print(
+                        f"epoch={epoch_id + 1}/{num_epochs} "
+                        f"step={step_id} loss={loss_value:.6f}",
+                        flush=True,
+                    )
+                    progress_bar.set_postfix(loss=f"{loss_value:.6f}")
+                accelerator.backward(loss)
+                if enable_model_cpu_offload:
+                    offload_manager.after_backward()
+                optimizer.step()
+                scheduler.step()
+                optimizer.zero_grad()
+                model_logger.on_step_end(accelerator, model, save_steps, loss=reduced_loss)
+        model_logger.on_epoch_end(accelerator, model, epoch_id)
+
+    model_logger.on_training_end(accelerator, model, save_steps)
+
+
+def launch_data_process_task(
+    accelerator: Accelerator,
+    dataset: torch.utils.data.Dataset,
+    model: DiffusionTrainingModule,
+    model_logger: ModelLogger,
+    num_workers: int = 8,
+    args = None,
+    **kwargs,
+):
+    if args is not None:
+        num_workers = args.dataset_num_workers
+        enable_model_cpu_offload = args.enable_model_cpu_offload
+        enable_optimizer_cpu_offload = args.enable_optimizer_cpu_offload
+        cpu_offload_split_threshold = args.cpu_offload_split_threshold
+        
+    dataloader = torch.utils.data.DataLoader(dataset, shuffle=False, collate_fn=lambda x: x[0], num_workers=num_workers)
+    if enable_model_cpu_offload:
+        dataloader = accelerator.prepare(dataloader)
+        offload_manager = OffloadTrainingManager(model, accelerator.device, enable_optimizer_cpu_offload, cpu_offload_split_threshold)
+        model.pipe.device = accelerator.device
+    else:
+        model.to(device=accelerator.device)
+        model, dataloader = accelerator.prepare(model, dataloader)
+    
+    for data_id, data in enumerate(tqdm(dataloader)):
+        with accelerator.accumulate(model):
+            with torch.no_grad():
+                folder = os.path.join(model_logger.output_path, str(accelerator.process_index))
+                os.makedirs(folder, exist_ok=True)
+                save_path = os.path.join(model_logger.output_path, str(accelerator.process_index), f"{data_id}.pth")
+                data = model(data)
+                torch.save(data, save_path)
+                if enable_model_cpu_offload:
+                    offload_manager.after_backward()
+
+def initialize_deepspeed_gradient_checkpointing(accelerator: Accelerator):
+    if getattr(accelerator.state, "deepspeed_plugin", None) is not None:
+        ds_config = accelerator.state.deepspeed_plugin.deepspeed_config
+        if "activation_checkpointing" in ds_config:
+            import deepspeed
+            act_config = ds_config["activation_checkpointing"]
+            deepspeed.checkpointing.configure(
+                mpu_=None, 
+                partition_activations=act_config.get("partition_activations", False),
+                checkpoint_in_cpu=act_config.get("cpu_checkpointing", False),
+                contiguous_checkpointing=act_config.get("contiguous_memory_optimization", False)
+            )
+        else:
+            print("Do not find activation_checkpointing config in deepspeed config, skip initializing deepspeed gradient checkpointing.")

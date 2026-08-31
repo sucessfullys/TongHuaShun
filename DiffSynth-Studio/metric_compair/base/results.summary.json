@@ -1,0 +1,14 @@
+{
+  "pred_dir": "/mnt/image-edit/datasets/duanyufa/DiffSynth-Studio/outputs/FLUX.2_Base_deblur",
+  "gt_dir": "/mnt/image-edit/datasets/duanyufa/Face/test/HR",
+  "num_pred_images": 100,
+  "num_rows": 100,
+  "skipped_pairs": 0,
+  "means": {
+    "psnr": 19.543996505737304,
+    "ssim": 0.6054060459136963,
+    "lpips": 0.42278815984725954,
+    "musiq": 74.78018777847291,
+    "maniqa": 0.45343264982104303
+  }
+}

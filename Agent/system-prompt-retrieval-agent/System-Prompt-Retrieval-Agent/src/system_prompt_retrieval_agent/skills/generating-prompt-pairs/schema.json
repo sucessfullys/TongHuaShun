@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PromptPairsResponse",
+  "description": "Output schema for the generating-prompt-pairs skill (V0.2.1). Requires cross_lingual_robustness_strategy per pair; rejects user_prompts and any undeclared field.",
+  "type": "object",
+  "required": ["prompt_pairs"],
+  "properties": {
+    "prompt_pairs": {
+      "type": "array",
+      "description": "List of generated (system_prompt, negative_prompt) pairs.",
+      "items": {
+        "type": "object",
+        "required": [
+          "system_prompt",
+          "negative_prompt",
+          "rationale",
+          "expected_improvement_target",
+          "risk",
+          "cross_lingual_robustness_strategy"
+        ],
+        "properties": {
+          "system_prompt": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 4000,
+            "description": "The system prompt for Gemma-4-31B-it. Must be robust across all enabled TRYON_PROMPTS phrasings."
+          },
+          "negative_prompt": {
+            "type": ["string", "null"],
+            "description": "Negative prompt for FLUX (optional). Use null or omit when no negative prompt is needed. Values 'None', 'none', 'NULL', empty string, or whitespace-only are normalized to null."
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Non-empty explanation of why this pair was chosen and what specific issue it addresses."
+          },
+          "expected_improvement_target": {
+            "type": "string",
+            "description": "The metric or category (e.g. edit_correctness, cross_lingual_gap) this pair is expected to improve."
+          },
+          "risk": {
+            "type": "string",
+            "description": "Potential downside or regression risk for this pair."
+          },
+          "cross_lingual_robustness_strategy": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Non-empty description of how this system_prompt achieves robustness across zh and en phrasings. Must address: which phrasing is weakest (worst_user_prompt_id), how the prompt avoids single-keyword dependency, and how zh/en balance is maintained."
+          }
+        },
+        "additionalProperties": false,
+        "description": "A single (system_prompt, negative_prompt) candidate pair. The user_prompts field is NOT accepted here — user prompts are a controlled evaluation variable, not a search target."
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "remote_gemma_stage.output",
+  "title": "RemoteGemmaStageOutput",
+  "description": "Output for the remote_gemma_stage tool. Mirrors RemoteStageResponse from schemas.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ok", "stage"],
+  "properties": {
+    "ok": {
+      "type": "boolean",
+      "description": "True if the Gemma stage completed without fatal errors."
+    },
+    "stage": {
+      "type": "string",
+      "description": "Stage name, always 'gemma' for this tool.",
+      "const": "gemma"
+    },
+    "message": {
+      "type": "string",
+      "description": "Human-readable status or error message.",
+      "default": ""
+    },
+    "run_id": {
+      "type": "string",
+      "description": "Echo of the run_id from the request.",
+      "default": ""
+    },
+    "manifest": {
+      "description": "Detailed per-sample manifest of results, or null if not yet available.",
+      "oneOf": [
+        { "$ref": "#/$defs/RemoteManifest" },
+        { "type": "null" }
+      ]
+    }
+  },
+  "$defs": {
+    "ManifestEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sample_id", "status"],
+      "properties": {
+        "sample_id": { "type": "string", "description": "Dataset sample identifier." },
+        "status": { "type": "string", "description": "Processing status for this sample." },
+        "output_path": { "type": ["string", "null"], "description": "Path to the output artifact, or null." },
+        "error": { "type": ["string", "null"], "description": "Error message if failed, otherwise null." }
+      }
+    },
+    "RemoteManifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage"],
+      "properties": {
+        "stage": { "type": "string", "description": "Stage name." },
+        "run_id": { "type": ["string", "null"], "description": "Run identifier." },
+        "ok": { "type": "integer", "description": "Count of successful samples.", "default": 0 },
+        "errors": { "type": "integer", "description": "Count of failed samples.", "default": 0 },
+        "total": { "type": "integer", "description": "Total samples attempted.", "default": 0 },
+        "entries": { "type": "array", "items": { "$ref": "#/$defs/ManifestEntry" } },
+        "workers": { "type": "array", "items": { "type": "object" } },
+        "vram_free_gib": { "oneOf": [{ "type": "array", "items": { "type": "number" } }, { "type": "null" }] }
+      }
+    }
+  }
+}

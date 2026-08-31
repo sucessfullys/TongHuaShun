@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "remote_prompt_pair_pipeline.output",
+  "title": "RemotePromptPairPipelineOutput",
+  "description": "Output for the remote_prompt_pair_pipeline tool. Mirrors RemoteStageResponse from schemas.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ok", "stage"],
+  "properties": {
+    "ok": {
+      "type": "boolean",
+      "description": "True if the full pipeline completed without fatal errors."
+    },
+    "stage": {
+      "type": "string",
+      "description": "Name of the final stage executed (e.g., 'gemma', 'flux', 'qwen')."
+    },
+    "message": {
+      "type": "string",
+      "description": "Human-readable status or error message.",
+      "default": ""
+    },
+    "run_id": {
+      "type": "string",
+      "description": "Echo of the run_id from the request.",
+      "default": ""
+    },
+    "manifest": {
+      "description": "Detailed per-sample manifest of results, or null if not yet available.",
+      "oneOf": [
+        { "$ref": "#/$defs/RemoteManifest" },
+        { "type": "null" }
+      ]
+    }
+  },
+  "$defs": {
+    "ManifestEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sample_id", "status"],
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "description": "Dataset sample identifier."
+        },
+        "status": {
+          "type": "string",
+          "description": "Processing status for this sample (e.g., 'ok', 'error', 'skipped')."
+        },
+        "output_path": {
+          "type": ["string", "null"],
+          "description": "Path to the output artifact on the remote server, or null if failed."
+        },
+        "error": {
+          "type": ["string", "null"],
+          "description": "Error message if this sample failed, otherwise null."
+        }
+      }
+    },
+    "RemoteManifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage"],
+      "properties": {
+        "stage": {
+          "type": "string",
+          "description": "Stage name this manifest belongs to."
+        },
+        "run_id": {
+          "type": ["string", "null"],
+          "description": "Run identifier associated with this manifest."
+        },
+        "ok": {
+          "type": "integer",
+          "description": "Count of samples that succeeded.",
+          "default": 0
+        },
+        "errors": {
+          "type": "integer",
+          "description": "Count of samples that failed.",
+          "default": 0
+        },
+        "total": {
+          "type": "integer",
+          "description": "Total number of samples attempted.",
+          "default": 0
+        },
+        "entries": {
+          "type": "array",
+          "description": "Per-sample processing results.",
+          "items": { "$ref": "#/$defs/ManifestEntry" }
+        },
+        "workers": {
+          "type": "array",
+          "description": "Worker process metadata (pid, gpu index, etc.).",
+          "items": { "type": "object" }
+        },
+        "vram_free_gib": {
+          "description": "Free VRAM in GiB per GPU at completion, or null if not measured.",
+          "oneOf": [
+            { "type": "array", "items": { "type": "number" } },
+            { "type": "null" }
+          ]
+        }
+      }
+    }
+  }
+}

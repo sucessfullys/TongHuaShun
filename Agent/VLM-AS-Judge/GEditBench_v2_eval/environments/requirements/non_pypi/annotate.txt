@@ -1,0 +1,2 @@
+# No external non-PyPI dependencies are required.
+# SAM2 is vendored in-repo under src/sam2.

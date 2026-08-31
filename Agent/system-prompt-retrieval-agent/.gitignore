@@ -1,0 +1,65 @@
+.env
+.env.*
+!/.env.example
+/.claude.CLAUDE.md
+.claude/settings.local.json
+knowledge/
+temp_wxy/
+process/
+processes/
+*.pid
+*.lock
+*.log
+logs/
+runs/
+outputs/
+checkpoints/
+checkpoint-*/
+*.safetensors
+*.pt
+*.pth
+*.bin
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+*results/
+Image-Generater-Remote/config.yaml
+Image-Generater-Remote/.venv/
+Image-Generater-Remote/logs/
+Image-Generater-Remote/outputs/
+
+# Ralph Loop runtime state (per-session, never committed)
+.claude/ralph-loop.local.md
+
+# V0.2 local agent
+System-Prompt-Retrieval-Agent/.venv/
+System-Prompt-Retrieval-Agent/outputs/
+System-Prompt-Retrieval-Agent/preeval_workspace/
+System-Prompt-Retrieval-Agent/memory/*
+!System-Prompt-Retrieval-Agent/memory/.gitkeep
+System-Prompt-Retrieval-Agent/logs/
+System-Prompt-Retrieval-Agent/config.yaml
+System-Prompt-Retrieval-Agent/.env
+System-Prompt-Retrieval-Agent/*.egg-info/
+System-Prompt-Retrieval-Agent/src/*.egg-info/
+System-Prompt-Retrieval-Agent/build/
+System-Prompt-Retrieval-Agent/dist/
+System-Prompt-Retrieval-Agent/**/__pycache__/
+System-Prompt-Retrieval-Agent/**/*.pyc
+
+# V0.3 WebUI
+System-Prompt-Retrieval-Agent-WebUI/.venv-v0.3-webui/
+System-Prompt-Retrieval-Agent-WebUI/.runtime/
+System-Prompt-Retrieval-Agent-WebUI/**/__pycache__/
+System-Prompt-Retrieval-Agent-WebUI/**/*.pyc
+
+# V0.2 generated dataset/manifests
+System-Prompt-Retrieval-Agent/data/test500_manifest/*.bak.*
+System-Prompt-Retrieval-Agent/data/test500_manifest/manifest_audit_*.json
+
+# Runtime state (PID + log files for scripts/runtime/)
+.runtime/*
+!.runtime/.gitkeep

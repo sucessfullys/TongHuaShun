@@ -1,0 +1,11 @@
+# ERA runtime dependencies — mirrors pyproject.toml [project].dependencies.
+# Install the package itself with `pip install -e .` (preferred); this file is
+# a convenience for `pip install -r requirements.txt`.
+pyyaml>=6.0
+# Stage 1 literature research — the arXiv MCP server.
+arxiv-mcp-server>=0.5.0
+# Stage 8 human feedback — the FastAPI review web app (era/webapp).
+fastapi>=0.110
+uvicorn[standard]>=0.27
+# Dev / tests (pyproject [project.optional-dependencies].dev).
+pytest>=7.0

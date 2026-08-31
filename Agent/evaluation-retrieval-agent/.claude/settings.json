@@ -1,0 +1,20 @@
+{
+  "enabledPlugins": {
+    "ralph-loop@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "Bash(pkill -9 -f \"python3 -u NoGPUAlarmNew.py\")",
+      "Bash(sudo pkill -9 -f \"python3 -u NoGPUAlarmNew.py\")"
+    ]
+  }
+}

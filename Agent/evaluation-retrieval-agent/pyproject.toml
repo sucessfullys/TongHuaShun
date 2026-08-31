@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "era"
+version = "0.1.7"
+description = "ERA — General Image Generation / Editing Evaluation Retrieval Agent"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0",
+    # Stage 1 literature research — the arXiv MCP server. Installed into the
+    # repo venv so `.mcp.json` can launch it by absolute path (no uvx needed).
+    "arxiv-mcp-server>=0.5.0",
+    # Stage 8 human feedback — the FastAPI review web app (era/webapp).
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+era = "era.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["era*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

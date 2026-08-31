@@ -1,0 +1,17 @@
+# DreamFaceOmini Gradio 推理依赖（torch/torchvision 由 setup.sh 单独安装 cu129 版本）
+accelerate==1.14.0
+diffusers==0.38.0
+einops==0.8.2
+gradio==6.19.0
+huggingface_hub==1.20.1
+imageio==2.37.3
+modelscope>=1.20
+numpy==2.4.4
+pandas==3.0.3
+peft==0.19.1
+pillow==12.2.0
+safetensors==0.8.0
+sentencepiece==0.2.1
+tqdm==4.68.3
+transformers==5.12.1
+# torchaudio 由 setup.sh 与 torch 一起从 cu129 index 安装

@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.17",
+  "eval_note": "看v2.17e1",
+  "date": "2026-04-23_10:51:59",
+  "epoch": 1,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/v2.17e1moredata.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/明星/demo/02-2.json",
+  "num_samples": 100,
+  "seed": 42,
+  "steps": 50,
+  "cfg": 1.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.17_e1_cfg1.0_eval_s2guidance1_scale1-star"
+}

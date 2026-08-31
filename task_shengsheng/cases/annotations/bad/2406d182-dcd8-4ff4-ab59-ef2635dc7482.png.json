@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "sample_key": "bad/2406d182-dcd8-4ff4-ab59-ef2635dc7482.png",
+  "per_method": {
+    "image": "The generated image contains the wrong cat (incorrect biological structure logic)."
+  },
+  "created_at": "2026-06-08T07:16:51+00:00",
+  "updated_at": "2026-06-08T07:16:56+00:00"
+}

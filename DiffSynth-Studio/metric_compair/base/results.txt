@@ -1,0 +1,18 @@
+Image Quality Metrics
+pred_dir: /mnt/image-edit/datasets/duanyufa/DiffSynth-Studio/outputs/FLUX.2_Base_deblur
+gt_dir: /mnt/image-edit/datasets/duanyufa/Face/test/HR
+num_pred_images: 100
+num_rows: 100
+skipped_pairs: 0
+
+Mean metrics:
+PSNR: 19.543997
+SSIM: 0.605406
+LPIPS: 0.422788
+MUSIQ: 74.780188
+MANIQA: 0.453433
+
+Notes:
+PSNR, SSIM, and LPIPS require GT images.
+MUSIQ and MANIQA are no-reference metrics and only use predicted images.
+For LPIPS, lower is better. For PSNR/SSIM/MUSIQ/MANIQA, higher is generally better.

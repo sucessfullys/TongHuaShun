@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "remote_gemma_stage.input",
+  "title": "RemoteGemmaStageInput",
+  "description": "Input for the remote_gemma_stage tool. Mirrors RemoteStageRequest from schemas.py; dispatches to the /stage/gemma endpoint.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "round_id",
+    "prompt_pair_id",
+    "system_prompt_id",
+    "system_prompt_text",
+    "dataset_root",
+    "output_root"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "description": "Unique identifier for this pipeline run."
+    },
+    "round_id": {
+      "type": "integer",
+      "description": "Optimization round number (0-indexed)."
+    },
+    "prompt_pair_id": {
+      "type": "string",
+      "description": "Unique identifier for the prompt pair being evaluated."
+    },
+    "system_prompt_id": {
+      "type": "string",
+      "description": "Unique identifier for the system (positive) prompt."
+    },
+    "system_prompt_text": {
+      "type": "string",
+      "description": "Full text of the system (positive) prompt."
+    },
+    "negative_prompt_id": {
+      "type": ["string", "null"],
+      "description": "Unique identifier for the negative prompt, or null if not used."
+    },
+    "negative_prompt": {
+      "type": ["string", "null"],
+      "description": "Full text of the negative prompt, or null if not used."
+    },
+    "dataset_root": {
+      "type": "string",
+      "description": "Absolute path on the remote server to the dataset root directory."
+    },
+    "output_root": {
+      "type": "string",
+      "description": "Absolute path on the remote server where outputs will be written."
+    },
+    "limit": {
+      "type": "integer",
+      "description": "Maximum number of samples to process (0 means all).",
+      "default": 0
+    },
+    "allow_partial": {
+      "type": "boolean",
+      "description": "If true, a partial run (some failures) is still considered successful.",
+      "default": false
+    }
+  }
+}

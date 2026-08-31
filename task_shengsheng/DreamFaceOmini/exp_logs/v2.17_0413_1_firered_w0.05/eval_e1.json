@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.17_0413_1_firered_w0.05",
+  "eval_note": "看e1脸部是否崩坏",
+  "date": "2026-04-13_12:55:23",
+  "epoch": 1,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/train/v2.17_0413_1_firered_w0.05/epoch-1.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/明星/demo/02-2.json",
+  "num_samples": 69,
+  "seed": 42,
+  "steps": 50,
+  "cfg": 4.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.17_0413_1_firered_w0.05_e1"
+}

@@ -1,0 +1,32 @@
+{
+  "val_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multilimb_reason_v3_val_fixed_version8.jsonl",
+  "base_val_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_val_fixed.jsonl",
+  "created_at": "2026-08-10T11:21:02",
+  "note": "Original fixed validation file is unchanged. This version upgrades prompts from multi-hand to multi-limb and adds selected multi-leg abnormal validation samples.",
+  "base_rows_rewritten": 210,
+  "added_multi_leg_rows": 60,
+  "total_rows": 270,
+  "label_counts": {
+    "non_human": 50,
+    "normal": 100,
+    "abnormal": 120
+  },
+  "anomaly_type_counts": {
+    "non_human": 50,
+    "normal": 100,
+    "multi_hand": 60,
+    "multi_leg": 60
+  },
+  "source_counts": {
+    "background_no_human": 50,
+    "normal_human": 100,
+    "abnormal_selected": 49,
+    "abnormal_bg_aug": 11,
+    "dreamface2_20260803_selected_multi_leg_val": 15,
+    "dreamface2_diverse_english_3seed_selected_multi_leg_val": 45
+  },
+  "leg_candidate_dirs": {
+    "dreamface2_20260803_selected_multi_leg_val": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_20260803_173429/images_abnormal_leg_选择",
+    "dreamface2_diverse_english_3seed_selected_multi_leg_val": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/output/highrisk_hand_foot_diverse_english_3seed_20260804_174158/images_abnormal_leg_选择"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "output": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_grounding_v2_schemeA_train.jsonl",
+  "source_v1_jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_grounding_base_train.jsonl",
+  "scheme": "v2_schemeA_normal_no_bbox",
+  "random_seed": 20260716,
+  "max_abnormal_bbox": 9,
+  "records_total": 68546,
+  "records_by_conclusion": {
+    "abnormal": 32982,
+    "non_human": 3227,
+    "normal": 32337
+  },
+  "normal_image_sources": {
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours/Version1/images": 30428,
+    "/mnt/image-edit/datasets/duanyufa/task_shengsheng/Open_dataset/Ours/Version1/images_1": 1909
+  },
+  "skipped": {
+    "missing_current_train_file": 1294
+  },
+  "v1_abnormal_bbox_distribution_seen": {
+    "1": 9978,
+    "2": 11250,
+    "3": 4760,
+    "4": 2895,
+    "5": 1605,
+    "6": 1001,
+    "7": 682,
+    "8": 484,
+    "9": 327
+  },
+  "validation": {
+    "abnormal_bbox_placeholder_matches_objects": true,
+    "normal_and_non_human_have_no_objects": true,
+    "all_images_exist": true
+  }
+}

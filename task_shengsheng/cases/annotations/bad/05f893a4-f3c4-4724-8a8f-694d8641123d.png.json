@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "sample_key": "bad/05f893a4-f3c4-4724-8a8f-694d8641123d.png",
+  "per_method": {
+    "image": "The generated image shows deformed fingers. (incorrect biological structure logic)\n\nThe generated image shows multiple ghosting of the mirror. (the physics logic is incorrect)."
+  },
+  "created_at": "2026-06-08T07:07:50+00:00",
+  "updated_at": "2026-06-08T07:08:05+00:00"
+}

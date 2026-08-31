@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LocalEvaluationResult",
+  "description": "Sub-scores from the local OpenAI VLM evaluator for a single (prompt_pair_id, user_prompt_id, sample_id) cell.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "edit_correctness",
+    "garment_transfer_correctness",
+    "preservation",
+    "artifact_penalty",
+    "notes"
+  ],
+  "properties": {
+    "edit_correctness": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "How well the edit follows the intermediate prompt (0=ignored, 1=exact match)."
+    },
+    "garment_transfer_correctness": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Accuracy of garment placement and transfer (0=wrong, 1=natural fit)."
+    },
+    "preservation": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "How well identity and background are preserved (0=unrecognizable, 1=unchanged)."
+    },
+    "artifact_penalty": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Degree of visible artifacts (0=clean, 1=severe artifacts). Higher is worse."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Brief qualitative evaluation notes (1-2 sentences)."
+    }
+  }
+}

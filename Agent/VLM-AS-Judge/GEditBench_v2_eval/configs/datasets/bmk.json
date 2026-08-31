@@ -1,0 +1,50 @@
+{
+    "editscore_consistency": {
+        "data_path": "data/z_reward_bench/EditReward-Bench",
+        "eval_dim": "consistency",
+        "shuffled_res_path": "data/z_reward_bench/shuffled_editscore_bench_consistency.json"
+    },
+    "editscore_prompt_following": {
+        "data_path": "data/z_reward_bench/EditReward-Bench",
+        "eval_dim": "prompt_following",
+        "shuffled_res_path": "data/z_reward_bench/shuffled_editscore_bench_prompt_following.json"
+    },
+    "editreward_visual_quality": {
+        "json_file_path": "data/z_reward_bench/editreward_bench_visual_quality.jsonl",
+        "image_data_path": "data/z_reward_bench/editreward_bench_images"
+    },
+    "vc_reward": {
+        "bench_path": "/path/to/VCReward-Bench"
+    },
+    "geditv2": {
+        "bench_path": "/mnt/image-edit/datasets/dingjianbiao/agent/benchmark/GEditBench_v2/datasets/GEditBench-v2",
+        "candidates_gallery_path": "/mnt/image-edit/datasets/dingjianbiao/agent/benchmark/GEditBench_v2/datasets/GEditBench-v2-CandidatesGallery",
+        "selected_compare_model_list": [
+            "ImageAgent0821_2",
+            "GPT_Image_1p5",
+            "Nano_Banana_Pro",
+            "Seedream4p5",
+            "Qwen_Image_Edit_2511",
+            "FLUX2_klein_9b",
+            "FireRed_Image_Edit"
+        ],
+        "disabled_models":[
+            "BAGEL",
+            "FLUX1_Kontext_dev",
+            "FLUX2_dev",
+            "FLUX2_dev_turbo",
+            "GLM_Image",
+            "OmniGen2",
+            "Qwen_Image_Edit",
+            "Qwen_Image_Edit_2509",
+            "Step1X_Edit_v1p2",
+            "LongCat_Image_Edit",
+            "FLUX2_klein_4b"
+        ]
+    }
+}
+
+
+
+
+

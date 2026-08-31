@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ELO Leaderboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      color: #222;
+    }
+    h1, h2 {
+      margin: 0 0 12px;
+    }
+    h2 {
+      margin-top: 28px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      width: 100%;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #9aa5b1;
+      padding: 6px 10px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    thead th {
+      background: #d9e2f3;
+      font-weight: 700;
+    }
+    thead tr:nth-child(2) th {
+      background: #eaf1fb;
+    }
+    td:first-child, th:first-child {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>ELO Leaderboard Summary</h1>
+  <table class="dataframe elo-summary">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Samples</th>
+      <th colspan="2" halign="left">Visual Consistency</th>
+      <th colspan="2" halign="left">Visual Quality</th>
+      <th colspan="2" halign="left">Instruction Following</th>
+      <th colspan="2" halign="left">Overall</th>
+      <th>Rank</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>ELO↑</th>
+      <th>95% CI</th>
+      <th>ELO↑</th>
+      <th>95% CI</th>
+      <th>ELO↑</th>
+      <th>95% CI</th>
+      <th>ELO↑</th>
+      <th>95% CI</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nano_Banana_Pro</td>
+      <td>195</td>
+      <td>1111</td>
+      <td>-24/+33</td>
+      <td>1036</td>
+      <td>-29/+25</td>
+      <td>1008</td>
+      <td>-27/+26</td>
+      <td>1048</td>
+      <td>-14/+16</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>GPT_Image_1p5</td>
+      <td>184</td>
+      <td>851</td>
+      <td>-44/+28</td>
+      <td>1163</td>
+      <td>-31/+29</td>
+      <td>1107</td>
+      <td>-33/+31</td>
+      <td>1043</td>
+      <td>-15/+17</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ImageAgent0821_2</td>
+      <td>200</td>
+      <td>1071</td>
+      <td>-29/+24</td>
+      <td>1007</td>
+      <td>-22/+29</td>
+      <td>1045</td>
+      <td>-22/+29</td>
+      <td>1039</td>
+      <td>-14/+16</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Seedream4p5</td>
+      <td>198</td>
+      <td>1010</td>
+      <td>-23/+29</td>
+      <td>1023</td>
+      <td>-28/+38</td>
+      <td>949</td>
+      <td>-23/+30</td>
+      <td>993</td>
+      <td>-15/+18</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>FLUX2_klein_9b</td>
+      <td>200</td>
+      <td>1052</td>
+      <td>-31/+20</td>
+      <td>871</td>
+      <td>-30/+34</td>
+      <td>957</td>
+      <td>-27/+30</td>
+      <td>963</td>
+      <td>-19/+13</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Qwen_Image_Edit_2511</td>
+      <td>200</td>
+      <td>905</td>
+      <td>-31/+26</td>
+      <td>900</td>
+      <td>-33/+28</td>
+      <td>932</td>
+      <td>-26/+28</td>
+      <td>915</td>
+      <td>-15/+17</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Overall</h2>
+<table class="dataframe elo-detail">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank</th>
+      <th>Model</th>
+      <th>Score</th>
+      <th>CI_String</th>
+      <th>Dimensions_Covered</th>
+      <th>Match_Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nano_Banana_Pro</td>
+      <td>1048</td>
+      <td>-14/+16</td>
+      <td>3</td>
+      <td>2697</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GPT_Image_1p5</td>
+      <td>1043</td>
+      <td>-15/+17</td>
+      <td>3</td>
+      <td>2704</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ImageAgent0821_2</td>
+      <td>1039</td>
+      <td>-14/+16</td>
+      <td>3</td>
+      <td>2709</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Seedream4p5</td>
+      <td>993</td>
+      <td>-15/+18</td>
+      <td>3</td>
+      <td>2793</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>FLUX2_klein_9b</td>
+      <td>963</td>
+      <td>-19/+13</td>
+      <td>3</td>
+      <td>2741</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Qwen_Image_Edit_2511</td>
+      <td>915</td>
+      <td>-15/+17</td>
+      <td>3</td>
+      <td>2740</td>
+    </tr>
+  </tbody>
+</table><h2>Visual Consistency</h2>
+<table class="dataframe elo-detail">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank</th>
+      <th>Model</th>
+      <th>Score</th>
+      <th>CI_String</th>
+      <th>Dimensions_Covered</th>
+      <th>Match_Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nano_Banana_Pro</td>
+      <td>1111</td>
+      <td>-24/+33</td>
+      <td>1</td>
+      <td>957</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ImageAgent0821_2</td>
+      <td>1071</td>
+      <td>-29/+24</td>
+      <td>1</td>
+      <td>977</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>FLUX2_klein_9b</td>
+      <td>1052</td>
+      <td>-31/+20</td>
+      <td>1</td>
+      <td>977</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Seedream4p5</td>
+      <td>1010</td>
+      <td>-23/+29</td>
+      <td>1</td>
+      <td>970</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Qwen_Image_Edit_2511</td>
+      <td>905</td>
+      <td>-31/+26</td>
+      <td>1</td>
+      <td>977</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>GPT_Image_1p5</td>
+      <td>851</td>
+      <td>-44/+28</td>
+      <td>1</td>
+      <td>914</td>
+    </tr>
+  </tbody>
+</table><h2>Visual Quality</h2>
+<table class="dataframe elo-detail">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank</th>
+      <th>Model</th>
+      <th>Score</th>
+      <th>CI_String</th>
+      <th>Dimensions_Covered</th>
+      <th>Match_Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>GPT_Image_1p5</td>
+      <td>1163</td>
+      <td>-31/+29</td>
+      <td>1</td>
+      <td>913</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nano_Banana_Pro</td>
+      <td>1036</td>
+      <td>-29/+25</td>
+      <td>1</td>
+      <td>858</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Seedream4p5</td>
+      <td>1023</td>
+      <td>-28/+38</td>
+      <td>1</td>
+      <td>899</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>ImageAgent0821_2</td>
+      <td>1007</td>
+      <td>-22/+29</td>
+      <td>1</td>
+      <td>856</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Qwen_Image_Edit_2511</td>
+      <td>900</td>
+      <td>-33/+28</td>
+      <td>1</td>
+      <td>883</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>FLUX2_klein_9b</td>
+      <td>871</td>
+      <td>-30/+34</td>
+      <td>1</td>
+      <td>881</td>
+    </tr>
+  </tbody>
+</table><h2>Instruction Following</h2>
+<table class="dataframe elo-detail">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank</th>
+      <th>Model</th>
+      <th>Score</th>
+      <th>CI_String</th>
+      <th>Dimensions_Covered</th>
+      <th>Match_Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>GPT_Image_1p5</td>
+      <td>1107</td>
+      <td>-33/+31</td>
+      <td>1</td>
+      <td>877</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ImageAgent0821_2</td>
+      <td>1045</td>
+      <td>-22/+29</td>
+      <td>1</td>
+      <td>876</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Nano_Banana_Pro</td>
+      <td>1008</td>
+      <td>-27/+26</td>
+      <td>1</td>
+      <td>882</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>FLUX2_klein_9b</td>
+      <td>957</td>
+      <td>-27/+30</td>
+      <td>1</td>
+      <td>883</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Seedream4p5</td>
+      <td>949</td>
+      <td>-23/+30</td>
+      <td>1</td>
+      <td>924</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Qwen_Image_Edit_2511</td>
+      <td>932</td>
+      <td>-26/+28</td>
+      <td>1</td>
+      <td>880</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

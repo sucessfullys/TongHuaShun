@@ -1,0 +1,17 @@
+{
+  "count": 10000,
+  "unique_count": 10000,
+  "included_reference_samples": 10,
+  "expanded_scene_count": 500,
+  "composition": {
+    "medium_shot_hands_visible": 3334,
+    "full_body_hands_visible": 3333,
+    "three_quarter_portrait": 3333
+  },
+  "gender": {
+    "female": 5000,
+    "male": 5000
+  },
+  "normal_hand_only": true,
+  "seed": 20260708
+}

@@ -1,0 +1,63 @@
+name: cpu_unit_tests
+
+on:
+  push:
+    branches:
+      - main
+      - v0.*
+    paths:
+      - "verl_omni/**"
+      - "tests/**/*_on_cpu.py"
+      - "pyproject.toml"
+      - .github/workflows/cpu_unit_tests.yml
+  pull_request:
+    branches:
+      - main
+      - v0.*
+    types: [labeled]
+    paths:
+      - "verl_omni/**"
+      - "tests/**/*_on_cpu.py"
+      - "pyproject.toml"
+      - .github/workflows/cpu_unit_tests.yml
+
+# Cancel jobs on the same ref if a new one is triggered
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+# Declare permissions just read content.
+permissions:
+  contents: read
+
+jobs:
+  cpu_unit_tests:
+    if: >-
+      github.event_name != 'pull_request' ||
+      contains(github.event.pull_request.labels.*.name, 'ready-for-ci')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+    env:
+      TORCH_COMPILE_DISABLE: 1
+      TORCHINDUCTOR_DISABLE: 1
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          pip install --extra-index-url https://download.pytorch.org/whl/cpu "https://github.com/vllm-project/vllm/releases/download/v0.22.0/vllm-0.22.0+cpu-cp38-abi3-manylinux_2_34_x86_64.whl"
+          pip install "vllm-omni==0.22.0"
+          pip install --no-deps "verl @ git+https://github.com/verl-project/verl.git@$(cat .github/verl_pin.txt)"
+          pip install ".[dev]"
+          pip install --no-deps -e .
+      - name: Run CPU unit tests
+        run: |
+          echo '[pytest]' > pytest.ini
+          echo 'python_files = *_on_cpu.py' >> pytest.ini
+          pytest -s -x --asyncio-mode=auto tests/

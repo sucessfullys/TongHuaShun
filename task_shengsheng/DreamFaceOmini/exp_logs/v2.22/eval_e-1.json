@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.22",
+  "eval_note": "看v2.22的效果。使用更多数据",
+  "date": "2026-05-12_16:40:44",
+  "epoch": -1,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/nft/dreamface_nft_vlm_triplet_human_gemma4_v2.22_resume/checkpoints/checkpoint-5/diffsynth_lora.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/机器人/demo/02-2.json",
+  "num_samples": 200,
+  "seed": 42,
+  "steps": 4,
+  "cfg": 1.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.22_e-1_cfg1.0_s2guidance0_scale1-robot-flux9b-e5resume"
+}

@@ -1,0 +1,18 @@
+{
+  "hr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/\u6587\u6863\u56fe\u7247/HR",
+  "lr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/\u6587\u6863\u56fe\u7247/LR",
+  "source_images": 30000,
+  "eligible_images": 30000,
+  "skipped_aspect_ratio": 0,
+  "paired_images": 30000,
+  "severity_counts": {
+    "mild": 8979,
+    "medium": 13465,
+    "strong": 7556
+  },
+  "noise_counts": {
+    "none": 19568,
+    "light_gaussian": 8913,
+    "light_poisson": 1519
+  }
+}

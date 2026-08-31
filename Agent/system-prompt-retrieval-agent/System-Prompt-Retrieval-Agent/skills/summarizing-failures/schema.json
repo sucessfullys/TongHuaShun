@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["summary", "failure_tags"],
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "Concise 1-3 sentence description of the failure mode."
+    },
+    "failure_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Short tag strings identifying specific failure categories (e.g., 'misaligned_garment', 'color_bleed')."
+    }
+  },
+  "additionalProperties": false
+}

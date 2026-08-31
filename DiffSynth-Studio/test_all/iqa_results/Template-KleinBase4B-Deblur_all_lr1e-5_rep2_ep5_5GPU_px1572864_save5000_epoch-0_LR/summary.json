@@ -1,0 +1,41 @@
+{
+  "num_pairs": 45,
+  "lr_dir": "/mnt/image-edit/datasets/duanyufa/DiffSynth-Studio/test_all/测试集合/LR",
+  "enhanced_dir": "/mnt/image-edit/datasets/duanyufa/DiffSynth-Studio/test_all/Template-KleinBase4B-Deblur_all_lr1e-5_rep2_ep5_5GPU_px1572864_save5000/epoch-0/LR",
+  "note": "delta_mean_enhanced_minus_lr = enhanced_mean - lr_mean",
+  "metrics": [
+    {
+      "metric": "niqe",
+      "direction": "lower_is_better",
+      "direction_zh": "越小越好",
+      "lr_mean": 6.976235087712606,
+      "enhanced_mean": 5.972805892096625,
+      "delta_mean_enhanced_minus_lr": -1.0034291956159809,
+      "better_by_mean": "enhanced",
+      "improved_count": 22,
+      "improved_rate": 0.4888888888888889
+    },
+    {
+      "metric": "brisque",
+      "direction": "lower_is_better",
+      "direction_zh": "越小越好",
+      "lr_mean": 47.87029588487413,
+      "enhanced_mean": 31.578995090060765,
+      "delta_mean_enhanced_minus_lr": -16.291300794813367,
+      "better_by_mean": "enhanced",
+      "improved_count": 32,
+      "improved_rate": 0.7111111111111111
+    },
+    {
+      "metric": "musiq",
+      "direction": "higher_is_better",
+      "direction_zh": "越大越好",
+      "lr_mean": 51.528713099161784,
+      "enhanced_mean": 61.58313568962945,
+      "delta_mean_enhanced_minus_lr": 10.054422590467667,
+      "better_by_mean": "enhanced",
+      "improved_count": 39,
+      "improved_rate": 0.8666666666666667
+    }
+  ]
+}

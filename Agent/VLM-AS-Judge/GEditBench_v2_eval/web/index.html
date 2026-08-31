@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEditBench 模型结果对比</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <div id="evalWinnerBanner" class="eval-winner-banner hidden"></div>
+        <div id="grid" class="comparison-grid"></div>
+        <div id="emptyState" class="empty-state hidden">
+          当前选择下没有可对比样本（已自动跳过不完整图片）。
+        </div>
+        <div class="bottom-nav">
+          <input
+            id="sampleIdInput"
+            type="text"
+            placeholder="输入样本ID跳转，如 background_change_000000"
+          />
+          <button id="jumpBtn">跳转</button>
+          <span id="jumpMsg" class="jump-msg"></span>
+          <span id="validInfo"></span>
+          <div class="index-jump">
+            <input id="indexInput" type="number" min="1" placeholder="序号" />
+            <span>/</span>
+            <span id="indexTotal">-</span>
+          </div>
+          <button id="prevBtn">上一张</button>
+          <button id="nextBtn">下一张</button>
+        </div>
+      </section>
+
+      <div class="review-row">
+        <div class="eval-box">
+          <div class="eval-header">
+            <div class="section-title">人工评测</div>
+            <div class="eval-toggles">
+              <label class="eval-toggle">
+                <input id="showEvalResultToggle" type="checkbox" checked />
+                显示评测结果
+              </label>
+              <label class="eval-toggle">
+                <input id="manualEvalToggle" type="checkbox" />
+                开启评测
+              </label>
+            </div>
+          </div>
+          <div id="manualEvalHint" class="eval-hint">
+            仅选择两个模型时可开启人工评测。
+          </div>
+          <div id="manualEvalPanel" class="manual-eval-panel hidden">
+            <div id="manualEvalStatus" class="eval-status"></div>
+            <div id="manualEvalChoices" class="eval-choices"></div>
+            <div id="manualEvalSummary" class="eval-summary hidden"></div>
+          </div>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="prompt-label">Prompt</span>
+            <label class="prompt-toggle">
+              <input id="promptZhToggle" type="checkbox" checked />
+              显示中文翻译
+            </label>
+          </div>
+          <div class="prompt-en-block">
+            <span class="prompt-lang-tag">EN</span>
+            <div id="promptText" class="prompt-text">加载中...</div>
+          </div>
+          <div id="promptZhBlock" class="prompt-zh-block">
+            <span class="prompt-lang-tag prompt-lang-tag-zh">中</span>
+            <div id="promptZhText" class="prompt-zh-text"></div>
+          </div>
+        </div>
+      </div>
+
+      <header class="top-panel">
+        <h1>GEditBench 模型结果对比</h1>
+        <div class="top-content">
+          <div class="model-box">
+            <div class="section-title">模型列管理</div>
+            <div id="modelSelectors" class="selectors"></div>
+            <button id="addModelBtn" class="add-btn">+ 增加模型列</button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div id="imageModal" class="image-modal hidden" aria-hidden="true">
+      <div id="imageModalBackdrop" class="image-modal-backdrop"></div>
+      <div class="image-modal-panel" role="dialog" aria-modal="true" aria-label="图片预览">
+        <div class="image-modal-toolbar">
+          <span id="imageModalTitle" class="image-modal-title"></span>
+          <div class="image-modal-actions">
+            <button id="zoomOutBtn" type="button">-</button>
+            <button id="zoomResetBtn" type="button">100%</button>
+            <button id="zoomInBtn" type="button">+</button>
+            <button id="closeImageModalBtn" type="button">关闭</button>
+          </div>
+        </div>
+        <div id="imageModalViewport" class="image-modal-viewport">
+          <img id="imageModalImg" alt="预览图片" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

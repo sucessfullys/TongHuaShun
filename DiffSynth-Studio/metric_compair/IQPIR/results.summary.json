@@ -1,0 +1,14 @@
+{
+  "pred_dir": "/mnt/image-edit/datasets/duanyufa/IQPIR/results/iqpir_test/restored_faces_1024",
+  "gt_dir": "/mnt/image-edit/datasets/duanyufa/Face/test/HR",
+  "num_pred_images": 100,
+  "num_rows": 100,
+  "skipped_pairs": 0,
+  "means": {
+    "psnr": 21.811198539733887,
+    "ssim": 0.6764541208744049,
+    "lpips": 0.3524190646409988,
+    "musiq": 70.50208229064941,
+    "maniqa": 0.35522995531558993
+  }
+}

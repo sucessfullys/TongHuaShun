@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qwen_stage_request",
+  "title": "QwenStageRequest",
+  "description": "MCP JSON-Schema for QwenStageRequest (mirrors schemas.py V0.2.1). system_prompt_text is forbidden on prompt pairs for this stage.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "prompt_pairs",
+    "user_prompts",
+    "user_prompt_corpus_hash",
+    "dataset_root",
+    "output_root"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "round_id": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1
+    },
+    "prompt_pairs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/PromptPairRequestNoSystemPrompt" }
+    },
+    "user_prompts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/GemmaUserPrompt" }
+    },
+    "user_prompt_corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$",
+      "description": "SHA-256 hex digest of the user-prompt corpus (64 hex chars)."
+    },
+    "sample_ids": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "default": null
+    },
+    "sample_manifest_path": {
+      "type": ["string", "null"],
+      "default": null
+    },
+    "sample_manifest_path_purpose": {
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["resume_missing_cells", "prior_stage_survivor_cells"]
+        },
+        { "type": "null" }
+      ],
+      "default": null
+    },
+    "dataset_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "output_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lifecycle_mode": {
+      "type": "string",
+      "enum": ["cold", "warm"],
+      "default": "cold"
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+    "allow_partial": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "if": {
+    "properties": {
+      "sample_manifest_path": { "type": "string" }
+    },
+    "required": ["sample_manifest_path"]
+  },
+  "then": {
+    "properties": {
+      "sample_manifest_path_purpose": {
+        "type": "string",
+        "enum": ["resume_missing_cells", "prior_stage_survivor_cells"]
+      }
+    },
+    "required": ["sample_manifest_path_purpose"]
+  },
+  "$defs": {
+    "GemmaUserPrompt": {
+      "title": "GemmaUserPrompt",
+      "type": "object",
+      "required": ["user_prompt_id", "language", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "user_prompt_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "enum": ["zh", "en"]
+        },
+        "text": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "PromptPairRequestNoSystemPrompt": {
+      "title": "PromptPairRequest (no system_prompt_text)",
+      "description": "For Flux and Qwen stages: system_prompt_text must be null or absent.",
+      "type": "object",
+      "required": ["prompt_pair_id"],
+      "additionalProperties": false,
+      "properties": {
+        "prompt_pair_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "system_prompt_id": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "system_prompt_text": {
+          "type": "null",
+          "description": "Must be null for Flux/Qwen stages."
+        },
+        "negative_prompt_id": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "negative_prompt": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "cell_id": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "intermediate_prompt_dir": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "flux_image_dir": {
+          "type": ["string", "null"],
+          "default": null
+        }
+      }
+    }
+  }
+}

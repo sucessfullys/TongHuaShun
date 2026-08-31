@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "sample_key": "bad/2222ee0d-30e4-4a02-b2ea-19209b5f4d07.png",
+  "per_method": {
+    "image": "The generated image shows multiple ghosting of the hand and arm (incorrect biological structure logic)"
+  },
+  "created_at": "2026-06-08T07:16:20+00:00",
+  "updated_at": "2026-06-08T07:16:23+00:00"
+}

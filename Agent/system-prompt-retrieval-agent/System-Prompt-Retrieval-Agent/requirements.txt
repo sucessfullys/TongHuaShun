@@ -1,0 +1,20 @@
+# Pinned to versions installed in the local agent venv as of 2026-04-27 V0.2.2 debug.
+
+openai>=2.32
+pydantic>=2.13
+pyyaml>=6.0
+python-dotenv>=1.2
+httpx>=0.28
+jsonschema>=4.26
+pillow>=12.0
+pandas>=3.0
+numpy>=2.4
+fastapi>=0.136
+uvicorn>=0.46
+anyio>=4.13
+tqdm>=4.67
+
+# Test
+pytest>=9.0
+pytest-asyncio>=1.3
+respx>=0.23

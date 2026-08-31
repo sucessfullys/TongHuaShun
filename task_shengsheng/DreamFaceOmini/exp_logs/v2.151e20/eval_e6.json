@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.151e20",
+  "eval_note": "看基线e20脸部是否崩坏,cfg=1.0",
+  "date": "2026-04-14_02:54:39",
+  "epoch": 6,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/v2.151e20.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/明星/demo/02-2.json",
+  "num_samples": 69,
+  "seed": 42,
+  "steps": 50,
+  "cfg": 1.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.151e20_e6_cfg1.0"
+}

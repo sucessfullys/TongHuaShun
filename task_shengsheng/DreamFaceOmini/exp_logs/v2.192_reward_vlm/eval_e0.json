@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.192_reward_vlm",
+  "eval_note": "看v2.18",
+  "date": "2026-04-19_09:26:48",
+  "epoch": 0,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/nft/dreamface_nft_vlm_reward_v2.192/checkpoints/checkpoint-75/adapter_model.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/明星/demo/02-2.json",
+  "num_samples": 100,
+  "seed": 42,
+  "steps": 50,
+  "cfg": 1.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.192_reward_vlm_e0_cfg1.0_eval_s2guidance1_scale1-star"
+}

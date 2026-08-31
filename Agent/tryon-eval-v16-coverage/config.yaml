@@ -1,0 +1,54 @@
+data:
+  datasets:
+  - dataset_id: ces_old
+    data_root: /mnt/image-edit/datasets/xywang/dataset/tryon_results
+    layout: per_sample_dirs
+    sample_glob: '*/*/*'
+    sample_key: relpath
+    input_roles:
+      input_cloth: input_cloth.png
+      input_model: input_model.png
+    methods:
+    - method_id: flux2klein
+      path: /mnt/image-edit/datasets/xywang/dataset/tryon_results/TryOn_results
+      output_file: tryon_result_flux2klein.png
+    - method_id: flux2klein_pe
+      path: /mnt/image-edit/datasets/xywang/dataset/tryon_results/TryOn_results_PE
+      output_file: tryon_result_flux2klein.png
+    - method_id: flux2klein_pe_agent
+      path: /mnt/image-edit/datasets/xywang/dataset/tryon_results/TryOn_results_PE_v5_agent_vlmergev7_llmv2
+      output_file: tryon_result_flux2klein_agent.png
+  - dataset_id: whq_new
+    data_root: /mnt/image-edit/datasets/xywang/code/evaluation-retrieval-agent/workspaces/tryon-eval/deliver/_whq_quality_eval/staging/full
+    layout: per_sample_dirs
+    sample_glob: '*'
+    sample_key: basename
+    input_roles:
+      input_cloth: input_cloth.png
+      input_model: input_model.png
+    methods:
+    - method_id: whq
+      path: /mnt/image-edit/datasets/xywang/code/evaluation-retrieval-agent/workspaces/tryon-eval/deliver/_whq_quality_eval/staging/full/samples
+      output_file: tryon_result.png
+  - dataset_id: job3a
+    data_root: /mnt/image-edit/datasets/xywang/code/evaluation-retrieval-agent/workspaces/tryon-eval/deliver/_job3a_staging
+    sample_glob: '*'
+    input_roles:
+      input_model: input_model.png
+      input_cloth: input_cloth.png
+    methods:
+    - method_id: v023_fixed_baseline
+      path: /mnt/image-edit/datasets/xywang/code/evaluation-retrieval-agent/workspaces/tryon-eval/deliver/_job3a_staging
+      output_file: tryon_result.png
+  - dataset_id: job3a_v023
+    data_root: /mnt/image-edit/datasets/wanghaidong/tryon-eval-v16-coverage/_staging_job3a
+    layout: per_sample_dirs
+    sample_glob: '*'
+    sample_key: basename
+    input_roles:
+      input_model: input_model.png
+      input_cloth: input_cloth.png
+    methods:
+    - method_id: v023_fixed_baseline
+      path: /mnt/image-edit/datasets/wanghaidong/tryon-eval-v16-coverage/_staging_job3a
+      output_file: tryon_result.png

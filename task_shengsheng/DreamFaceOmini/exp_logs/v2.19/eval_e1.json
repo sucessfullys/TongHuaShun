@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.19",
+  "eval_note": "看v2.19e50的效果",
+  "date": "2026-04-23_10:57:38",
+  "epoch": 1,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/grpo/dreamface_grpo_vlm_reward_v2.20(from2.17_0413)-lora/checkpoints/checkpoint-50/adapter_model.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/明星/demo/02-2.json",
+  "num_samples": 100,
+  "seed": 42,
+  "steps": 4,
+  "cfg": 1.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.19_e1_cfg1.0_eval_s2guidance0_scale1-star-flux9b"
+}

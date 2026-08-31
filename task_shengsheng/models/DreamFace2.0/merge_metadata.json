@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-05-14T10:38:27",
+  "base_dir": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0",
+  "lora_path": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/merged_into_model",
+  "adapter_config": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/merged_into_model",
+  "output_dir": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0",
+  "current_model_dir": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0",
+  "note": "This local copy is a merged DreamFace2.0 model directory. The LoRA has already been merged into the local weights; inference should load current_model_dir directly and does not need an extra LoRA.",
+  "rank": 32,
+  "lora_alpha": 32,
+  "scale": 1.0,
+  "num_lora_modules": 120,
+  "num_diffusers_merged_weights": 120,
+  "num_single_file_merge_ops": 120,
+  "lora_sha256": "70977d8ba4519a040d362fd6e7266ce599a024c28f82d2e3482446802fd4abf4",
+  "base_single_file_sha256": "0975d6b77b5f510b99547d6724a208e36527df654e8f6134f59ece3f9f30da58"
+}

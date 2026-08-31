@@ -1,0 +1,27 @@
+# Standalone try-on evaluator — ignore RUN ARTIFACTS, venv, and caches.
+# The package CODE (run.py, scorer/, evaluator/, webapp/, config.yaml, README.md,
+# setup.sh, requirements*.txt) IS tracked; everything below is regenerated.
+
+# per-run scoring outputs: runs/<ts>/{scores.*.jsonl, verdicts.jsonl, REPORT.md,
+# detection.json, human/review_model.json, logs/} — recreated by run.py every run
+runs/
+
+# auto-created virtualenv (rebuilt by `bash setup.sh` / `python3 run.py`)
+.venv/
+
+# report-only metric corroboration cache (regenerated at runtime)
+metric_cache/
+scorer/metric_cache/
+
+# python bytecode + tool caches
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+.pytest_cache/
+
+# stray logs / pids / OS files
+*.log
+*.pid
+*.stdout
+.DS_Store

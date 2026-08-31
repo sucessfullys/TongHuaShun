@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "score_aggregator.output",
+  "title": "ScoreAggregatorOutput",
+  "description": "Output for the score_aggregator tool. Returns the overall weighted score and optional per-category breakdown. Mirrors PromptPairScoreContext from schemas.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["overall_score", "total_score"],
+  "properties": {
+    "overall_score": {
+      "type": ["number", "null"],
+      "description": "Weighted aggregate score across all sub-score dimensions (0–1), or null if insufficient data."
+    },
+    "total_score": {
+      "type": ["number", "null"],
+      "description": "Unweighted sum of sub-scores, or null if insufficient data."
+    },
+    "sub_scores": {
+      "type": "object",
+      "description": "Echo of the input sub-scores, with any computed fields filled in.",
+      "additionalProperties": false,
+      "properties": {
+        "qwen_pass_rate": { "type": ["number", "null"] },
+        "edit_correctness": { "type": ["number", "null"] },
+        "garment_transfer_correctness": { "type": ["number", "null"] },
+        "preservation": { "type": ["number", "null"] },
+        "artifact_penalty": { "type": ["number", "null"] }
+      }
+    },
+    "category_scores": {
+      "description": "Per-category aggregate results, or null if no category_scores were provided.",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "weighted_score": { "type": ["number", "null"] },
+              "total_score": { "type": ["number", "null"] },
+              "sub_scores": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "qwen_pass_rate": { "type": ["number", "null"] },
+                  "edit_correctness": { "type": ["number", "null"] },
+                  "garment_transfer_correctness": { "type": ["number", "null"] },
+                  "preservation": { "type": ["number", "null"] },
+                  "artifact_penalty": { "type": ["number", "null"] }
+                }
+              },
+              "missing_score_reason": { "type": ["string", "null"] }
+            }
+          }
+        },
+        { "type": "null" }
+      ]
+    },
+    "missing_score_reason": {
+      "type": ["string", "null"],
+      "description": "Reason why overall_score is null, if applicable."
+    }
+  }
+}

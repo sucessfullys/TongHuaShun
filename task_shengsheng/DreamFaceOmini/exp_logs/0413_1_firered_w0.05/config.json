@@ -1,0 +1,20 @@
+{
+  "exp_name": "0413_1_firered_w0.05",
+  "note": "降低face_id_weight到0.05",
+  "date": "2026-04-13_03:34:55",
+  "server": "interactive-jrks5r5xonh5-5799f85c7f-qgpwb",
+  "git_commit": "fb360e8",
+  "gpus": "1,2,3,4,5,6,7",
+  "learning_rate": "1e-4",
+  "num_epochs": 100,
+  "max_pixels": 2073600,
+  "lora_rank": 32,
+  "lora_checkpoint": "/mnt/data/image-edit/datasets/shensheng/v2.151e20.safetensors",
+  "dataset": "/mnt/data/image-edit/datasets/shensheng/datasets/merged_train_4349.jsonl",
+  "face_id_mode": "firered",
+  "face_id_weight": 0.05,
+  "face_sigma_cap": 0.9,
+  "face_cl_weight": 0.0,
+  "face_cl_temperature": 0.07,
+  "output_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/train/0413_1_firered_w0.05"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "sample_key": "bad/00b54ca9-89e3-40d2-9472-8548477381c7.png",
+  "per_method": {
+    "image": "The generated image shows deformed fingers. (incorrect biological structure logic)"
+  },
+  "created_at": "2026-06-08T07:06:19+00:00",
+  "updated_at": "2026-06-08T07:06:19+00:00"
+}

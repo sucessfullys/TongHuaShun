@@ -1,0 +1,25 @@
+{
+  "hr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/SHHQ-1.0/SHHQ-1.0/HR",
+  "lr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/SHHQ-1.0/SHHQ-1.0/LR",
+  "severity_probs": {
+    "mild": 0.3,
+    "medium": 0.45,
+    "strong": 0.25
+  },
+  "noise_probability": 0.4,
+  "source_images": 40000,
+  "eligible_images": 40000,
+  "skipped_aspect_ratio": 0,
+  "paired_images": 40000,
+  "severity_counts": {
+    "mild": 12145,
+    "medium": 17988,
+    "strong": 9867
+  },
+  "noise_counts": {
+    "none": 24138,
+    "light_gaussian": 13483,
+    "light_poisson": 2379
+  },
+  "metadata_rows": 40000
+}

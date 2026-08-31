@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "sample_key": "bad/0e60bd68-95ed-4051-a387-c56b1e66f2af.png",
+  "per_method": {
+    "image": "The generated image shows multiple ghosting of the cricket (the physics logic is incorrect)."
+  },
+  "created_at": "2026-06-08T07:11:38+00:00",
+  "updated_at": "2026-06-08T07:11:51+00:00"
+}

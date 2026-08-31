@@ -1,0 +1,115 @@
+# ERA project config — REFERENCE EXAMPLE.
+#
+# This file documents the schema of the per-project config that /era:init
+# generates at workspaces/{project}/config.yaml. The real config.yaml is
+# git-ignored (it holds absolute dataset paths); this example is committed.
+#
+# The values below are illustrative only — a generic image-editing comparison.
+# ERA evaluates any image generation / editing task; /era:init fills these
+# fields from environment probes + operator answers.
+#
+# Field names under `hardware` are consumed verbatim by the downstream
+# model_selector (allowed GPU pool = visible_gpu_ids \ reserve_gpu_ids capped by
+# max_gpus_per_run; per-GPU usable VRAM = per_gpu_memory_gb * headroom -
+# safety_margin_gb).
+
+# ---- Identity ----
+project_name: image-edit-eval
+mission: >-
+  Evaluate edited images and produce quantitative results comparing two
+  image-editing methods.
+task_family: editing          # generation | editing
+task_adapter: generic         # virtual_tryon | object_replacement | style_transfer | generic
+created_at: "2026-01-01T00:00:00+00:00"
+era_version: "0.1.4"
+
+# ---- Workspace ----
+workspaces_dir: /abs/path/to/evaluation-retrieval-agent/workspaces
+iteration_dirs: true          # Stages 2-10 live in iter_NNN/; Stage 0 creates iter_001
+
+# ---- Hardware ----
+hardware:
+  gpu_model: NVIDIA A100-SXM4-80GB
+  visible_gpu_ids: [0, 1]
+  reserve_gpu_ids: []         # GPUs excluded from Family-A VLM judges
+  max_gpus_per_run: 2
+  per_gpu_memory_gb: 80.0
+  headroom: 0.90              # fraction of VRAM usable
+  safety_margin_gb: 2.0       # absolute VRAM subtracted
+  driver_version: ""
+  cuda_version: ""
+  probe_ok: true              # false => values were entered manually
+
+# ---- Checkpoints ----
+checkpoints:
+  local_model_root: /path/to/models
+  detected: []                # model repos found under local_model_root
+  user_checkpoints: []        # explicit entries: {id, path, kind, notes}
+
+# ---- Serving ----
+serving:
+  backend: ms-swift           # default backend
+  fallbacks: [vllm, lmdeploy]
+  openai_compatible: true
+  default_host: 127.0.0.1
+  port_range: [8000, 8099]
+
+# ---- Data ----
+data:
+  data_root: /path/to/edits   # common parent of the method dirs
+  layout: per_sample_dirs     # per_sample_dirs | flat_files | separate_input_dir
+  methods:                    # one entry per generation/editing method
+    - method_id: baseline
+      path: /path/to/edits/baseline
+      output_file: edited.png
+    - method_id: method_b
+      path: /path/to/edits/method_b
+      output_file: edited.png
+  sample_glob: "*"            # relative glob from a method path to a leaf sample dir
+  sample_count: 200           # samples per method
+  input_roles:                # co-located input images: role -> filename glob
+    source: source.png
+  input_root: ""              # only for layout=separate_input_dir
+  sample_key: relpath         # relpath | basename | index | manifest
+  pairing_manifest: ""
+  image_extensions: [.png, .jpg, .jpeg, .webp]
+
+# ---- Credentials (presence-only; secrets stay in .env) ----
+credentials:
+  env_file: /abs/path/to/.env
+  openai: true
+  anthropic: true
+  google: true
+
+# ---- Budget ----
+budget:
+  api_cost_cap_usd: 0.0       # 0.0 = no paid-API spend (local VLMs + metrics); >0 caps spend
+  wallclock_cap_hours: 24.0
+
+# ---- Agent modes (Stage 2-6 sub-agent tiers) ----
+# Per-stage model tier: heavy | standard | light. ERA dispatches each persona
+# to the era-<tier> sub-agent (heavy/standard = Opus, light = Sonnet).
+agent_modes:
+  plan_brainstorm: standard   # Stage 2 — idea generators
+  multi_review: light         # Stage 3 — debate critics
+  plan_decision: heavy        # Stage 4 — synthesis & decision
+  experiment_plan: heavy      # Stage 5 — experiment planner
+  full_experiment: standard   # Stage 6 — experiment runner
+
+# ---- Debate (Stage 2-4 idea-generation loop) ----
+debate:
+  max_rounds: 4               # >= 1; Stage 4 ADVANCE/REVISE rounds, forced to ADVANCE at the cap
+
+# ---- Experiment (Stage 5-6 execution policy) ----
+experiment:
+  family_a_execution: serial_full_pool      # serial_full_pool | parallel_packed (Rule 6)
+  family_b_schedule: before_after_family_a  # before_after_family_a | parallel_on_unallowed_gpus
+  free_gpu_threshold_mb: 2000               # a GPU is "free" below this used-VRAM
+  poll_interval_s: 45                       # Stage 6 marker-file poll cadence
+  serve_startup_timeout_s: 600              # VLM-judge endpoint dry-probe timeout
+  max_task_retries: 1                       # bounded re-runs of a failed task
+  pilot_first: true                         # run the pilot pass before the full run
+  codex_reviewer: false                     # true => review runners with a separate Codex sub-agent
+
+# Pipeline lifecycle (stage / run_state / iteration) is NOT stored here — it
+# lives solely in the workspace's status.json. config.yaml is static facts only.

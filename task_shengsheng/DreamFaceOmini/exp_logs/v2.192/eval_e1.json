@@ -1,0 +1,15 @@
+{
+  "exp_name": "v2.192",
+  "eval_note": "看v2.192的e75效果",
+  "date": "2026-04-24_13:11:54",
+  "epoch": 1,
+  "lora_path": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/models/nft/dreamface_nft_vlm_reward_v2.192/checkpoints/checkpoint-75/adapter_diffsynth_model.safetensors",
+  "benchmark": "/mnt/data/image-edit/datasets/shensheng/datasets/benchmark/明星/demo/02-2.json",
+  "num_samples": 100,
+  "seed": 2048,
+  "steps": 50,
+  "cfg": 1.0,
+  "height": 1152,
+  "width": 896,
+  "output_dir": "/mnt/data/image-edit/datasets/shensheng/code/stable/DreamFaceOmini/exp_out/v2.192_e1_cfg1.0_eval_s2guidance0_scale1-明星-flux9b-e90-seed2048"
+}

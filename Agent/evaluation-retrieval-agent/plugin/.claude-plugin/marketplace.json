@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "era",
+  "description": "ERA — Evaluation Retrieval Agent local plugins",
+  "owner": {
+    "name": "ERA"
+  },
+  "plugins": [
+    {
+      "name": "era",
+      "source": "./",
+      "description": "ERA — General AIGC Evaluation Retrieval Agent",
+      "version": "0.1.4",
+      "author": {
+        "name": "ERA"
+      }
+    }
+  ]
+}

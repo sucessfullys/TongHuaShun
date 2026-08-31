@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "score_aggregator.input",
+  "title": "ScoreAggregatorInput",
+  "description": "Input for the score_aggregator tool. Aggregates sub-scores and optional per-category scores into an overall score.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sub_scores", "weights"],
+  "properties": {
+    "sub_scores": {
+      "type": "object",
+      "description": "Raw sub-score values. Mirrors PromptPairSubScores from schemas.py.",
+      "additionalProperties": false,
+      "properties": {
+        "qwen_pass_rate": {
+          "type": ["number", "null"],
+          "description": "Qwen VLM pass rate (0–1)."
+        },
+        "edit_correctness": {
+          "type": ["number", "null"],
+          "description": "Edit correctness score (0–1)."
+        },
+        "garment_transfer_correctness": {
+          "type": ["number", "null"],
+          "description": "Garment transfer correctness (0–1)."
+        },
+        "preservation": {
+          "type": ["number", "null"],
+          "description": "Subject preservation score (0–1)."
+        },
+        "artifact_penalty": {
+          "type": ["number", "null"],
+          "description": "Artifact penalty (0–1, lower is better)."
+        }
+      }
+    },
+    "weights": {
+      "type": "object",
+      "description": "Per-sub-score weights for the weighted aggregate. Keys must match sub_scores fields.",
+      "additionalProperties": {
+        "type": "number",
+        "description": "Weight for this sub-score dimension."
+      }
+    },
+    "category_scores": {
+      "description": "Optional per-category score contexts. Keys are category labels; values mirror CategoryScoreContext from schemas.py.",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "weighted_score": { "type": ["number", "null"], "description": "Weighted score for this category." },
+              "total_score": { "type": ["number", "null"], "description": "Total score for this category." },
+              "sub_scores": {
+                "type": "object",
+                "description": "Per-dimension sub-scores for this category.",
+                "additionalProperties": false,
+                "properties": {
+                  "qwen_pass_rate": { "type": ["number", "null"] },
+                  "edit_correctness": { "type": ["number", "null"] },
+                  "garment_transfer_correctness": { "type": ["number", "null"] },
+                  "preservation": { "type": ["number", "null"] },
+                  "artifact_penalty": { "type": ["number", "null"] }
+                }
+              },
+              "missing_score_reason": { "type": ["string", "null"], "description": "Reason if score is missing." }
+            }
+          }
+        },
+        { "type": "null" }
+      ]
+    }
+  }
+}

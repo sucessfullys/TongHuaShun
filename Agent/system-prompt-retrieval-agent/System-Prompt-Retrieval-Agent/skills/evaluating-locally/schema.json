@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "required": [
+    "edit_correctness",
+    "garment_transfer_correctness",
+    "preservation",
+    "artifact_penalty",
+    "notes"
+  ],
+  "properties": {
+    "edit_correctness": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "How well the generated image follows the edit instruction in the intermediate prompt."
+    },
+    "garment_transfer_correctness": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Accuracy of garment transfer from cloth image to model."
+    },
+    "preservation": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "How well identity, pose, and background of the model image are preserved."
+    },
+    "artifact_penalty": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Degree of visible artifacts in the generated image. Higher means more artifacts."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Brief evaluator notes explaining the scores."
+    }
+  },
+  "additionalProperties": false
+}

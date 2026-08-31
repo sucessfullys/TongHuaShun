@@ -1,0 +1,72 @@
+{
+  "base_file": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version3.jsonl",
+  "output_file": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train_with_noise_version4.jsonl",
+  "base_rows": 8942,
+  "added_rows": 684,
+  "skipped_existing_images": 0,
+  "total_rows": 9626,
+  "labels": {
+    "normal": 5005,
+    "abnormal": 3121,
+    "non_human": 1500
+  },
+  "sources": {
+    "normal_human": 3000,
+    "abnormal_selected": 1205,
+    "background_no_human": 1000,
+    "abnormal_bg_aug": 300,
+    "normal_human_noise_aug": 1700,
+    "abnormal_bg_aug_noise_aug": 198,
+    "abnormal_selected_noise_aug": 802,
+    "background_no_human_noise_aug": 500,
+    "supplement_misclassified_normal": 106,
+    "supplement_misclassified_abnormal": 131,
+    "dreamface2_abnormal_seg_hand_selected": 302,
+    "dreamface2_manual_abnormal": 21,
+    "dreamface2_manual_abnormal_aug": 162,
+    "dreamface2_manual_normal": 199
+  },
+  "label_source": {
+    "normal": {
+      "normal_human": 3000,
+      "normal_human_noise_aug": 1700,
+      "supplement_misclassified_normal": 106,
+      "dreamface2_manual_normal": 199
+    },
+    "abnormal": {
+      "abnormal_selected": 1205,
+      "abnormal_bg_aug": 300,
+      "abnormal_bg_aug_noise_aug": 198,
+      "abnormal_selected_noise_aug": 802,
+      "supplement_misclassified_abnormal": 131,
+      "dreamface2_abnormal_seg_hand_selected": 302,
+      "dreamface2_manual_abnormal": 21,
+      "dreamface2_manual_abnormal_aug": 162
+    },
+    "non_human": {
+      "background_no_human": 1000,
+      "background_no_human_noise_aug": 500
+    }
+  },
+  "added_by_source": {
+    "dreamface2_abnormal_seg_hand_selected": 302,
+    "dreamface2_manual_abnormal": 21,
+    "dreamface2_manual_abnormal_aug": 162,
+    "dreamface2_manual_normal": 199
+  },
+  "validation": {
+    "duplicate_ids": 0,
+    "duplicate_images": 0,
+    "missing_images": 0,
+    "bad_label": 0,
+    "bad_message_structure": 0,
+    "label_conclusion_mismatch": 0
+  },
+  "examples": {
+    "missing_images": [],
+    "bad_label": [],
+    "message_bad": [],
+    "conclusion_mismatch": [],
+    "skipped_existing_images": []
+  }
+}

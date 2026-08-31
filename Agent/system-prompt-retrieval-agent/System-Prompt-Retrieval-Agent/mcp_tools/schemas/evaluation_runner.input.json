@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evaluation_runner.input",
+  "title": "EvaluationRunnerInput",
+  "description": "Input for the evaluation_runner tool. Accepts a batch of samples and runs local API evaluation plus Qwen output parsing.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["samples"],
+  "properties": {
+    "samples": {
+      "type": "array",
+      "description": "List of evaluation samples. Each sample has an image path and a set of prompts/references for scoring.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sample_id", "image_path"],
+        "properties": {
+          "sample_id": {
+            "type": "string",
+            "description": "Unique identifier for this sample."
+          },
+          "image_path": {
+            "type": "string",
+            "description": "Absolute local path to the generated image to evaluate."
+          },
+          "reference_image_path": {
+            "type": ["string", "null"],
+            "description": "Absolute local path to the reference image for comparison, or null."
+          },
+          "category": {
+            "type": ["string", "null"],
+            "description": "Evaluation category label (e.g., 'garment_transfer'), or null."
+          },
+          "prompt_pair_id": {
+            "type": ["string", "null"],
+            "description": "Prompt pair identifier for traceability."
+          },
+          "qwen_output_path": {
+            "type": ["string", "null"],
+            "description": "Path to Qwen model raw JSON output for this sample, if already available."
+          }
+        }
+      }
+    },
+    "budget_usd": {
+      "type": ["number", "null"],
+      "description": "Maximum OpenAI API budget in USD for this batch. Null means use config default."
+    }
+  }
+}

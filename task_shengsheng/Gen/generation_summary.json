@@ -1,0 +1,33 @@
+{
+  "count": 10000,
+  "unique_count": 10000,
+  "seed": 20260707,
+  "included_reference_samples": 10,
+  "expanded_scene_count": 500,
+  "composition": {
+    "medium_shot_hands_visible": 3334,
+    "three_quarter_portrait": 3333,
+    "full_body_hands_visible": 3333
+  },
+  "anomaly_family": {
+    "polydactyly": 1000,
+    "oligodactyly": 1000,
+    "syndactyly": 1000,
+    "multi_hand": 1000,
+    "arm_anomaly": 1000,
+    "double_palm": 1000,
+    "bifid_finger": 1000,
+    "macrodactyly": 1000,
+    "ectrodactyly": 1000,
+    "thumb_anomaly": 1000
+  },
+  "scope": {
+    "single": 7000,
+    "both": 3000
+  },
+  "gender": {
+    "female": 5000,
+    "male": 5000
+  },
+  "history_hash_count": 10000
+}

@@ -1,0 +1,114 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+**/.venv/
+**/venv/
+
+# Secrets / credentials
+config.yaml
+**/config.yaml
+.env
+.env.*
+!.env.example
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+*_secret*
+*_secrets*
+*credentials*
+*api_key*
+*.token
+.ssh/
+id_rsa
+id_ed25519
+secrets/
+credentials*.json
+# ...but keep credentials-related *source code* (rules above target secrets)
+!*credentials*.py
+
+# Caches
+.cache/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime outputs (project-local, not synced)
+outputs/
+runs/
+logs/
+tmp/
+*.log
+*.tmp
+*.pid
+
+# Dataset contents (large; lives on remote)
+data/
+datasets/
+checkpoints/
+models/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.gguf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / front-end build — the Stage 8 webapp + /era:annotate frontend pull
+# node_modules; the built bundles in era/{webapp,annotate}/static/ ARE
+# committed so the runtime needs no Node.
+era/webapp/frontend/node_modules/
+era/webapp/frontend/.vite/
+era/annotate/frontend/node_modules/
+era/annotate/frontend/.vite/
+
+# Plan and Prompts
+overall_plan.md
+knowledge/
+
+# ERA project workspaces (local artifacts)
+workspaces/
+
+# ERA cross-workspace runtime state (GPU leases etc.) — machine-local
+/.era/
+
+# ERA init scratch
+.era_init_in.json
+.era_probe_in.json
+.era_probe_out.json
+
+# Ralph loop plugin in-session state (written in repo cwd by /era:start)
+/.claude/ralph-loop.local.md
+
+# Repo-root MCP registration — generated, carries a machine-specific absolute
+# venv path (regenerate with `era.cli write-mcp-config`).
+/.mcp.json
+
+# Claude Code per-machine local settings (permissions etc.) — not shared
+/.claude/settings.local.json
+
+*.pptx

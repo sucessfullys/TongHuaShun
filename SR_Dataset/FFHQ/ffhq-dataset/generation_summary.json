@@ -1,0 +1,24 @@
+{
+  "hr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/FFHQ/ffhq-dataset/HR",
+  "lr_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/FFHQ/ffhq-dataset/LR",
+  "severity_probs": {
+    "mild": 0.3,
+    "medium": 0.45,
+    "strong": 0.25
+  },
+  "noise_probability": 0.4,
+  "source_images": 10032,
+  "eligible_images": 10032,
+  "skipped_aspect_ratio": 0,
+  "paired_images": 10032,
+  "severity_counts": {
+    "mild": 2943,
+    "medium": 4540,
+    "strong": 2549
+  },
+  "noise_counts": {
+    "none": 6042,
+    "light_gaussian": 3407,
+    "light_poisson": 583
+  }
+}

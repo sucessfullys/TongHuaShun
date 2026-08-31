@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "sample_key": "bad/0430906b-040d-4ed0-8c9f-0f00d121625d.png",
+  "per_method": {
+    "image": "The generated image shows multiple ghosting of the leg (incorrect biological structure logic)"
+  },
+  "created_at": "2026-06-08T07:06:44+00:00",
+  "updated_at": "2026-06-08T07:07:08+00:00"
+}

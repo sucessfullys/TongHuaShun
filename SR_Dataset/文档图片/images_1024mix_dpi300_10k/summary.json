@@ -1,0 +1,52 @@
+{
+  "name": "images_1024mix_dpi300_10k",
+  "target": 10000,
+  "actual": 10000,
+  "dpi": 300,
+  "shapes": [
+    {
+      "width": 1024,
+      "height": 1024,
+      "weight": 0.7,
+      "ratio": 1.0
+    },
+    {
+      "width": 1280,
+      "height": 960,
+      "weight": 0.08,
+      "ratio": 1.3333333333333333
+    },
+    {
+      "width": 960,
+      "height": 1280,
+      "weight": 0.08,
+      "ratio": 1.3333333333333333
+    },
+    {
+      "width": 1536,
+      "height": 1024,
+      "weight": 0.07,
+      "ratio": 1.5
+    },
+    {
+      "width": 1024,
+      "height": 1536,
+      "weight": 0.07,
+      "ratio": 1.5
+    }
+  ],
+  "shape_counts": {
+    "1024x1024": 7000,
+    "1280x960": 800,
+    "960x1280": 800,
+    "1536x1024": 700,
+    "1024x1536": 700
+  },
+  "pdf_count_total": 600,
+  "pdf_count_used": 600,
+  "page_count_total": 5983,
+  "page_count_used": 5961,
+  "max_iou_per_page_threshold": 0.6,
+  "out_dir": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/文档图片/images_1024mix_dpi300_10k",
+  "manifest": "/mnt/image-edit/datasets/duanyufa/SR_Dataset/文档图片/images_1024mix_dpi300_10k/pdf_patch_manifest.jsonl"
+}

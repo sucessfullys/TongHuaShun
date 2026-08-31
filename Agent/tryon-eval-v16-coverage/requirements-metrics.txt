@@ -1,0 +1,8 @@
+# Optional metric deps (DINOv2 + color-EMD corroboration, run on CPU). Skipped
+# by `run.py --light`. torch/torchvision usually come from system site-packages
+# (the venv inherits them), so pip only downloads what is missing. These metrics
+# are report-only / corroboration in the shipped recipe — the VLM judge decides
+# the verdict — so a missing metric degrades gracefully and scores stay valid.
+torch
+torchvision
+timm

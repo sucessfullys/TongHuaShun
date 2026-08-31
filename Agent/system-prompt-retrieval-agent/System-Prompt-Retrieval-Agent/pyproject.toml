@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "vendor_sync_backend"
+backend-path = ["_build"]
+
+[project]
+name = "system-prompt-retrieval-agent"
+version = "0.2.0"
+description = "Local prompt-pair retrieval agent for virtual try-on (V0.2)"
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.50",
+  "pydantic>=2.7",
+  "pyyaml>=6.0",
+  "python-dotenv>=1.0",
+  "httpx>=0.27",
+  "jsonschema>=4.22",
+  "pillow>=10.3",
+  "pandas>=2.2",
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2", "respx>=0.21", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+system-prompt-retrieval-agent = "system_prompt_retrieval_agent.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

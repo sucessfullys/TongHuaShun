@@ -1,0 +1,39 @@
+{
+  "language": "English",
+  "reference_images": 147,
+  "prompts_per_reference": 10,
+  "bad_hand_per_reference": 5,
+  "bad_foot_per_reference": 5,
+  "total_rows": 1470,
+  "jsonl": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/DreamFace2.0/prompt_jobs/dreamface2_highrisk_hand_foot_prompts_20260803.jsonl",
+  "design_note": "English FLUX2-oriented prompts; high-risk scenes inspired by prior bad-hand analysis and Filter 07-30 style, but rewritten with varied locations, poses, clothing, occlusions, and camera language. Collage/multi-panel scenes are excluded.",
+  "banned_terms_checked": [
+    "collage",
+    "split screen",
+    "multi-panel",
+    "diptych",
+    "triptych",
+    "grid",
+    "contact sheet",
+    "four-panel",
+    "three-panel",
+    "multiple frames",
+    "拼贴",
+    "多画面",
+    "四宫格",
+    "三连拍",
+    "多姿态"
+  ],
+  "scene_counts": {
+    "window_sill_cross_legged_face_touch": 147,
+    "floor_hugging_knees_asymmetric_hands": 147,
+    "hair_adjusting_flower_grip": 147,
+    "side_lying_sofa_book_occlusion": 147,
+    "convenience_store_raised_arm_pocket": 147,
+    "bed_edge_crossed_ankles": 147,
+    "wet_stairs_long_coat_stride": 147,
+    "grass_side_sit_foreground_feet": 147,
+    "dance_pose_one_leg_lifted": 147,
+    "bar_stool_interlaced_legs": 147
+  }
+}

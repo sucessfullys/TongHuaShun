@@ -1,0 +1,324 @@
+version: "v2.0"
+
+global:
+  cn_prefix: "照片级写实"
+  en_prefix: "Photorealistic"
+
+  cn_suffix: "真实皮肤纹理，真实布料细节，raw photo style，高细节"
+  en_suffix: "realistic skin texture, realistic fabric detail, raw photo style, highly detailed"
+
+templates:
+  cn: "{prefix}，{scene_cn}，{subject_cn}，{clothing_cn}，{composition_cn}，{action_cn}，{anomaly_cn}，{normal_part_cn}，{lighting_cn}，{atmosphere_cn}，{suffix}。"
+  en: "{prefix}, {scene_en}, {subject_en}, {clothing_en}, {composition_en}, {action_en}, {anomaly_en}, {normal_part_en}, {lighting_en}, {atmosphere_en}, {suffix}."
+
+subjects:
+  male:
+    cn:
+      - "一位年轻男子"
+      - "一位年轻男性"
+      - "一位青年男性"
+    en:
+      - "a young man"
+      - "a young male adult"
+      - "a young adult man"
+
+  female:
+    cn:
+      - "一位年轻女性"
+      - "一位青年女性"
+      - "一位年轻女子"
+    en:
+      - "a young woman"
+      - "a young female adult"
+      - "a young adult woman"
+
+clothing:
+  male:
+    - key: "casual_jacket"
+      cn: "穿着休闲夹克、白色T恤和长裤"
+      en: "wearing a casual jacket, white T-shirt, and trousers"
+
+    - key: "business_casual"
+      cn: "穿着深色外套、简约上衣和休闲长裤"
+      en: "wearing a dark jacket, simple top, and casual trousers"
+
+    - key: "sporty"
+      cn: "穿着运动上衣、运动短裤和运动鞋"
+      en: "wearing a sports top, athletic shorts, and sneakers"
+
+    - key: "minimal_fashion"
+      cn: "穿着极简风格上衣和深色长裤"
+      en: "wearing a minimalist top and dark trousers"
+
+    - key: "outdoor"
+      cn: "穿着户外夹克、工装裤和运动鞋"
+      en: "wearing an outdoor jacket, cargo pants, and sneakers"
+
+  female:
+    - key: "knit_sweater_skirt"
+      cn: "穿着米色针织毛衣和浅色长裙"
+      en: "wearing a beige knitted sweater and a light long skirt"
+
+    - key: "casual_loungewear"
+      cn: "穿着休闲家居服和浅色外套"
+      en: "wearing casual loungewear and a light jacket"
+
+    - key: "business_suit"
+      cn: "穿着合身西装套装和白色衬衫"
+      en: "wearing a fitted business suit and white shirt"
+
+    - key: "white_dress"
+      cn: "穿着白色连衣裙"
+      en: "wearing a white dress"
+
+    - key: "minimal_fashion"
+      cn: "穿着极简高级时装"
+      en: "wearing minimalist high-fashion clothing"
+
+composition_overrides:
+  medium_shot_hands_visible:
+    cn: "中景人像构图，人物从头部到腰部或膝盖入镜"
+    en: "medium portrait composition from head to waist or knees"
+
+  three_quarter_portrait:
+    cn: "三分之二人像构图，人物从头部到大腿或小腿入镜"
+    en: "three-quarter portrait composition from head to thighs or lower legs"
+
+  full_body_hands_visible:
+    cn: "完整全身人像构图，人物从头到脚完整入镜"
+    en: "full-body portrait composition, shown head-to-toe"
+
+visibility_phrases:
+  default:
+    cn: "异常结构自然融入人物动作"
+    en: "the abnormal structure is naturally integrated into the action"
+
+  full_body_hands_visible:
+    cn: "异常结构自然融入人物的全身姿态"
+    en: "the abnormal structure is naturally integrated into the full-body pose"
+
+  medium_shot_hands_visible:
+    cn: "异常结构自然融入人物动作"
+    en: "the abnormal structure is naturally integrated into the action"
+
+  three_quarter_portrait:
+    cn: "异常结构自然融入人物姿态"
+    en: "the abnormal structure is naturally integrated into the pose"
+
+normal_part_descriptions:
+  single:
+    left:
+      cn: "右手保持正常五指结构"
+      en: "the right hand keeps a normal five-finger structure"
+
+    right:
+      cn: "左手保持正常五指结构"
+      en: "the left hand keeps a normal five-finger structure"
+
+  both:
+    cn: "双手都呈现对应的异常结构"
+    en: "both hands show the corresponding abnormal structures"
+
+anomaly_descriptions:
+  polydactyly:
+    six_fingers:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手一共有六根完整手指，多出的一根手指位于无名指和小指之间"
+          en: "the left hand shows a clear hand-structure abnormality, with six complete fingers in total, including one extra finger located between the ring finger and the little finger"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手一共有六根完整手指，多出的一根手指位于无名指和小指之间"
+          en: "the right hand shows a clear hand-structure abnormality, with six complete fingers in total, including one extra finger located between the ring finger and the little finger"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手各有六根完整手指，每只手都多出一根手指，位置位于无名指和小指之间"
+        en: "both hands show clear hand-structure abnormalities, with six complete fingers on both the left and right hands, each hand having one extra finger located between the ring finger and the little finger"
+
+    seven_fingers:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手一共有七根完整手指，七根手指排列清晰且彼此可辨"
+          en: "the left hand shows a clear hand-structure abnormality, with seven complete fingers in total, all clearly arranged and individually visible"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手一共有七根完整手指，七根手指排列清晰且彼此可辨"
+          en: "the right hand shows a clear hand-structure abnormality, with seven complete fingers in total, all clearly arranged and individually visible"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手各有七根完整手指，每只手的七根手指都排列清晰且彼此可辨"
+        en: "both hands show clear hand-structure abnormalities, with seven complete fingers on both the left and right hands, all fingers clearly arranged and individually visible"
+
+    extra_finger_between_ring_and_little:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手无名指和小指之间额外长出一根完整手指"
+          en: "the left hand shows a clear hand-structure abnormality, with one complete extra finger growing between the ring finger and the little finger"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手无名指和小指之间额外长出一根完整手指"
+          en: "the right hand shows a clear hand-structure abnormality, with one complete extra finger growing between the ring finger and the little finger"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手的无名指和小指之间都额外长出一根完整手指"
+        en: "both hands show clear hand-structure abnormalities, with one complete extra finger growing between the ring finger and the little finger on both hands"
+
+  oligodactyly:
+    three_fingers:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手只有三根完整手指，三根手指彼此分离且可数，手掌轮廓自然"
+          en: "the left hand shows a clear hand-structure abnormality, with only three complete fingers visible, three separate countable fingers, and a natural palm silhouette"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手只有三根完整手指，三根手指彼此分离且可数，手掌轮廓自然"
+          en: "the right hand shows a clear hand-structure abnormality, with only three complete fingers visible, three separate countable fingers, and a natural palm silhouette"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手都只有三根完整手指，每只手的三根手指彼此分离且可数"
+        en: "both hands show clear hand-structure abnormalities, with only three complete fingers visible on both the left and right hands, and the three fingers on each hand are separate and countable"
+
+    four_fingers:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手只有四根完整手指，四根手指排列自然且清晰可辨"
+          en: "the left hand shows a clear hand-structure abnormality, with only four complete fingers visible, naturally arranged and clearly distinguishable"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手只有四根完整手指，四根手指排列自然且清晰可辨"
+          en: "the right hand shows a clear hand-structure abnormality, with only four complete fingers visible, naturally arranged and clearly distinguishable"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手都只有四根完整手指，每只手的四根手指排列自然且清晰可辨"
+        en: "both hands show clear hand-structure abnormalities, with only four complete fingers visible on both the left and right hands, naturally arranged and clearly distinguishable"
+
+  multi_hand:
+    extra_small_hand_at_wrist:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手手腕外侧额外连接着一只较小但完整的小手，小手拥有独立小手掌和五根完整手指，与主手并列出现在左腕附近"
+          en: "the left hand shows a clear hand-structure abnormality, with a smaller complete additional hand attached to the outer side of the left wrist, the small hand having its own palm and five complete fingers, appearing beside the main hand near the left wrist"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手手腕外侧额外连接着一只较小但完整的小手，小手拥有独立小手掌和五根完整手指，与主手并列出现在右腕附近"
+          en: "the right hand shows a clear hand-structure abnormality, with a smaller complete additional hand attached to the outer side of the right wrist, the small hand having its own palm and five complete fingers, appearing beside the main hand near the right wrist"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手的手腕外侧都额外连接着一只较小但完整的小手，每只小手都有独立小手掌和五根完整手指"
+        en: "both hands show clear hand-structure abnormalities, with a smaller complete additional hand attached to the outer side of each wrist, each small hand having its own palm and five complete fingers"
+
+    complete_second_hand_attached_to_wrist:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手手腕旁额外连接着一只完整的第二只手，第二只手拥有完整手掌和五根完整手指"
+          en: "the left hand shows a clear hand-structure abnormality, with a complete second hand attached beside the left wrist, the second hand having a complete palm and five complete fingers"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手手腕旁额外连接着一只完整的第二只手，第二只手拥有完整手掌和五根完整手指"
+          en: "the right hand shows a clear hand-structure abnormality, with a complete second hand attached beside the right wrist, the second hand having a complete palm and five complete fingers"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手腕和右手腕旁都额外连接着一只完整的第二只手，每只第二只手都有完整手掌和五根完整手指"
+        en: "both hands show clear hand-structure abnormalities, with a complete second hand attached beside each wrist, each second hand having a complete palm and five complete fingers"
+
+  syndactyly:
+    middle_ring_fused:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手中指和无名指部分融合，两根手指之间由连续皮肤连接，但各自轮廓仍然可辨"
+          en: "the left hand shows a clear hand-structure abnormality, with the middle finger and ring finger partially fused together, continuous skin connecting the two fingers while their individual outlines remain visible"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手中指和无名指部分融合，两根手指之间由连续皮肤连接，但各自轮廓仍然可辨"
+          en: "the right hand shows a clear hand-structure abnormality, with the middle finger and ring finger partially fused together, continuous skin connecting the two fingers while their individual outlines remain visible"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手的中指与无名指都部分融合，两根手指之间由连续皮肤连接，但各自轮廓仍然可辨"
+        en: "both hands show clear hand-structure abnormalities, with the middle finger and ring finger partially fused on both hands, continuous skin connecting the two fingers while their individual outlines remain visible"
+
+    index_middle_fused:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手食指和中指部分融合，两根手指之间由连续皮肤连接，但各自轮廓仍然可辨"
+          en: "the left hand shows a clear hand-structure abnormality, with the index finger and middle finger partially fused together, continuous skin connecting the two fingers while their individual outlines remain visible"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手食指和中指部分融合，两根手指之间由连续皮肤连接，但各自轮廓仍然可辨"
+          en: "the right hand shows a clear hand-structure abnormality, with the index finger and middle finger partially fused together, continuous skin connecting the two fingers while their individual outlines remain visible"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手的食指与中指都部分融合，两根手指之间由连续皮肤连接，但各自轮廓仍然可辨"
+        en: "both hands show clear hand-structure abnormalities, with the index finger and middle finger partially fused on both hands, continuous skin connecting the two fingers while their individual outlines remain visible"
+
+  arm_anomaly:
+    extra_forearm_with_hand:
+      single:
+        left:
+          cn: "左臂出现明显肢体结构异常，可以清楚看到左肘下方额外分出一条较小但完整的前臂，并连接一只完整的手，使左侧出现额外一只手"
+          en: "the left arm shows a clear limb-structure abnormality, with a smaller but complete additional forearm branching below the left elbow and connected to a complete hand, creating an extra hand on the left side"
+
+        right:
+          cn: "右臂出现明显肢体结构异常，可以清楚看到右肘下方额外分出一条较小但完整的前臂，并连接一只完整的手，使右侧出现额外一只手"
+          en: "the right arm shows a clear limb-structure abnormality, with a smaller but complete additional forearm branching below the right elbow and connected to a complete hand, creating an extra hand on the right side"
+
+      both:
+        cn: "双臂都出现明显肢体结构异常，可以清楚看到左肘和右肘下方都额外分出一条较小但完整的前臂，并各自连接一只完整的手"
+        en: "both arms show clear limb-structure abnormalities, with a smaller complete additional forearm branching below each elbow and connected to a complete hand on both sides"
+
+    extra_arm_from_shoulder:
+      single:
+        left:
+          cn: "左侧身体出现明显肢体结构异常，可以清楚看到左侧躯干附近额外长出一条完整手臂，并连接一只完整的手"
+          en: "the left side of the body shows a clear limb-structure abnormality, with an additional complete arm growing from the left side of the torso and connected to a complete hand"
+
+        right:
+          cn: "右侧身体出现明显肢体结构异常，可以清楚看到右侧躯干附近额外长出一条完整手臂，并连接一只完整的手"
+          en: "the right side of the body shows a clear limb-structure abnormality, with an additional complete arm growing from the right side of the torso and connected to a complete hand"
+
+      both:
+        cn: "身体两侧都出现明显肢体结构异常，可以清楚看到左侧和右侧躯干附近都额外长出一条完整手臂，并各自连接一只完整的手"
+        en: "both sides of the body show clear limb-structure abnormalities, with an additional complete arm growing from both the left and right sides of the torso, each connected to a complete hand"
+
+  double_palm:
+    fused_double_palm:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手由两个完整手掌融合连接形成，两个手掌共用同一手腕区域"
+          en: "the left hand shows a clear hand-structure abnormality, with two complete palms fused together and sharing the same wrist area"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手由两个完整手掌融合连接形成，两个手掌共用同一手腕区域"
+          en: "the right hand shows a clear hand-structure abnormality, with two complete palms fused together and sharing the same wrist area"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手都由两个完整手掌融合连接形成，每侧两个手掌共用同一手腕区域"
+        en: "both hands show clear hand-structure abnormalities, with two complete palms fused together on both the left and right hands, each pair sharing the same wrist area"
+
+    side_by_side_double_palm:
+      single:
+        left:
+          cn: "左手出现明显手部结构异常，可以清楚看到左手由两个完整手掌并列连接形成，两个手掌共享同一个手腕区域，构成清晰的双掌结构"
+          en: "the left hand shows a clear hand-structure abnormality, with two complete palms joined side by side, both palms sharing the same wrist area and forming a distinct double-palm structure"
+
+        right:
+          cn: "右手出现明显手部结构异常，可以清楚看到右手由两个完整手掌并列连接形成，两个手掌共享同一个手腕区域，构成清晰的双掌结构"
+          en: "the right hand shows a clear hand-structure abnormality, with two complete palms joined side by side, both palms sharing the same wrist area and forming a distinct double-palm structure"
+
+      both:
+        cn: "双手都出现明显手部结构异常，可以清楚看到左手和右手都由两个完整手掌并列连接形成，每侧两个手掌共享同一个手腕区域"
+        en: "both hands show clear hand-structure abnormalities, with two complete palms joined side by side on both the left and right hands, each pair sharing the same wrist area"
+
+quality_style_variants:
+  cn:
+    - "浅景深"
+    - "真实摄影质感"
+    - "高分辨率"
+    - "清晰锐利"
+    - "自然肤色"
+
+  en:
+    - "shallow depth of field"
+    - "realistic photography texture"
+    - "high resolution"
+    - "sharp and crisp"
+    - "natural skin tone"

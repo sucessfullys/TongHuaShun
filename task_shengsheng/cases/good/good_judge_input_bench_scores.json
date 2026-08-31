@@ -1,0 +1,16 @@
+{
+  "level1": {
+    "Aesthetics": 57.34666666666667
+  },
+  "level2": {
+    "Aesthetics": {
+      "Composition": 62.0,
+      "Color Harmony": 72.0,
+      "Lighting": 80.0,
+      "Anatomical Portraiture": 3.2,
+      "Emotional Expression": 60.0,
+      "Style Control": 67.5
+    }
+  },
+  "total": 57.34666666666667
+}

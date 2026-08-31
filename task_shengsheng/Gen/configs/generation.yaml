@@ -1,0 +1,280 @@
+version: "v2.0"
+
+project:
+  name: "hand_anomaly_dataset_v2"
+  description: "Synthetic hand and upper-limb structural anomaly dataset generated with structured prompts and FLUX."
+
+random:
+  global_seed: 20260707
+  deterministic_sampling: true
+
+dataset:
+  target_num_images: 10000
+  sample_id_prefix: "img"
+  sample_id_digits: 8
+  age_group: "young_adult"
+  output_language:
+    - "cn"
+    - "en"
+  main_generation_prompt: "prompt_en"
+
+paths:
+  taxonomy_config: "configs/taxonomy.yaml"
+  prompt_template_config: "configs/prompt_templates.yaml"
+
+  structured_manifest: "data/manifests/structured_manifest.jsonl"
+  prompt_manifest: "data/manifests/prompt_manifest.jsonl"
+  shard_dir: "data/manifests/shards"
+
+  image_root: "data/images"
+  metadata_root: "data/metadata"
+  merged_metadata_jsonl: "data/metadata/image_records.jsonl"
+  merged_metadata_parquet: "data/metadata/image_records.parquet"
+
+quota:
+  scene:
+    strategy: "equal"
+    target_per_scene: 200
+
+  gender:
+    strategy: "equal"
+    targets:
+      male: 5000
+      female: 5000
+
+  composition:
+    strategy: "manual"
+    targets:
+      medium_shot_hands_visible: 3334
+      three_quarter_portrait: 3333
+      full_body_hands_visible: 3333
+
+  anomaly_family:
+    strategy: "manual"
+    targets:
+      polydactyly: 1000
+      oligodactyly: 1000
+      multi_hand: 1000
+      syndactyly: 1000
+      arm_anomaly: 1000
+      double_palm: 1000
+      bifid_finger: 1000
+      thumb_anomaly: 1000
+      ectrodactyly: 1000
+      macrodactyly: 1000
+
+  anomaly_scope:
+    strategy: "manual"
+    targets:
+      single: 7000
+      both: 3000
+
+  anomaly_side_for_single:
+    strategy: "equal"
+    targets:
+      left: 3500
+      right: 3500
+
+  anomaly_side_for_both:
+    fixed_value: "none"
+
+composition_policy:
+  medium_shot_hands_visible:
+    target_ratio: 0.3334
+    description: "Highest hand visibility, best for finger-level abnormalities."
+    preferred_for:
+      - polydactyly
+      - oligodactyly
+      - syndactyly
+      - double_palm
+      - multi_hand
+
+  three_quarter_portrait:
+    target_ratio: 0.3333
+    description: "Balanced person visibility and hand visibility."
+    preferred_for:
+      - polydactyly
+      - oligodactyly
+      - syndactyly
+      - multi_hand
+      - double_palm
+      - arm_anomaly
+
+  full_body_hands_visible:
+    target_ratio: 0.3333
+    description: "Full body visible while keeping the hand structure readable."
+    preferred_for:
+      - multi_hand
+      - arm_anomaly
+      - double_palm
+      - polydactyly
+      - oligodactyly
+
+action_policy:
+  require_scene_action_compatibility: true
+  require_anomaly_description: true
+  max_retries_for_scene_action_sampling: 30
+
+anomaly_policy:
+  schema:
+    - anomaly_family
+    - anomaly_variant
+    - anomaly_scope
+    - anomaly_side
+
+  scope_rules:
+    single:
+      allowed_sides:
+        - left
+        - right
+      normal_other_side_required: true
+
+    both:
+      allowed_sides:
+        - none
+      normal_other_side_required: false
+
+  allow_both_for_all_families: true
+
+  variant_sampling:
+    strategy: "uniform_within_family"
+
+prompt:
+  generation_mode: "template"
+  enable_llm_rewrite: false
+  use_chinese_prompt: true
+  use_english_prompt: true
+  main_prompt_field_for_flux: "prompt_en"
+
+  global_style_cn:
+    - "照片级写实"
+    - "真实皮肤纹理"
+    - "真实布料细节"
+    - "raw photo style"
+    - "高细节"
+
+  global_style_en:
+    - "photorealistic"
+    - "realistic skin texture"
+    - "realistic fabric detail"
+    - "raw photo style"
+    - "highly detailed"
+
+  required_semantics:
+    - scene
+    - subject
+    - clothing
+    - composition
+    - action
+    - anomaly_precise_description
+    - normal_other_hand_if_single
+    - lighting
+    - atmosphere
+    - style
+
+  forbidden_phrases_cn:
+    - "异常类型"
+    - "属于生理结构畸变"
+    - "不要出现"
+    - "负面提示词"
+
+  forbidden_phrases_en:
+    - "anomaly type:"
+    - "physiological structural deformity"
+    - "do not generate"
+    - "negative prompt"
+
+flux:
+  model_id: "black-forest-labs/FLUX.1-dev"
+  torch_dtype: "bfloat16"
+  device_map: null
+
+  image:
+    width: 896
+    height: 1152
+    output_format: "jpg"
+    jpg_quality: 95
+
+  inference:
+    num_inference_steps: 28
+    guidance_scale: 3.5
+    num_images_per_prompt: 1
+    max_sequence_length: 512
+
+  performance:
+    enable_attention_slicing: false
+    enable_vae_slicing: true
+    enable_vae_tiling: true
+    use_torch_compile: false
+    channels_last: false
+
+multi_gpu:
+  enabled: true
+  num_gpus: 8
+  shard_count: 8
+  samples_per_shard: 1250
+  cuda_visible_devices:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+
+runtime:
+  log_every: 10
+  save_metadata_every: 1
+  skip_existing_images: true
+  resume_from_existing_metadata: true
+  fail_fast: false
+  max_generation_retries: 2
+
+validation:
+  check_manifest_distribution: true
+  check_prompt_not_empty: true
+  check_forbidden_phrases: true
+  check_required_fields: true
+  required_fields:
+    - sample_id
+    - scene
+    - gender
+    - age_group
+    - composition
+    - action
+    - anomaly_family
+    - anomaly_variant
+    - anomaly_scope
+    - anomaly_side
+    - lighting
+    - style
+    - prompt_cn
+    - prompt_en
+
+metadata:
+  save_jsonl: true
+  save_parquet: true
+  fields:
+    - sample_id
+    - image_path
+    - prompt_cn
+    - prompt_en
+    - scene
+    - gender
+    - age_group
+    - composition
+    - action
+    - anomaly_family
+    - anomaly_variant
+    - anomaly_scope
+    - anomaly_side
+    - seed
+    - width
+    - height
+    - steps
+    - guidance
+    - model_name
+    - shard_id
+    - worker_id
+    - created_at

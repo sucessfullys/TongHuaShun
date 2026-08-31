@@ -1,0 +1,10 @@
+# Core deps for the scorer harness + review web app. Installed into <pkg>/.venv
+# on first run (setup.sh or run.py auto-bootstrap). The venv is created with
+# --system-site-packages, so packages already present on the box are NOT
+# re-downloaded. PyYAML + numpy + Pillow are required by the scoring closure;
+# fastapi + uvicorn only by the optional review web app.
+fastapi
+uvicorn
+numpy
+Pillow
+PyYAML

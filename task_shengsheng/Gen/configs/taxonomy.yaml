@@ -1,0 +1,732 @@
+version: "v2.0"
+dataset_name: "hand_anomaly_dataset_v2"
+
+scenes:
+  sunlit_cafe:
+    cn: "阳光洒入的温暖咖啡馆，木质桌椅，窗边座位"
+    en: "warm sunlit cafe with wooden furniture and a window-side seat"
+    lighting_cn: "温暖自然窗光"
+    lighting_en: "warm natural window light"
+    atmosphere_cn: "舒适生活氛围"
+    atmosphere_en: "cozy lifestyle atmosphere"
+    allowed_actions: [holding_a_coffee_mug_with_both_hands, holding_a_cup_in_one_hand, holding_a_smartphone, turning_a_page, resting_hands_on_an_open_book, waving_to_camera]
+
+  restaurant_table:
+    cn: "明亮餐厅桌边，餐具与玻璃杯摆放整齐"
+    en: "bright restaurant table setting with tableware and glasses"
+    lighting_cn: "柔和室内餐厅光"
+    lighting_en: "soft indoor restaurant lighting"
+    atmosphere_cn: "自然用餐氛围"
+    atmosphere_en: "natural dining atmosphere"
+    allowed_actions: [holding_a_cup_in_one_hand, holding_a_smartphone, handing_over_a_card, showing_both_palms, resting_hands_on_an_open_book]
+
+  home_kitchen:
+    cn: "温暖家庭厨房，整洁料理台，晨间生活气息"
+    en: "warm home kitchen with a tidy countertop and morning domestic atmosphere"
+    lighting_cn: "晨间自然光"
+    lighting_en: "morning natural light"
+    atmosphere_cn: "温馨居家氛围"
+    atmosphere_en: "cozy home atmosphere"
+    allowed_actions: [cutting_vegetables, stirring_a_bowl, washing_a_cup, holding_a_cup_in_one_hand, showing_both_palms, pointing_while_explaining]
+
+  living_room:
+    cn: "现代客厅，柔软沙发，茶几与暖色灯光"
+    en: "modern living room with a soft sofa, coffee table, and warm lighting"
+    lighting_cn: "柔和室内暖光"
+    lighting_en: "soft warm indoor light"
+    atmosphere_cn: "放松居家氛围"
+    atmosphere_en: "relaxed home atmosphere"
+    allowed_actions: [holding_a_smartphone, holding_a_cup_in_one_hand, waving_to_camera, showing_both_palms, taking_a_selfie]
+
+  bedroom:
+    cn: "整洁卧室，床铺、窗帘与柔和晨光"
+    en: "tidy bedroom with a bed, curtains, and soft morning light"
+    lighting_cn: "柔和晨间窗光"
+    lighting_en: "soft morning window light"
+    atmosphere_cn: "安静私密氛围"
+    atmosphere_en: "quiet private atmosphere"
+    allowed_actions: [holding_a_smartphone, adjusting_hair, buttoning_a_shirt, holding_a_cup_in_one_hand, showing_both_palms]
+
+  home_study:
+    cn: "家庭书房，书桌、台灯与书架背景"
+    en: "home study with a desk, desk lamp, and bookshelf background"
+    lighting_cn: "柔和台灯与自然混合光"
+    lighting_en: "soft desk-lamp and natural mixed light"
+    atmosphere_cn: "安静阅读氛围"
+    atmosphere_en: "quiet reading atmosphere"
+    allowed_actions: [holding_a_book_open, turning_a_page, signing_a_document, typing_pause_hands_visible, holding_a_laptop, resting_hands_on_an_open_book]
+
+  office_desk_area:
+    cn: "现代办公室工位区，电脑、桌面文件与办公椅"
+    en: "modern office desk area with a computer, documents, and office chair"
+    lighting_cn: "明亮办公室日光"
+    lighting_en: "bright office daylight"
+    atmosphere_cn: "真实办公氛围"
+    atmosphere_en: "realistic workplace atmosphere"
+    allowed_actions: [typing_pause_hands_visible, holding_a_folder, signing_a_document, holding_a_smartphone, pointing_while_explaining, showing_both_palms]
+
+  office_meeting_room:
+    cn: "现代会议室，长桌、玻璃墙与投影屏背景"
+    en: "modern meeting room with a long table, glass wall, and presentation screen"
+    lighting_cn: "明亮商务日光"
+    lighting_en: "bright corporate daylight"
+    atmosphere_cn: "干净商务氛围"
+    atmosphere_en: "clean business atmosphere"
+    allowed_actions: [holding_a_folder, pointing_while_explaining, signing_a_document, showing_both_palms, holding_a_smartphone]
+
+  coworking_space:
+    cn: "联合办公空间，开放式桌椅、绿植与笔记本电脑"
+    en: "coworking space with open desks, plants, and laptops"
+    lighting_cn: "自然窗光与室内混合光"
+    lighting_en: "mixed natural window light and indoor light"
+    atmosphere_cn: "现代轻松办公氛围"
+    atmosphere_en: "modern casual work atmosphere"
+    allowed_actions: [holding_a_laptop, typing_pause_hands_visible, holding_a_cup_in_one_hand, holding_a_smartphone, pointing_while_explaining]
+
+  library_reading_area:
+    cn: "安静大学图书馆，木质书桌、书架背景与柔和阅读灯"
+    en: "quiet university library with wooden desks, bookshelves, and soft reading lamps"
+    lighting_cn: "柔和室内阅读光"
+    lighting_en: "soft indoor reading light"
+    atmosphere_cn: "安静学习氛围"
+    atmosphere_en: "quiet study atmosphere"
+    allowed_actions: [holding_a_book_open, turning_a_page, resting_hands_on_an_open_book, signing_a_document, showing_both_palms]
+
+  classroom:
+    cn: "明亮教室，课桌、黑板与窗边自然光"
+    en: "bright classroom with desks, blackboard, and natural window light"
+    lighting_cn: "明亮教室自然光"
+    lighting_en: "bright classroom natural light"
+    atmosphere_cn: "真实校园氛围"
+    atmosphere_en: "realistic campus atmosphere"
+    allowed_actions: [holding_a_book_open, pointing_while_explaining, signing_a_document, showing_both_palms, waving_to_camera]
+
+  art_studio:
+    cn: "艺术工作室，画架、颜料与散落的画纸"
+    en: "art studio with easels, paint, and scattered drawing papers"
+    lighting_cn: "柔和工作室自然光"
+    lighting_en: "soft studio natural light"
+    atmosphere_cn: "创作工作氛围"
+    atmosphere_en: "creative working atmosphere"
+    allowed_actions: [holding_a_camera, showing_both_palms, holding_a_flower_pot, using_scissors, pointing_while_explaining]
+
+  dance_studio:
+    cn: "舞蹈教室，木地板、镜墙与干净训练空间"
+    en: "dance studio with wooden floor, mirrored wall, and clean training space"
+    lighting_cn: "柔和室内顶光"
+    lighting_en: "soft indoor overhead light"
+    atmosphere_cn: "艺术训练氛围"
+    atmosphere_en: "artistic training atmosphere"
+    allowed_actions: [stretching_with_hands_visible, showing_both_palms, waving_to_camera]
+
+  gym:
+    cn: "现代健身房，器械、镜墙与运动灯光"
+    en: "modern gym with equipment, mirrored walls, and athletic lighting"
+    lighting_cn: "明亮健身房灯光"
+    lighting_en: "bright gym lighting"
+    atmosphere_cn: "运动训练氛围"
+    atmosphere_en: "athletic training atmosphere"
+    allowed_actions: [lifting_a_dumbbell, stretching_with_hands_visible, holding_a_smartphone, showing_both_palms]
+
+  yoga_room:
+    cn: "安静瑜伽室，瑜伽垫、木地板与柔和光线"
+    en: "quiet yoga room with mats, wooden floor, and soft light"
+    lighting_cn: "柔和自然光"
+    lighting_en: "soft natural light"
+    atmosphere_cn: "平静放松氛围"
+    atmosphere_en: "calm relaxing atmosphere"
+    allowed_actions: [stretching_with_hands_visible, showing_both_palms, waving_to_camera]
+
+  indoor_shopping_mall:
+    cn: "室内购物中心，明亮店铺灯光与人流背景"
+    en: "indoor shopping mall with bright storefront lighting and crowd background"
+    lighting_cn: "明亮商业灯光"
+    lighting_en: "bright commercial lighting"
+    atmosphere_cn: "真实购物氛围"
+    atmosphere_en: "realistic shopping atmosphere"
+    allowed_actions: [holding_a_shopping_bag, holding_a_smartphone, handing_over_a_card, waving_to_camera]
+
+  supermarket_aisle:
+    cn: "超市货架通道，商品陈列整齐，灯光明亮"
+    en: "supermarket aisle with neatly arranged products and bright lighting"
+    lighting_cn: "明亮超市灯光"
+    lighting_en: "bright supermarket lighting"
+    atmosphere_cn: "日常购物氛围"
+    atmosphere_en: "everyday shopping atmosphere"
+    allowed_actions: [holding_a_shopping_bag, holding_a_smartphone, handing_over_a_card, holding_a_cup_in_one_hand]
+
+  convenience_store:
+    cn: "便利店内部，冷柜与货架背景，灯光明亮"
+    en: "convenience store interior with refrigerators and shelves in the background"
+    lighting_cn: "明亮便利店灯光"
+    lighting_en: "bright convenience store lighting"
+    atmosphere_cn: "日常生活氛围"
+    atmosphere_en: "everyday life atmosphere"
+    allowed_actions: [holding_a_cup_in_one_hand, holding_a_smartphone, handing_over_a_card, holding_a_shopping_bag]
+
+  bookstore:
+    cn: "书店内部，书架环绕，木质陈列台"
+    en: "bookstore interior surrounded by bookshelves and wooden display tables"
+    lighting_cn: "柔和室内阅读光"
+    lighting_en: "soft indoor reading light"
+    atmosphere_cn: "安静文艺氛围"
+    atmosphere_en: "quiet literary atmosphere"
+    allowed_actions: [holding_a_book_open, turning_a_page, resting_hands_on_an_open_book, holding_a_smartphone]
+
+  flower_shop:
+    cn: "花店内部，鲜花、绿植与柔和自然光"
+    en: "flower shop interior with fresh flowers, plants, and soft natural light"
+    lighting_cn: "柔和自然光"
+    lighting_en: "soft natural light"
+    atmosphere_cn: "清新生活氛围"
+    atmosphere_en: "fresh lifestyle atmosphere"
+    allowed_actions: [holding_a_bouquet, holding_a_flower_pot, using_scissors, showing_both_palms]
+
+  hair_salon:
+    cn: "理发店内部，镜子、座椅与柔和灯光"
+    en: "hair salon interior with mirrors, chairs, and soft lighting"
+    lighting_cn: "明亮柔和室内光"
+    lighting_en: "bright soft indoor light"
+    atmosphere_cn: "时尚生活氛围"
+    atmosphere_en: "stylish lifestyle atmosphere"
+    allowed_actions: [adjusting_hair, holding_a_smartphone, showing_both_palms, waving_to_camera]
+
+  hospital_corridor:
+    cn: "医院走廊，浅色墙面、指示牌与明亮灯光"
+    en: "hospital corridor with light-colored walls, signs, and bright lighting"
+    lighting_cn: "明亮冷色室内光"
+    lighting_en: "bright cool indoor lighting"
+    atmosphere_cn: "干净医疗环境氛围"
+    atmosphere_en: "clean medical environment atmosphere"
+    allowed_actions: [holding_a_medicine_bottle, holding_a_folder, holding_a_smartphone, showing_both_palms]
+
+  clinic_waiting_area:
+    cn: "诊所候诊区，椅子、杂志架与柔和灯光"
+    en: "clinic waiting area with chairs, magazine rack, and soft lighting"
+    lighting_cn: "柔和诊所灯光"
+    lighting_en: "soft clinic lighting"
+    atmosphere_cn: "安静候诊氛围"
+    atmosphere_en: "quiet waiting-room atmosphere"
+    allowed_actions: [holding_a_medicine_bottle, holding_a_smartphone, resting_hands_on_an_open_book, showing_both_palms]
+
+  pharmacy:
+    cn: "药店内部，药品货架与明亮白色灯光"
+    en: "pharmacy interior with medicine shelves and bright white lighting"
+    lighting_cn: "明亮白色商业灯光"
+    lighting_en: "bright white commercial lighting"
+    atmosphere_cn: "日常健康消费氛围"
+    atmosphere_en: "everyday healthcare shopping atmosphere"
+    allowed_actions: [holding_a_medicine_bottle, handing_over_a_card, holding_a_smartphone, showing_both_palms]
+
+  subway_platform:
+    cn: "现代地铁站台，明亮都市灯光与列车背景"
+    en: "modern subway platform with bright urban lighting and train background"
+    lighting_cn: "明亮都市环境光"
+    lighting_en: "bright urban ambient lighting"
+    atmosphere_cn: "真实通勤氛围"
+    atmosphere_en: "realistic commuting atmosphere"
+    allowed_actions: [holding_a_smartphone, holding_a_train_handle, holding_a_rail, waving_to_camera, showing_both_palms]
+
+  subway_carriage:
+    cn: "地铁车厢内部，扶手、座椅与通勤人群背景"
+    en: "subway carriage interior with handrails, seats, and commuting background"
+    lighting_cn: "明亮车厢灯光"
+    lighting_en: "bright carriage lighting"
+    atmosphere_cn: "日常通勤氛围"
+    atmosphere_en: "everyday commuting atmosphere"
+    allowed_actions: [holding_a_train_handle, holding_a_rail, holding_a_smartphone, showing_both_palms]
+
+  bus_stop:
+    cn: "城市公交站，站牌、道路与街景背景"
+    en: "city bus stop with signboard, road, and street background"
+    lighting_cn: "自然街道光"
+    lighting_en: "natural street light"
+    atmosphere_cn: "日常出行氛围"
+    atmosphere_en: "everyday travel atmosphere"
+    allowed_actions: [holding_a_smartphone, holding_an_umbrella, holding_a_shopping_bag, waving_to_camera]
+
+  bus_interior:
+    cn: "公交车内部，扶手、座椅与车窗光线"
+    en: "bus interior with handrails, seats, and window light"
+    lighting_cn: "车窗自然光与室内灯混合光"
+    lighting_en: "mixed window light and interior bus lighting"
+    atmosphere_cn: "真实公共交通氛围"
+    atmosphere_en: "realistic public transport atmosphere"
+    allowed_actions: [holding_a_rail, holding_a_smartphone, holding_a_shopping_bag, showing_both_palms]
+
+  train_station_hall:
+    cn: "火车站大厅，电子屏、候车座椅与人流背景"
+    en: "train station hall with digital boards, waiting seats, and crowd background"
+    lighting_cn: "明亮大厅灯光"
+    lighting_en: "bright hall lighting"
+    atmosphere_cn: "出行候车氛围"
+    atmosphere_en: "travel waiting atmosphere"
+    allowed_actions: [carrying_a_backpack_strap, holding_a_smartphone, holding_a_shopping_bag, waving_to_camera]
+
+  airport_terminal:
+    cn: "机场航站楼，玻璃幕墙、行李箱与登机信息屏"
+    en: "airport terminal with glass walls, luggage, and flight information screens"
+    lighting_cn: "明亮机场自然光"
+    lighting_en: "bright airport natural light"
+    atmosphere_cn: "现代旅行氛围"
+    atmosphere_en: "modern travel atmosphere"
+    allowed_actions: [carrying_a_backpack_strap, holding_a_smartphone, handing_over_a_card, holding_a_camera, waving_to_camera]
+
+  parking_garage:
+    cn: "地下停车库，混凝土柱、车辆与冷色灯光"
+    en: "underground parking garage with concrete pillars, cars, and cool lighting"
+    lighting_cn: "冷色停车场灯光"
+    lighting_en: "cool parking-garage lighting"
+    atmosphere_cn: "都市停车场氛围"
+    atmosphere_en: "urban parking-garage atmosphere"
+    allowed_actions: [holding_a_smartphone, opening_a_door_handle, carrying_a_backpack_strap, showing_both_palms]
+
+  car_interior:
+    cn: "汽车内部，方向盘、车窗与城市街景"
+    en: "car interior with steering wheel, windows, and city street view"
+    lighting_cn: "车窗自然光"
+    lighting_en: "natural window light inside a car"
+    atmosphere_cn: "真实车内氛围"
+    atmosphere_en: "realistic car interior atmosphere"
+    allowed_actions: [gripping_a_steering_wheel, holding_a_smartphone, handing_over_a_card]
+
+  city_street_day:
+    cn: "白天城市街头，人行道、建筑立面与自然光"
+    en: "daytime city street with sidewalk, building facades, and natural light"
+    lighting_cn: "明亮自然街道光"
+    lighting_en: "bright natural street light"
+    atmosphere_cn: "日常街头氛围"
+    atmosphere_en: "everyday street atmosphere"
+    allowed_actions: [holding_a_smartphone, holding_a_cup_in_one_hand, waving_to_camera, carrying_a_backpack_strap, showing_both_palms]
+
+  city_street_night:
+    cn: "夜晚城市街头，霓虹灯牌与车辆灯光虚化"
+    en: "night city street with neon signs and blurred car lights"
+    lighting_cn: "电影感街头夜景光"
+    lighting_en: "cinematic nighttime street lighting"
+    atmosphere_cn: "都市夜色氛围"
+    atmosphere_en: "urban night atmosphere"
+    allowed_actions: [holding_a_smartphone, waving_to_camera, holding_a_cup_in_one_hand, holding_a_camera, showing_both_palms]
+
+  crosswalk:
+    cn: "城市斑马线旁，路口信号灯与街景背景"
+    en: "city crosswalk with traffic lights and street background"
+    lighting_cn: "自然城市环境光"
+    lighting_en: "natural urban ambient light"
+    atmosphere_cn: "动态街头氛围"
+    atmosphere_en: "dynamic street atmosphere"
+    allowed_actions: [holding_a_smartphone, waving_to_camera, carrying_a_backpack_strap, showing_both_palms]
+
+  alley:
+    cn: "城市小巷，墙面纹理、路灯与窄街背景"
+    en: "urban alley with textured walls, street lights, and narrow street background"
+    lighting_cn: "柔和巷道光线"
+    lighting_en: "soft alley lighting"
+    atmosphere_cn: "安静街头氛围"
+    atmosphere_en: "quiet street atmosphere"
+    allowed_actions: [holding_a_smartphone, holding_a_camera, showing_both_palms, waving_to_camera]
+
+  rooftop_day:
+    cn: "白天城市天台，远处建筑 skyline 与自然光"
+    en: "daytime city rooftop with distant skyline and natural light"
+    lighting_cn: "明亮自然日光"
+    lighting_en: "bright natural daylight"
+    atmosphere_cn: "开阔城市氛围"
+    atmosphere_en: "open urban atmosphere"
+    allowed_actions: [waving_to_camera, showing_both_palms, holding_a_camera, holding_a_smartphone]
+
+  rooftop_night:
+    cn: "城市高楼天台夜景，远处霓虹与城市灯光"
+    en: "nighttime city rooftop with distant neon lights and urban illumination"
+    lighting_cn: "电影感夜景光影"
+    lighting_en: "cinematic night lighting"
+    atmosphere_cn: "都市未来感氛围"
+    atmosphere_en: "urban futuristic atmosphere"
+    allowed_actions: [showing_both_palms, holding_a_smartphone, holding_a_microphone, waving_to_camera]
+
+  park_walkway:
+    cn: "城市公园步道，树木、长椅与自然光"
+    en: "city park walkway with trees, benches, and natural light"
+    lighting_cn: "柔和自然光"
+    lighting_en: "soft natural light"
+    atmosphere_cn: "轻松户外氛围"
+    atmosphere_en: "relaxed outdoor atmosphere"
+    allowed_actions: [holding_a_smartphone, waving_to_camera, holding_a_cup_in_one_hand, carrying_a_backpack_strap, showing_both_palms]
+
+  playground:
+    cn: "户外游乐场，彩色设施与阳光背景"
+    en: "outdoor playground with colorful equipment and sunlight"
+    lighting_cn: "明亮户外日光"
+    lighting_en: "bright outdoor daylight"
+    atmosphere_cn: "轻松活泼氛围"
+    atmosphere_en: "relaxed lively atmosphere"
+    allowed_actions: [waving_to_camera, showing_both_palms, holding_a_smartphone]
+
+  basketball_court:
+    cn: "户外篮球场，球场线、篮筐与围网背景"
+    en: "outdoor basketball court with court lines, hoop, and fence background"
+    lighting_cn: "傍晚暖光与球场灯混合光"
+    lighting_en: "mixed warm evening light and court lighting"
+    atmosphere_cn: "运动抓拍氛围"
+    atmosphere_en: "sports candid atmosphere"
+    allowed_actions: [holding_a_basketball, preparing_to_shoot_a_basketball, showing_both_palms, waving_to_camera]
+
+  soccer_field_sideline:
+    cn: "足球场边线，草地、球门与运动场背景"
+    en: "soccer field sideline with grass, goal, and sports field background"
+    lighting_cn: "明亮户外运动光"
+    lighting_en: "bright outdoor sports lighting"
+    atmosphere_cn: "运动场氛围"
+    atmosphere_en: "sports field atmosphere"
+    allowed_actions: [holding_a_soccer_ball, waving_to_camera, showing_both_palms]
+
+  beach:
+    cn: "金色日落下的海边沙滩，海风吹动衣服和头发"
+    en: "beach at golden sunset with sea breeze moving clothes and hair"
+    lighting_cn: "柔和金色日落光"
+    lighting_en: "soft golden sunset light"
+    atmosphere_cn: "清新海边氛围"
+    atmosphere_en: "fresh coastal atmosphere"
+    allowed_actions: [adjusting_hair, holding_a_camera, holding_a_smartphone, waving_to_camera, showing_both_palms]
+
+  lakeside:
+    cn: "湖边步道，平静水面、树木与自然光"
+    en: "lakeside walkway with calm water, trees, and natural light"
+    lighting_cn: "柔和自然光"
+    lighting_en: "soft natural light"
+    atmosphere_cn: "宁静户外氛围"
+    atmosphere_en: "peaceful outdoor atmosphere"
+    allowed_actions: [holding_a_camera, waving_to_camera, holding_a_smartphone, showing_both_palms]
+
+  forest_path:
+    cn: "绿色森林小径，树影斑驳，清晨薄雾"
+    en: "green forest path with dappled tree shadows and light morning mist"
+    lighting_cn: "柔和自然光"
+    lighting_en: "soft natural light"
+    atmosphere_cn: "森林环境氛围"
+    atmosphere_en: "forest atmosphere"
+    allowed_actions: [showing_both_palms, holding_a_camera, carrying_a_backpack_strap, waving_to_camera]
+
+  mountain_trail:
+    cn: "山间徒步小路，岩石、树木与远处山景"
+    en: "mountain trail with rocks, trees, and distant mountain view"
+    lighting_cn: "清晰户外自然光"
+    lighting_en: "clear outdoor natural light"
+    atmosphere_cn: "户外徒步氛围"
+    atmosphere_en: "outdoor hiking atmosphere"
+    allowed_actions: [carrying_a_backpack_strap, holding_a_camera, showing_both_palms, holding_a_smartphone]
+
+  riverside_promenade:
+    cn: "河边步道，栏杆、城市水面与自然光"
+    en: "riverside promenade with railing, city water view, and natural light"
+    lighting_cn: "柔和城市自然光"
+    lighting_en: "soft urban natural light"
+    atmosphere_cn: "城市休闲氛围"
+    atmosphere_en: "urban leisure atmosphere"
+    allowed_actions: [holding_a_smartphone, holding_a_camera, waving_to_camera, holding_a_cup_in_one_hand, showing_both_palms]
+
+  market_street:
+    cn: "热闹市集街道，摊位、招牌与人流背景"
+    en: "busy market street with stalls, signs, and crowd background"
+    lighting_cn: "自然街道光与摊位灯光"
+    lighting_en: "natural street light mixed with stall lighting"
+    atmosphere_cn: "真实市集氛围"
+    atmosphere_en: "realistic market atmosphere"
+    allowed_actions: [holding_a_shopping_bag, handing_over_a_card, holding_a_smartphone, holding_a_cup_in_one_hand, waving_to_camera]
+
+  live_stream_room:
+    cn: "直播间，红色背景、补光灯、商品陈列与麦克风"
+    en: "live-stream room with red backdrop, studio lights, product display, and microphone"
+    lighting_cn: "明亮直播补光"
+    lighting_en: "bright live-stream studio lighting"
+    atmosphere_cn: "电商直播氛围"
+    atmosphere_en: "e-commerce live-stream atmosphere"
+    allowed_actions: [holding_a_microphone, pointing_while_explaining, showing_both_palms, waving_to_camera, holding_a_smartphone]
+
+  podcast_studio:
+    cn: "播客录音室，麦克风、吸音板与柔和灯光"
+    en: "podcast studio with microphone, acoustic panels, and soft lighting"
+    lighting_cn: "柔和录音室灯光"
+    lighting_en: "soft studio recording light"
+    atmosphere_cn: "专业录制氛围"
+    atmosphere_en: "professional recording atmosphere"
+    allowed_actions: [holding_a_microphone, pointing_while_explaining, showing_both_palms, holding_a_smartphone, waving_to_camera]
+
+subjects:
+  gender:
+    male:
+      cn: "一位年轻男子"
+      en: "a young man"
+    female:
+      cn: "一位年轻女性"
+      en: "a young woman"
+
+  age_group:
+    young_adult:
+      cn: "青年"
+      en: "young adult"
+
+compositions:
+  medium_shot_hands_visible:
+    cn: "中景人像构图，人物从头部到腰部或膝盖入镜"
+    en: "medium portrait composition from head to waist or knees"
+
+  three_quarter_portrait:
+    cn: "三分之二人像构图，人物从头部到大腿或小腿入镜"
+    en: "three-quarter portrait composition from head to thighs or lower legs"
+
+  full_body_hands_visible:
+    cn: "完整全身人像构图，人物从头到脚完整入镜"
+    en: "full-body portrait composition, shown head-to-toe"
+
+actions:
+  holding_a_coffee_mug_with_both_hands:
+    cn: "双手自然捧着一只陶瓷咖啡杯"
+    en: "naturally holding a ceramic coffee mug with both hands"
+
+  holding_a_cup_in_one_hand:
+    cn: "一只手自然拿着杯子，另一只手放在身体前方"
+    en: "holding a cup naturally with one hand while the other hand rests in front of the body"
+
+  holding_a_smartphone:
+    cn: "双手或一只手自然拿着智能手机"
+    en: "naturally holding a smartphone with one or both hands"
+
+  waving_to_camera:
+    cn: "抬起一只手向镜头挥手，另一只手自然放松并清晰可见"
+    en: "raising one hand to wave toward the camera while the other hand stays relaxed and clearly visible"
+
+  showing_both_palms:
+    cn: "双手朝向镜头自然展开，手掌清晰可见"
+    en: "opening both hands naturally toward the camera with palms clearly visible"
+
+  adjusting_hair:
+    cn: "双手自然抬起整理头发，手部靠近脸部"
+    en: "raising both hands naturally near the face to adjust hair"
+
+  holding_a_book_open:
+    cn: "双手拿着一本打开的书，手指压在书页边缘"
+    en: "holding an open book with both hands, fingers resting along the page edges"
+
+  turning_a_page:
+    cn: "一只手翻动书页，另一只手扶住书本"
+    en: "turning a page with one hand while the other hand holds the book steady"
+
+  holding_a_folder:
+    cn: "一只手拿着文件夹，另一只手自然抬起"
+    en: "holding a folder with one hand while the other hand is naturally raised"
+
+  pointing_while_explaining:
+    cn: "一只手做说明手势，另一只手自然放在身体前方"
+    en: "making an explanatory gesture with one hand while the other hand rests naturally in front of the body"
+
+  holding_a_microphone:
+    cn: "一只手把黑色麦克风举到嘴边，另一只手清晰进入画面"
+    en: "raising a black microphone to the mouth with one hand while the other hand is clearly visible in the frame"
+
+  making_a_peace_sign:
+    cn: "一只手做出自然的比耶手势，另一只手清晰可见"
+    en: "making a natural peace sign with one hand while the other hand is clearly visible"
+
+  giving_a_thumbs_up:
+    cn: "一只手做出点赞手势，另一只手自然放松并清晰可见"
+    en: "giving a thumbs-up gesture with one hand while the other hand stays relaxed and clearly visible"
+
+  holding_a_shopping_bag:
+    cn: "一只手拎着购物袋，另一只手自然放在身体前方"
+    en: "holding a shopping bag with one hand while the other hand rests naturally in front of the body"
+
+  holding_a_bouquet:
+    cn: "双手自然抱着一束鲜花，手指清晰可见"
+    en: "naturally holding a bouquet with both hands, fingers clearly visible"
+
+  carrying_a_backpack_strap:
+    cn: "一只手抓着背包肩带，另一只手自然放松并清晰可见"
+    en: "holding a backpack strap with one hand while the other hand stays relaxed and clearly visible"
+
+  opening_a_door_handle:
+    cn: "一只手握住门把手，另一只手清晰可见"
+    en: "gripping a door handle with one hand while the other hand is clearly visible"
+
+  holding_a_basketball:
+    cn: "双手自然托着一只篮球，手指贴在球面上"
+    en: "naturally holding a basketball with both hands, fingers placed on the ball surface"
+
+  preparing_to_shoot_a_basketball:
+    cn: "双臂抬起准备投篮，手部靠近篮球并清晰可见"
+    en: "raising both arms as if preparing to shoot a basketball, hands close to the ball and clearly visible"
+
+  holding_a_soccer_ball:
+    cn: "双手抱着一只足球，手指清晰贴在球面上"
+    en: "holding a soccer ball with both hands, fingers clearly placed on the ball surface"
+
+  gripping_a_steering_wheel:
+    cn: "双手握住方向盘，手指和手掌清晰可见"
+    en: "gripping a steering wheel with both hands, fingers and palms clearly visible"
+
+  holding_a_train_handle:
+    cn: "一只手握住车厢吊环，另一只手清晰可见"
+    en: "holding a train handle with one hand while the other hand is clearly visible"
+
+  holding_a_rail:
+    cn: "一只手握住扶手栏杆，另一只手清晰可见"
+    en: "holding a rail with one hand while the other hand is clearly visible"
+
+  signing_a_document:
+    cn: "一只手正在签署文件，另一只手扶着纸张"
+    en: "signing a document with one hand while the other hand holds the paper steady"
+
+  handing_over_a_card:
+    cn: "一只手递出一张卡片，另一只手自然放在身体前方"
+    en: "handing over a card with one hand while the other hand rests naturally in front of the body"
+
+  holding_a_medicine_bottle:
+    cn: "一只手拿着药瓶，另一只手清晰可见"
+    en: "holding a medicine bottle with one hand while the other hand is clearly visible"
+
+  cutting_vegetables:
+    cn: "一只手扶着蔬菜，另一只手拿着厨具准备切菜"
+    en: "holding vegetables with one hand while the other hand holds a kitchen utensil for cutting"
+
+  stirring_a_bowl:
+    cn: "一只手扶着碗，另一只手搅拌碗中的食材"
+    en: "holding a bowl with one hand while the other hand stirs ingredients inside it"
+
+  washing_a_cup:
+    cn: "双手在水槽旁清洗杯子，手部清晰可见"
+    en: "washing a cup by the sink with both hands clearly visible"
+
+  typing_pause_hands_visible:
+    cn: "双手停在键盘附近，手指清晰可见"
+    en: "both hands paused near a keyboard, fingers clearly visible"
+
+  holding_a_laptop:
+    cn: "双手托着一台笔记本电脑，手指清晰可见"
+    en: "holding a laptop with both hands, fingers clearly visible"
+
+  taking_a_selfie:
+    cn: "一只手举着手机自拍，另一只手清晰可见"
+    en: "holding a phone for a selfie with one hand while the other hand is clearly visible"
+
+  using_scissors:
+    cn: "一只手使用剪刀，另一只手扶住物体"
+    en: "using scissors with one hand while the other hand holds an object steady"
+
+  holding_a_camera:
+    cn: "双手拿着相机，手指清晰放在机身两侧"
+    en: "holding a camera with both hands, fingers clearly placed on both sides of the camera"
+
+  holding_an_umbrella:
+    cn: "一只手握住雨伞伞柄，另一只手清晰可见"
+    en: "holding an umbrella handle with one hand while the other hand is clearly visible"
+
+  buttoning_a_shirt:
+    cn: "双手在胸前整理或扣上衬衫纽扣"
+    en: "using both hands near the chest to adjust or button a shirt"
+
+  lifting_a_dumbbell:
+    cn: "一只手举着哑铃，另一只手清晰可见"
+    en: "lifting a dumbbell with one hand while the other hand is clearly visible"
+
+  stretching_with_hands_visible:
+    cn: "双臂伸展，双手清晰可见"
+    en: "stretching both arms with both hands clearly visible"
+
+  holding_a_flower_pot:
+    cn: "双手托着一个小花盆，手指清晰环绕盆身"
+    en: "holding a small flower pot with both hands, fingers clearly wrapped around the pot"
+
+  resting_hands_on_an_open_book:
+    cn: "双手分别放在打开书本的两侧书页上"
+    en: "resting both hands on each side of an open book"
+
+anomaly_families:
+  polydactyly:
+    cn: "多指"
+    en: "polydactyly"
+    allow_single: true
+    allow_both: true
+    variants:
+      six_fingers:
+        cn: "六指"
+        en: "six fingers"
+      seven_fingers:
+        cn: "七指"
+        en: "seven fingers"
+      extra_finger_between_ring_and_little:
+        cn: "无名指和小指之间额外多出一根手指"
+        en: "one extra finger between the ring finger and the little finger"
+
+  oligodactyly:
+    cn: "少指"
+    en: "fewer fingers"
+    allow_single: true
+    allow_both: true
+    variants:
+      three_fingers:
+        cn: "三根手指"
+        en: "three fingers"
+      four_fingers:
+        cn: "四根手指"
+        en: "four fingers"
+
+  multi_hand:
+    cn: "多手"
+    en: "multi-hand"
+    allow_single: true
+    allow_both: true
+    variants:
+      extra_small_hand_at_wrist:
+        cn: "手腕外侧额外连接一只较小但完整的小手"
+        en: "a smaller complete additional hand attached to the outer side of the wrist"
+      complete_second_hand_attached_to_wrist:
+        cn: "手腕旁额外连接一只完整的第二只手"
+        en: "a complete second hand attached beside the wrist"
+
+  syndactyly:
+    cn: "手指融合"
+    en: "finger fusion"
+    allow_single: true
+    allow_both: true
+    variants:
+      middle_ring_fused:
+        cn: "中指和无名指部分融合"
+        en: "middle finger and ring finger partially fused"
+      index_middle_fused:
+        cn: "食指和中指部分融合"
+        en: "index finger and middle finger partially fused"
+
+  arm_anomaly:
+    cn: "手臂异常"
+    en: "arm anomaly"
+    allow_single: true
+    allow_both: true
+    variants:
+      extra_forearm_with_hand:
+        cn: "肘部下方额外分出一条前臂并连接完整手掌"
+        en: "an additional forearm branching below the elbow and connected to a complete hand"
+      extra_arm_from_shoulder:
+        cn: "身体一侧额外长出一条完整手臂"
+        en: "an additional complete arm growing from one side of the torso"
+
+  double_palm:
+    cn: "手掌融合"
+    en: "double-palm structure"
+    allow_single: true
+    allow_both: true
+    variants:
+      fused_double_palm:
+        cn: "两个完整手掌融合连接"
+        en: "two complete palms fused together"
+      side_by_side_double_palm:
+        cn: "两个完整手掌并列连接并共享同一手腕区域"
+        en: "two complete palms joined side by side and sharing the same wrist area"
+
+anomaly_scopes:
+  - single
+  - both
+
+anomaly_sides:
+  - left
+  - right
+  - none

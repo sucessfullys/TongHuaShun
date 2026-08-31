@@ -1,0 +1,9 @@
+{
+  "output": "/mnt/image-edit/datasets/duanyufa/task_shengsheng/models/ms-swift/examples/train/body_deformity_qwen3_vl/body_deformity_multihand_reason_v3_train.jsonl",
+  "total": 5505,
+  "abnormal_selected": 1205,
+  "abnormal_bg_aug": 300,
+  "normal_human": 3000,
+  "background_no_human": 1000,
+  "seed": 20260722
+}
