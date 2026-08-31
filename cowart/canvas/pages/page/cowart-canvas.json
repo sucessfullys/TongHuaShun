@@ -1,0 +1,246 @@
+{
+  "schema": {
+    "schemaVersion": 2,
+    "sequences": {
+      "com.tldraw.store": 5,
+      "com.tldraw.asset": 1,
+      "com.tldraw.camera": 1,
+      "com.tldraw.document": 2,
+      "com.tldraw.instance": 26,
+      "com.tldraw.instance_page_state": 5,
+      "com.tldraw.page": 1,
+      "com.tldraw.instance_presence": 6,
+      "com.tldraw.pointer": 1,
+      "com.tldraw.shape": 4,
+      "com.tldraw.user": 1,
+      "com.tldraw.asset.image": 6,
+      "com.tldraw.asset.video": 5,
+      "com.tldraw.asset.bookmark": 2,
+      "com.tldraw.shape.arrow": 8,
+      "com.tldraw.shape.bookmark": 2,
+      "com.tldraw.shape.draw": 4,
+      "com.tldraw.shape.embed": 4,
+      "com.tldraw.shape.frame": 1,
+      "com.tldraw.shape.geo": 11,
+      "com.tldraw.shape.group": 0,
+      "com.tldraw.shape.highlight": 3,
+      "com.tldraw.shape.image": 5,
+      "com.tldraw.shape.line": 5,
+      "com.tldraw.shape.note": 12,
+      "com.tldraw.shape.text": 4,
+      "com.tldraw.shape.video": 4,
+      "com.tldraw.binding.arrow": 1
+    }
+  },
+  "store": {
+    "asset:-2056832469": {
+      "id": "asset:-2056832469",
+      "type": "image",
+      "typeName": "asset",
+      "props": {
+        "name": "asset--2056832469.png",
+        "src": "/page-assets/page/asset--2056832469.png",
+        "w": 633,
+        "h": 844,
+        "fileSize": 558808,
+        "mimeType": "image/png",
+        "isAnimated": false
+      },
+      "meta": {}
+    },
+    "shape:HQOyjYy1d_Cdc_TZ6NQ9S": {
+      "x": 721.9227858526438,
+      "y": 372.5701565316103,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:HQOyjYy1d_Cdc_TZ6NQ9S",
+      "type": "text",
+      "props": {
+        "color": "black",
+        "size": "m",
+        "w": 351.9624938964844,
+        "font": "draw",
+        "textAlign": "start",
+        "autoSize": true,
+        "scale": 1,
+        "richText": {
+          "type": "doc",
+          "attrs": {
+            "dir": "auto"
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "dir": "auto"
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Remove the specified object."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "parentId": "page:page",
+      "index": "a4I1zfIG",
+      "typeName": "shape"
+    },
+    "shape:uouWDIDBH-pVPIQnnv1MA": {
+      "x": 1066.9400688189687,
+      "y": 186.47989499270955,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:uouWDIDBH-pVPIQnnv1MA",
+      "type": "draw",
+      "props": {
+        "segments": [
+          {
+            "type": "free",
+            "path": "AAAAAAAAAAAAAAA/ezwAAAAAe7wAAAAAgMAAAAAAe7x7vAAAvcIAAAAAvcIAAAAAn8UAAAAAw8IAAAAAe8AAAAAAhbwAAAAAe7yFvAAAe7wAAAAAgMB7vAAAgMAAAAAAvcKFvAAAgMR7vAAAvcIAAAAAvcIAAAAAvcIAAAAAgMAAAAAAe7wAAAAAvcIAAAAAhbwAAAAAgMAAAAAAe7wAAAAAgMB7PAAAe7wAAAAAe7yFPAAAgMAAAAAAhbwAAAAAe7x7PAAAe7wAAAAAAACFPAAAgMAAAAAAAAB7PAAAgMAAAAAAAAB7PAAAe7wAAAAAAACFPAAAgMAAAAAAe7wAAAAAhbx7PAAAe7wAAAAAhbwAAAAAe7wAAAAAAACFPAAAgMAAAAAAAAB7PAAAe7wAAAAAgMAAAAAAgMB7PAAAe7wAAAAAgMCAQAAAvcIAAAAAvcJ7PAAAhbyFPAAAe7yAQAAAe7x7PAAAAAB7PAAAAACFPAAAhbx7PAAAe7yFPAAAAAB7PAAAe7wAAAAAAACAQAAAhbx7PAAAAAB7PAAAe7yAQAAAAACFPAAAAAB7PAAAAAB7PAAAhbyFPAAAAAB7PAAAAACFPAAAe7x7PAAAAAB7PAAAAACAQAAAe7x7PAAAAACFPAAAAAB7PAAAAACFPAAAhbx7PAAAAAB7PAAAAACFPAAAAAB7QAAAAACAQAAAe7yFPAAAAAB7PAAAAAB7PAAAe7yFPAAAAAB7PAAAAACAQAAAAAB7PAAAAACFPAAAAAB7PAAAAAB7PAAAAACFPAAAAAB7PAAAAACFPAAAAAB7QAAAAACAQAAAAACFPAAAAAB7PAAAAAB7PAAAe0CARAAAhTyAQAAAAAB7QAAAezyAQAAAezyFPAAAAAB7PAAAAAB7PAAAAACAQAAAAACAQAAAAAB7PAAAhTyFPAAAezx7PAAAAAB7PAAAhTyAQAAAezy9QgAAAACAQAAAAAB7PAAAAACFPAAAAACAQAAAezx7PAAAgEB7PAAAAACAQAAAAACAQAAAezx7PAAAAACFPAAAAAB7PAAAAAB7PAAAAACFPAAAAAB7PAAAAACFPAAAhTx7PAAAezwAAAAAAAB7PAAAAACAQAAAAAB7PAAAAACFPAAAhTx7PAAAAACFPAAAAAB7PAAAAAB7PAAAAACAQAAAAACFPAAAezx7QAAAAACAQAAAezwAAAAAAAB7PAAAAACFPAAAAAB7PAAAhTyFPAAAAAB7PAAAAAB7PAAAgECFPAAAAAB7PAAAe0AAAAAAAACFPAAAgEAAAAAAezwAAAAAhTx7QAAAezwAAAAAgEAAAAAAezwAAAAAhTwAAAAAezwAAAAAhTwAAAAAezwAAAAAgEAAAAAAezwAAAAAezyFPAAAhTx7PAAAgEAAAAAAe0AAAAAAhTwAAAAAezwAAAAAgEAAAAAAezwAAAAAhTwAAAAAezwAAAAAezwAAAAAgEAAAAAAgEAAAAAAezwAAAAAhTwAAAAAezwAAAAAhTwAAAAAe0AAAAAAhTwAAAAAezwAAAAAgEB7PAAAgEAAAAAAe0CFPAAAhTwAAAAAezwAAAAAezwAAAAAgEAAAAAAvUJ7PAAAgECFPAAAhTwAAAAAe0AAAAAAgEAAAAAAezwAAAAAhTwAAAAAezwAAAAAhTwAAAAAe0B7PAAAhTwAAAAAezwAAAAAhTwAAAAAe0AAAAAAhTwAAAAAezwAAAAAezwAAAAAhTwAAAAAezwAAAAAgEAAAAAAezwAAAAAhTwAAAAAvUIAAAAAezwAAAAAhTx7vAAAezwAAAAAezyFvAAAhTwAAAAAAAB7vAAAgEAAAAAA"
+          }
+        ],
+        "color": "black",
+        "fill": "none",
+        "dash": "draw",
+        "size": "m",
+        "isComplete": true,
+        "isClosed": false,
+        "isPen": false,
+        "scale": 1,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "page:page",
+      "index": "a2Bmv1nV",
+      "typeName": "shape"
+    },
+    "user:T7Kah4_O9KQquAA0COAM-": {
+      "name": "",
+      "color": "#FF802B",
+      "imageUrl": "",
+      "meta": {},
+      "id": "user:T7Kah4_O9KQquAA0COAM-",
+      "typeName": "user"
+    },
+    "shape:zLgFpOYRg4CS9WjzghNnY": {
+      "x": 448.12846097432544,
+      "y": -24.80108088306315,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:zLgFpOYRg4CS9WjzghNnY",
+      "type": "image",
+      "props": {
+        "w": 633,
+        "h": 844,
+        "assetId": "asset:-2056832469",
+        "playing": true,
+        "url": "",
+        "crop": null,
+        "flipX": false,
+        "flipY": false,
+        "altText": ""
+      },
+      "parentId": "page:page",
+      "index": "a1rIicCV",
+      "typeName": "shape"
+    },
+    "asset:annotation-edit-remove-right-lamp-20260812T090410Z": {
+      "id": "asset:annotation-edit-remove-right-lamp-20260812T090410Z",
+      "typeName": "asset",
+      "type": "image",
+      "props": {
+        "name": "annotation-edit-remove-right-lamp-20260812T090410Z.png",
+        "src": "/page-assets/page/annotation-edit-remove-right-lamp-20260812T090410Z.png",
+        "w": 1100,
+        "h": 1429,
+        "fileSize": 1829956,
+        "mimeType": "image/png",
+        "isAnimated": false
+      },
+      "meta": {}
+    },
+    "shape:bzJpG5OJdddnHh5KHDzzp": {
+      "x": 1064.6924332963852,
+      "y": 183.10839883793463,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:bzJpG5OJdddnHh5KHDzzp",
+      "type": "draw",
+      "props": {
+        "segments": [
+          {
+            "type": "free",
+            "path": "AAAAAAAAAAAAAAA/AAB7vAAAgEAAAAAAAAB7PAAAezyAQAAAhTwAAAAAAAB7PAAAe0CFPAAAAAB7PAAAhTx7PAAAAACFPAAAezx7PAAAAAB7PAAAezwAAAAAAACFPAAAAAB7PAAAAACFPAAAAAB7PAAAAAB7PAAAAACAQAAAAACFPAAAAAB7PAAAAACAQAAAAAB7PAAAhTx7PAAAAACAQAAAezyFPAAA"
+          }
+        ],
+        "color": "black",
+        "fill": "none",
+        "dash": "draw",
+        "size": "m",
+        "isComplete": true,
+        "isClosed": false,
+        "isPen": false,
+        "scale": 1,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "page:page",
+      "index": "a3h2NJaV",
+      "typeName": "shape"
+    },
+    "page:page": {
+      "meta": {},
+      "id": "page:page",
+      "name": "Page 1",
+      "index": "a1",
+      "typeName": "page"
+    },
+    "document:document": {
+      "gridSize": 10,
+      "name": "",
+      "meta": {},
+      "id": "document:document",
+      "typeName": "document"
+    },
+    "shape:annotation-edit-remove-right-lamp-20260812T090410Z": {
+      "x": 1103.392864577725,
+      "y": -29.23501169603685,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {
+        "cowartGeneratedFromAnnotationEdit": true,
+        "cowartAnnotationSourceShapeId": "shape:zLgFpOYRg4CS9WjzghNnY",
+        "cowartEditInstruction": "Remove the specified object: right-side table lamp inside the black box",
+        "cowartAnnotationScreenshot": "annotation-edit-20260812T090232Z.png"
+      },
+      "id": "shape:annotation-edit-remove-right-lamp-20260812T090410Z",
+      "type": "image",
+      "props": {
+        "w": 633,
+        "h": 844,
+        "assetId": "asset:annotation-edit-remove-right-lamp-20260812T090410Z",
+        "playing": true,
+        "url": "",
+        "crop": null,
+        "flipX": false,
+        "flipY": false,
+        "altText": "Revised image generated from Cowart annotation screenshot: right-side table lamp removed"
+      },
+      "parentId": "page:page",
+      "index": "a5",
+      "typeName": "shape"
+    }
+  }
+}
